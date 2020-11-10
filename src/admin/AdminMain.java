@@ -200,7 +200,7 @@ public class AdminMain extends javax.swing.JFrame {
             st=connection.createStatement();
             st.executeUpdate(query1);
             st.executeUpdate(query2);
-            JOptionPane.showMessageDialog(null, "تم اكتمال الحذف بتجاح");     
+            JOptionPane.showMessageDialog(null, "تم حذف جميع الاوردرات بتجاح");         
         }
             catch(Exception e)
         {
@@ -218,8 +218,8 @@ public class AdminMain extends javax.swing.JFrame {
     
     private void deletedbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deletedbActionPerformed
         // TODO add your handling code here:
-            int a=JOptionPane.showConfirmDialog(null,"هل تود بالفعل حذف جميع الاوردرات");  
-if(a==JOptionPane.YES_OPTION){  
+  int a=JOptionPane.showConfirmDialog(null,"هل تود بالفعل حذف جميع الاوردرات");  
+  if(a==JOptionPane.YES_OPTION){  
     deletedata();
 }
     }//GEN-LAST:event_deletedbActionPerformed

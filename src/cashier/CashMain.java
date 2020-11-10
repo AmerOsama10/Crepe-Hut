@@ -3,7 +3,12 @@ package cashier;
 import admin.EnterSystem;
 import orders.recipes;
 import client.ClientsDetails;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 
 
@@ -39,8 +44,8 @@ public class CashMain extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         deliverorder = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        outcashier = new javax.swing.JButton();
+        clientdatabtn = new javax.swing.JButton();
+        deleteallbtn = new javax.swing.JButton();
         exit = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
@@ -63,31 +68,31 @@ public class CashMain extends javax.swing.JFrame {
         });
         jPanel1.add(deliverorder, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 130, 40));
 
-        jButton2.setBackground(new java.awt.Color(153, 0, 0));
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("بيانات العملاء");
-        jButton2.setBorder(null);
-        jButton2.setContentAreaFilled(true);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        clientdatabtn.setBackground(new java.awt.Color(153, 0, 0));
+        clientdatabtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        clientdatabtn.setForeground(new java.awt.Color(255, 255, 255));
+        clientdatabtn.setText("بيانات العملاء");
+        clientdatabtn.setBorder(null);
+        clientdatabtn.setContentAreaFilled(true);
+        clientdatabtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                clientdatabtnActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 100, 120, 40));
+        jPanel1.add(clientdatabtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 100, 120, 40));
 
-        outcashier.setBackground(new java.awt.Color(153, 0, 0));
-        outcashier.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        outcashier.setForeground(new java.awt.Color(255, 255, 255));
-        outcashier.setText("تسجيل الخروج");
-        outcashier.setBorder(null);
-        outcashier.setContentAreaFilled(true);
-        outcashier.addActionListener(new java.awt.event.ActionListener() {
+        deleteallbtn.setBackground(new java.awt.Color(153, 0, 0));
+        deleteallbtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        deleteallbtn.setForeground(new java.awt.Color(255, 255, 255));
+        deleteallbtn.setText("حذف الاوردرات");
+        deleteallbtn.setBorder(null);
+        deleteallbtn.setContentAreaFilled(true);
+        deleteallbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                outcashierActionPerformed(evt);
+                deleteallbtnActionPerformed(evt);
             }
         });
-        jPanel1.add(outcashier, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 110, 40));
+        jPanel1.add(deleteallbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 110, 40));
 
         exit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         exit.setForeground(new java.awt.Color(0, 0, 102));
@@ -122,11 +127,11 @@ public class CashMain extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void clientdatabtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clientdatabtnActionPerformed
      this.setVisible(false);
      ClientsDetails client=new ClientsDetails(); 
      client.setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_clientdatabtnActionPerformed
 
     private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
      // TODO add your handling code here:
@@ -143,12 +148,46 @@ public class CashMain extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_deliverorderActionPerformed
-
-    private void outcashierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_outcashierActionPerformed
-        this.setVisible(false);
-        LogOut out=new LogOut();
-        out.setVisible(true);       
-    }//GEN-LAST:event_outcashierActionPerformed
+    public Connection getConnection()
+    {
+        Connection con;
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
+            return con;
+        } catch(Exception e)
+        {
+           return null;
+        }
+    }
+    
+    void deletedata(){
+         Connection connection= getConnection();
+        String query1="DELETE FROM `dates`;";
+        String query2="DELETE FROM `orders`;";
+        Statement st;
+        ResultSet rs;
+        try{
+            st=connection.createStatement();
+            st.executeUpdate(query1);
+            st.executeUpdate(query2);
+            JOptionPane.showMessageDialog(null, "تم حذف جميع الاوردرات بتجاح");     
+        }
+            catch(Exception e)
+        {
+               JOptionPane.showMessageDialog(null, "لم يتم الحذف بنحاح");
+        }
+        
+    }
+    
+    private void deleteallbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteallbtnActionPerformed
+     int a=JOptionPane.showConfirmDialog(null,"هل تود بالفعل حذف جميع الاوردرات");  
+     if(a==JOptionPane.YES_OPTION){  
+     deletedata();
+         }     
+     
+     
+    }//GEN-LAST:event_deleteallbtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -186,11 +225,11 @@ public class CashMain extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton clientdatabtn;
+    private javax.swing.JButton deleteallbtn;
     private javax.swing.JButton deliverorder;
     private javax.swing.JButton exit;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton outcashier;
     // End of variables declaration//GEN-END:variables
 }

@@ -6,6 +6,7 @@
 package orders;
 
 import admin.AdminMain;
+import admin.InvoicesDetails;
 import cashier.Cash;
 import cashier.CashMain;
 import cashier.LogOut;
@@ -343,7 +344,7 @@ public class recipes extends javax.swing.JFrame {
         removerecipe = new javax.swing.JButton();
         printsheek = new javax.swing.JButton();
         orderid = new javax.swing.JTextField();
-        finishshift1 = new javax.swing.JButton();
+        viewallrecord = new javax.swing.JButton();
         TotalCost = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         exit = new javax.swing.JButton();
@@ -352,6 +353,7 @@ public class recipes extends javax.swing.JFrame {
         printdelivery = new javax.swing.JButton();
         clname = new javax.swing.JTextField();
         clid = new javax.swing.JTextField();
+        printallrecord = new javax.swing.JButton();
 
         jFrame1.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         jFrame1.setBackground(new java.awt.Color(255, 255, 204));
@@ -2774,12 +2776,9 @@ public class recipes extends javax.swing.JFrame {
             .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(krybsLayout.createSequentialGroup()
                     .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(krybsLayout.createSequentialGroup()
-                            .addComponent(kryb17, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, krybsLayout.createSequentialGroup()
-                            .addComponent(kryb13, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10)))
+                        .addComponent(kryb17, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(kryb13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(10, 10, 10)
                     .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(krybsLayout.createSequentialGroup()
                             .addComponent(kryb18, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2854,16 +2853,13 @@ public class recipes extends javax.swing.JFrame {
                     .addComponent(kryb6, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(kryb7, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(kryb8, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGap(10, 10, 10)
             .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(krybsLayout.createSequentialGroup()
-                    .addGap(10, 10, 10)
-                    .addComponent(kryb9, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, krybsLayout.createSequentialGroup()
-                    .addGap(10, 10, 10)
-                    .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(kryb11, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(kryb10, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(kryb12, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addComponent(kryb9, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(kryb11, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kryb10, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kryb12, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                 .addComponent(kryb13, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -3100,11 +3096,12 @@ public class recipes extends javax.swing.JFrame {
             .addContainerGap(58, Short.MAX_VALUE)
             .addGroup(pastaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pastaLayout.createSequentialGroup()
-                    .addGroup(pastaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(meat23, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(meat24, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(meat25, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(meat22, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pastaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(meat22, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(pastaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(meat23, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(meat24, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(meat25, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGap(10, 10, 10)
                     .addGroup(pastaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(meat26, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -3815,13 +3812,13 @@ public class recipes extends javax.swing.JFrame {
         }
     });
 
-    finishshift1.setBackground(new java.awt.Color(0, 204, 204));
-    finishshift1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    finishshift1.setForeground(new java.awt.Color(255, 255, 255));
-    finishshift1.setText("انهاء شيفت");
-    finishshift1.addActionListener(new java.awt.event.ActionListener() {
+    viewallrecord.setBackground(new java.awt.Color(0, 204, 204));
+    viewallrecord.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+    viewallrecord.setForeground(new java.awt.Color(255, 255, 255));
+    viewallrecord.setText("عرض الكل");
+    viewallrecord.addActionListener(new java.awt.event.ActionListener() {
         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            finishshift1ActionPerformed(evt);
+            viewallrecordActionPerformed(evt);
         }
     });
 
@@ -3904,6 +3901,16 @@ public class recipes extends javax.swing.JFrame {
     clid.setText("0");
     clid.setVisible(false);
 
+    printallrecord.setBackground(new java.awt.Color(0, 204, 204));
+    printallrecord.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+    printallrecord.setForeground(new java.awt.Color(255, 255, 255));
+    printallrecord.setText("طباعه الكل");
+    printallrecord.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            printallrecordActionPerformed(evt);
+        }
+    });
+
     javax.swing.GroupLayout datapanelLayout = new javax.swing.GroupLayout(datapanel);
     datapanel.setLayout(datapanelLayout);
     datapanelLayout.setHorizontalGroup(
@@ -3912,44 +3919,46 @@ public class recipes extends javax.swing.JFrame {
             .addGap(25, 25, 25)
             .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, datapanelLayout.createSequentialGroup()
-                    .addGap(14, 14, 14)
                     .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(datapanelLayout.createSequentialGroup()
+                            .addGap(14, 14, 14)
+                            .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(datapanelLayout.createSequentialGroup()
+                                    .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(TotalCost, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(taxs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(18, 18, 18)
+                                    .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, datapanelLayout.createSequentialGroup()
+                                    .addComponent(service, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, datapanelLayout.createSequentialGroup()
+                                    .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(discount, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(sum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGap(18, 18, 18)
+                                    .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))))
+                            .addGap(48, 48, 48)
                             .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(TotalCost, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(taxs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(18, 18, 18)
-                            .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, datapanelLayout.createSequentialGroup()
-                            .addComponent(service, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, datapanelLayout.createSequentialGroup()
-                            .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(discount, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(sum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGap(18, 18, 18)
-                            .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))))
-                    .addGap(48, 48, 48)
-                    .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(printsheek, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(printsheek, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(datapanelLayout.createSequentialGroup()
+                                    .addComponent(removerecipe, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(neworder, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(datapanelLayout.createSequentialGroup()
+                                    .addComponent(printdelivery, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(choosedelivery, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGroup(datapanelLayout.createSequentialGroup()
-                            .addComponent(removerecipe, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(neworder, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(datapanelLayout.createSequentialGroup()
-                            .addComponent(printdelivery, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(choosedelivery, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGap(0, 0, Short.MAX_VALUE)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(4, 4, 4)))
                     .addGap(50, 50, 50))
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, datapanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(54, 54, 54))
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, datapanelLayout.createSequentialGroup()
                     .addComponent(orderid)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -3959,7 +3968,9 @@ public class recipes extends javax.swing.JFrame {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                     .addComponent(clid, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(18, 18, 18)
-                    .addComponent(finishshift1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(viewallrecord, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(printallrecord, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGap(44, 44, 44))))
         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, datapanelLayout.createSequentialGroup()
             .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -3969,18 +3980,24 @@ public class recipes extends javax.swing.JFrame {
     datapanelLayout.setVerticalGroup(
         datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
         .addGroup(datapanelLayout.createSequentialGroup()
-            .addComponent(exit)
+            .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-            .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                .addComponent(clid)
-                .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cashierid, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(clname, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addComponent(orderid)
-                .addComponent(finishshift1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGap(30, 30, 30)
+            .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(datapanelLayout.createSequentialGroup()
+                    .addComponent(viewallrecord, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(printallrecord, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, datapanelLayout.createSequentialGroup()
+                    .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(clid)
+                        .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cashierid, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(clname, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(orderid, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(32, 32, 32)))
             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGap(32, 32, 32)
+            .addGap(18, 18, 18)
             .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                 .addComponent(sum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -4241,7 +4258,6 @@ void store_cashorder(){
             query1="INSERT INTO `orders`(`order_id`,`order_quantity`,`item_id`) VALUES('"+ordernumber+"','"+qun+"','"+item_id+"');";            
             st = con.createStatement();
             st.executeUpdate(query1);
-              System.out.println(item_id+"   "+ordernumber);
             count++;
         }
          }
@@ -4389,7 +4405,6 @@ void store_deliveryorder(){
                             JOptionPane.showMessageDialog(null, "تم طباعه الاوردر بنجاح"); 
                                 }
                             catch(Exception ex){
-                                          System.out.print(ex.toString());
 
                             JOptionPane.showMessageDialog(null, "لم تتم اضافه الاوردر !!");   
                             
@@ -4433,8 +4448,6 @@ void store_deliveryorder(){
 
 public void print_kitchen_report() 
 {
-    
-   
 
 try {
     Connection con =getConnection();
@@ -4447,7 +4460,7 @@ try {
     map.put("notes", txtarea);
    JasperReport jr = JasperCompileManager.compileReport(jsd);
    JasperPrint jp = JasperFillManager.fillReport(jr, map,con);
-   // JasperViewer.viewReport(jp); 
+    //JasperViewer.viewReport(jp); 
     //JasperPrintManager.printPage(jp, 0, false);
     //JasperPrint jp =reportEngine.fillReport() ;//it returns stream 
     //JasperViewer.viewReport(jp); 
@@ -4625,13 +4638,101 @@ try {
 
              
 
-    private void finishshift1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finishshift1ActionPerformed
+    private void viewallrecordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewallrecordActionPerformed
         // TODO add your handling code here:
-       this.setVisible(false);
-        LogOut out=new LogOut();
-        out.setVisible(true);
-    }//GEN-LAST:event_finishshift1ActionPerformed
+     //  this.setVisible(false);
+      //  LogOut out=new LogOut();
+      //  out.setVisible(true);
+      view_All_records();
+      
+    }//GEN-LAST:event_viewallrecordActionPerformed
+ 
 
+        public void view_All_records() 
+{
+     try { 
+     Connection con =getConnection();
+     Map map = new HashMap();
+     int id=maxorder();
+     map.put("totalid",id);
+
+    JasperDesign jsd = JRXmlLoader.load("C:/Reports/allrecord.jrxml");
+    JasperReport jr = JasperCompileManager.compileReport(jsd);
+    JasperPrint jp = JasperFillManager.fillReport(jr, map,con);
+    JasperViewer.viewReport(jp,false);
+    //JasperPrintManager.printPage(jp, 0, false);
+    //JasperPrint jp =reportEngine.fillReport() ;//it returns stream 
+                
+        }
+     catch (NullPointerException ex) {
+           JOptionPane.showMessageDialog(null,"هناك خطا لا يمكن العرض");
+        }
+    catch (JRException ex) {
+            Logger.getLogger(InvoicesDetails.class.getName()).log(Level.SEVERE, null, ex);
+        }
+      catch (IllegalArgumentException ex) {
+          JOptionPane.showMessageDialog(null," لا توجد اوردرات موجوده");
+        }
+}       
+   
+      
+        
+public void print_All_records() 
+{
+   
+
+   try { 
+     Connection con =getConnection();
+     Map map = new HashMap();
+     int id=maxorder();
+     map.put("totalid",id);
+
+    JasperDesign jsd = JRXmlLoader.load("C:/Reports/allrecord.jrxml");
+    JasperReport jr = JasperCompileManager.compileReport(jsd);
+    JasperPrint jp = JasperFillManager.fillReport(jr, map,con);
+  
+   // JasperPrintManager.printPage(jp, 0, false);
+   // JasperPrint jp =reportEngine.fillReport() ;//it returns stream 
+    print_All_records(jp);//call method
+         JOptionPane.showMessageDialog(null, "تم طباعه كل الاوردرات بنجاح"); 
+
+}      
+ catch (NullPointerException ex) {
+           JOptionPane.showMessageDialog(null," لم تتم طباعه الاوردرات بنجاح");
+        }
+catch (JRException ex) {
+            Logger.getLogger(InvoicesDetails.class.getName()).log(Level.SEVERE, null, ex);
+        }
+   catch (IllegalArgumentException ex) {
+          JOptionPane.showMessageDialog(null," لا توجد اوردرات موجوده");
+        }
+   
+}        
+    
+    
+     private void print_All_records(JasperPrint jp) throws JRException {
+    // TODO Auto-generated method stub
+    PrintRequestAttributeSet printRequestAttributeSet = new HashPrintRequestAttributeSet();
+    // printRequestAttributeSet.add(MediaSizeNdame.ISO_A4); //setting page size
+    printRequestAttributeSet.add(new Copies(1));
+    //PrinterName printerName = new PrinterName("Microsoft XPS Document Writer", null);
+
+      PrinterName printerName = new PrinterName("XP-80C (copy 5)", null); //gets printer 
+
+
+    PrintServiceAttributeSet printServiceAttributeSet = new HashPrintServiceAttributeSet();
+    printServiceAttributeSet.add(printerName);
+
+    JRPrintServiceExporter exporter = new JRPrintServiceExporter();
+
+    exporter.setParameter(JRExporterParameter.JASPER_PRINT, jp);
+    exporter.setParameter(JRPrintServiceExporterParameter.PRINT_REQUEST_ATTRIBUTE_SET, printRequestAttributeSet);
+    exporter.setParameter(JRPrintServiceExporterParameter.PRINT_SERVICE_ATTRIBUTE_SET, printServiceAttributeSet);
+    exporter.setParameter(JRPrintServiceExporterParameter.DISPLAY_PAGE_DIALOG, Boolean.FALSE);
+    exporter.setParameter(JRPrintServiceExporterParameter.DISPLAY_PRINT_DIALOG, Boolean.FALSE);
+    exporter.exportReport();
+}   
+    
     private void TotalCostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalCostActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TotalCostActionPerformed
@@ -4640,9 +4741,9 @@ try {
         // TODO add your handling code here:
         
          int key = evt.getKeyCode();
-            if (key == KeyEvent.VK_ENTER) {
+         if (key == KeyEvent.VK_ENTER) {
          int taxsint=Integer.parseInt(taxs.getText().toString());
-          totalcost=totalcost + ((totalcost * taxsint)/100);
+         totalcost=totalcost + ((totalcost * taxsint)/100);
          TotalCost.setText(""+totalcost);
          taxs.setEnabled(false);
        
@@ -4651,7 +4752,7 @@ try {
 
     private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
         // TODO add your handling code here:
-             this.setVisible(false);
+        this.setVisible(false);
         CashMain main =new CashMain();
         main.setVisible(true);
     }//GEN-LAST:event_exitActionPerformed
@@ -5681,6 +5782,12 @@ try {
         item_sandwich(itemid);
     }//GEN-LAST:event_cheese41ActionPerformed
 
+    private void printallrecordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printallrecordActionPerformed
+        // TODO add your handling code here:
+         print_All_records();
+                            
+    }//GEN-LAST:event_printallrecordActionPerformed
+
     
     
     /**
@@ -5773,7 +5880,6 @@ try {
     private javax.swing.JButton drink80;
     private javax.swing.JButton exit;
     private javax.swing.JButton exit1;
-    private javax.swing.JButton finishshift1;
     private javax.swing.JButton finishshift2;
     private javax.swing.JButton fruit86;
     private javax.swing.JButton fruit87;
@@ -5921,6 +6027,7 @@ try {
     private javax.swing.JButton pasta56;
     private javax.swing.JButton pasta57;
     private javax.swing.JButton pasta58;
+    private javax.swing.JButton printallrecord;
     public static javax.swing.JButton printdelivery;
     public static javax.swing.JButton printdelivery1;
     private javax.swing.JButton printsheek;
@@ -5978,6 +6085,7 @@ try {
     private javax.swing.JLabel takeaway1;
     private javax.swing.JTextField taxs;
     private javax.swing.JTextField taxs1;
+    private javax.swing.JButton viewallrecord;
     private javax.swing.JPanel wafel;
     private javax.swing.JButton wafel63;
     private javax.swing.JButton wafel64;
