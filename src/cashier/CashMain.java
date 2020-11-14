@@ -5,10 +5,15 @@ import orders.recipes;
 import client.ClientsDetails;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import orders.backtoorder;
 
 
 
@@ -45,7 +50,7 @@ public class CashMain extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         deliverorder = new javax.swing.JButton();
         clientdatabtn = new javax.swing.JButton();
-        deleteallbtn = new javax.swing.JButton();
+        backtorderbtn = new javax.swing.JButton();
         exit = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
@@ -66,7 +71,7 @@ public class CashMain extends javax.swing.JFrame {
                 deliverorderActionPerformed(evt);
             }
         });
-        jPanel1.add(deliverorder, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 130, 40));
+        jPanel1.add(deliverorder, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, 140, 40));
 
         clientdatabtn.setBackground(new java.awt.Color(153, 0, 0));
         clientdatabtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -79,20 +84,20 @@ public class CashMain extends javax.swing.JFrame {
                 clientdatabtnActionPerformed(evt);
             }
         });
-        jPanel1.add(clientdatabtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 100, 120, 40));
+        jPanel1.add(clientdatabtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 130, 40));
 
-        deleteallbtn.setBackground(new java.awt.Color(153, 0, 0));
-        deleteallbtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        deleteallbtn.setForeground(new java.awt.Color(255, 255, 255));
-        deleteallbtn.setText("حذف الاوردرات");
-        deleteallbtn.setBorder(null);
-        deleteallbtn.setContentAreaFilled(true);
-        deleteallbtn.addActionListener(new java.awt.event.ActionListener() {
+        backtorderbtn.setBackground(new java.awt.Color(153, 0, 0));
+        backtorderbtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        backtorderbtn.setForeground(new java.awt.Color(255, 255, 255));
+        backtorderbtn.setText("الرجوع للاوردر");
+        backtorderbtn.setBorder(null);
+        backtorderbtn.setContentAreaFilled(true);
+        backtorderbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deleteallbtnActionPerformed(evt);
+                backtorderbtnActionPerformed(evt);
             }
         });
-        jPanel1.add(deleteallbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 110, 40));
+        jPanel1.add(backtorderbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 130, 40));
 
         exit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         exit.setForeground(new java.awt.Color(0, 0, 102));
@@ -104,7 +109,7 @@ public class CashMain extends javax.swing.JFrame {
                 exitActionPerformed(evt);
             }
         });
-        jPanel1.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 0, 40, 30));
+        jPanel1.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 0, 40, 30));
 
         jLabel1.setBackground(new java.awt.Color(153, 0, 0));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu2.jpg"))); // NOI18N
@@ -117,7 +122,7 @@ public class CashMain extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -132,13 +137,28 @@ public class CashMain extends javax.swing.JFrame {
      ClientsDetails client=new ClientsDetails(); 
      client.setVisible(true);
     }//GEN-LAST:event_clientdatabtnActionPerformed
-
+       public void exitdata()
+    {
+        Connection con;
+        try {
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "");
+             Statement s;    
+             Cash cashier=new Cash();
+             cashier.clockOut();
+             String query="UPDATE `cashiers` SET `cashier_state`='"+cashier.getWorkState()+"'WHERE `cashier_state`=1;";
+             s = con.createStatement();
+             s.executeUpdate(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(CashMain.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
      // TODO add your handling code here:
-     
-    this.dispose();
+    
+       this.dispose();
        EnterSystem e=new EnterSystem();
        e.setVisible(true);
+       exitdata();
     }//GEN-LAST:event_exitActionPerformed
 
     private void deliverorderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deliverorderActionPerformed
@@ -180,14 +200,13 @@ public class CashMain extends javax.swing.JFrame {
         
     }
     
-    private void deleteallbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteallbtnActionPerformed
-     int a=JOptionPane.showConfirmDialog(null,"هل تود بالفعل حذف جميع الاوردرات");  
-     if(a==JOptionPane.YES_OPTION){  
-     deletedata();
-         }     
+    private void backtorderbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backtorderbtnActionPerformed
+     this.setVisible(false);
+     backtoorder back=new backtoorder(); 
+     back.setVisible(true);
      
      
-    }//GEN-LAST:event_deleteallbtnActionPerformed
+    }//GEN-LAST:event_backtorderbtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -225,8 +244,8 @@ public class CashMain extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton backtorderbtn;
     private javax.swing.JButton clientdatabtn;
-    private javax.swing.JButton deleteallbtn;
     private javax.swing.JButton deliverorder;
     private javax.swing.JButton exit;
     private javax.swing.JLabel jLabel1;

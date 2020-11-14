@@ -50,6 +50,7 @@ public class AdminMain extends javax.swing.JFrame {
         InvoicesData = new javax.swing.JButton();
         deletedb = new javax.swing.JButton();
         exit = new javax.swing.JButton();
+        tareer = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -71,7 +72,7 @@ public class AdminMain extends javax.swing.JFrame {
                 ItemsDataActionPerformed(evt);
             }
         });
-        homepanel.add(ItemsData, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, 110, 40));
+        homepanel.add(ItemsData, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 100, 110, 40));
 
         cashiersData.setBackground(new java.awt.Color(255, 255, 255));
         cashiersData.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -84,7 +85,7 @@ public class AdminMain extends javax.swing.JFrame {
                 cashiersDataActionPerformed(evt);
             }
         });
-        homepanel.add(cashiersData, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 130, 40));
+        homepanel.add(cashiersData, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 100, 120, 40));
 
         InvoicesData.setBackground(new java.awt.Color(255, 255, 255));
         InvoicesData.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -123,11 +124,22 @@ public class AdminMain extends javax.swing.JFrame {
                 exitActionPerformed(evt);
             }
         });
-        homepanel.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 0, 30, 40));
+        homepanel.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 0, 30, 40));
+
+        tareer.setBackground(new java.awt.Color(255, 255, 255));
+        tareer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        tareer.setForeground(new java.awt.Color(0, 102, 102));
+        tareer.setText("الشيك اليومي");
+        tareer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tareerActionPerformed(evt);
+            }
+        });
+        homepanel.add(tareer, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, -1, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu2.jpg"))); // NOI18N
         jLabel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 102), 2, true));
-        homepanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 440));
+        homepanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 440));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -224,6 +236,12 @@ public class AdminMain extends javax.swing.JFrame {
 }
     }//GEN-LAST:event_deletedbActionPerformed
 
+    private void tareerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tareerActionPerformed
+    
+      tareer t=new tareer();
+      t.setVisible(true);
+    }//GEN-LAST:event_tareerActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -270,5 +288,6 @@ public class AdminMain extends javax.swing.JFrame {
     private javax.swing.JButton exit;
     private javax.swing.JPanel homepanel;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton tareer;
     // End of variables declaration//GEN-END:variables
 }

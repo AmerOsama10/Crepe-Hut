@@ -344,7 +344,6 @@ public class recipes extends javax.swing.JFrame {
         removerecipe = new javax.swing.JButton();
         printsheek = new javax.swing.JButton();
         orderid = new javax.swing.JTextField();
-        viewallrecord = new javax.swing.JButton();
         TotalCost = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         exit = new javax.swing.JButton();
@@ -353,7 +352,8 @@ public class recipes extends javax.swing.JFrame {
         printdelivery = new javax.swing.JButton();
         clname = new javax.swing.JTextField();
         clid = new javax.swing.JTextField();
-        printallrecord = new javax.swing.JButton();
+        backtorderbtn = new javax.swing.JButton();
+        backtorderbtn1 = new javax.swing.JButton();
 
         jFrame1.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         jFrame1.setBackground(new java.awt.Color(255, 255, 204));
@@ -3812,16 +3812,6 @@ public class recipes extends javax.swing.JFrame {
         }
     });
 
-    viewallrecord.setBackground(new java.awt.Color(0, 204, 204));
-    viewallrecord.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    viewallrecord.setForeground(new java.awt.Color(255, 255, 255));
-    viewallrecord.setText("عرض الكل");
-    viewallrecord.addActionListener(new java.awt.event.ActionListener() {
-        public void actionPerformed(java.awt.event.ActionEvent evt) {
-            viewallrecordActionPerformed(evt);
-        }
-    });
-
     TotalCost.setEditable(false);
     TotalCost.setBackground(new java.awt.Color(51, 51, 51));
     TotalCost.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -3859,7 +3849,7 @@ public class recipes extends javax.swing.JFrame {
     cashierid.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
     cashierid.setForeground(new java.awt.Color(255, 255, 255));
     cashierid.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-    cashierid.setText(""+currentcashier());
+    cashierid.setText(""+currentcashiername());
     orderid.setVisible(true);
     cashierid.addActionListener(new java.awt.event.ActionListener() {
         public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3901,13 +3891,27 @@ public class recipes extends javax.swing.JFrame {
     clid.setText("0");
     clid.setVisible(false);
 
-    printallrecord.setBackground(new java.awt.Color(0, 204, 204));
-    printallrecord.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    printallrecord.setForeground(new java.awt.Color(255, 255, 255));
-    printallrecord.setText("طباعه الكل");
-    printallrecord.addActionListener(new java.awt.event.ActionListener() {
+    backtorderbtn.setBackground(new java.awt.Color(153, 0, 0));
+    backtorderbtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+    backtorderbtn.setForeground(new java.awt.Color(255, 255, 255));
+    backtorderbtn.setText("الرجوع للاوردر");
+    backtorderbtn.setBorder(null);
+    backtorderbtn.setContentAreaFilled(true);
+    backtorderbtn.addActionListener(new java.awt.event.ActionListener() {
         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            printallrecordActionPerformed(evt);
+            backtorderbtnActionPerformed(evt);
+        }
+    });
+
+    backtorderbtn1.setBackground(new java.awt.Color(0, 204, 204));
+    backtorderbtn1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+    backtorderbtn1.setForeground(new java.awt.Color(255, 255, 255));
+    backtorderbtn1.setText("الرجوع للاوردر");
+    backtorderbtn1.setBorder(null);
+    backtorderbtn1.setContentAreaFilled(true);
+    backtorderbtn1.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            backtorderbtn1ActionPerformed(evt);
         }
     });
 
@@ -3917,85 +3921,84 @@ public class recipes extends javax.swing.JFrame {
         datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, datapanelLayout.createSequentialGroup()
             .addGap(25, 25, 25)
-            .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, datapanelLayout.createSequentialGroup()
+            .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(datapanelLayout.createSequentialGroup()
+                    .addGap(14, 14, 14)
                     .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(datapanelLayout.createSequentialGroup()
-                            .addGap(14, 14, 14)
-                            .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(datapanelLayout.createSequentialGroup()
-                                    .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(TotalCost, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(taxs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, datapanelLayout.createSequentialGroup()
-                                    .addComponent(service, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, datapanelLayout.createSequentialGroup()
-                                    .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(discount, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(sum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))))
-                            .addGap(48, 48, 48)
                             .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(printsheek, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(datapanelLayout.createSequentialGroup()
-                                    .addComponent(removerecipe, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(neworder, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(datapanelLayout.createSequentialGroup()
-                                    .addComponent(printdelivery, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(choosedelivery, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(TotalCost, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(taxs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGap(18, 18, 18)
+                            .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, datapanelLayout.createSequentialGroup()
+                            .addComponent(service, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, datapanelLayout.createSequentialGroup()
+                            .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(discount, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(sum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGap(18, 18, 18)
+                            .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))))
+                    .addGap(48, 48, 48)
+                    .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(printsheek, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(datapanelLayout.createSequentialGroup()
+                            .addComponent(removerecipe, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(neworder, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(datapanelLayout.createSequentialGroup()
+                            .addComponent(printdelivery, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(choosedelivery, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGroup(datapanelLayout.createSequentialGroup()
+                    .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(datapanelLayout.createSequentialGroup()
+                            .addComponent(orderid)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(clname, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(cashierid, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(backtorderbtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(datapanelLayout.createSequentialGroup()
                             .addGap(0, 0, Short.MAX_VALUE)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(4, 4, 4)))
-                    .addGap(50, 50, 50))
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, datapanelLayout.createSequentialGroup()
-                    .addComponent(orderid)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                    .addComponent(clname, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(cashierid, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                    .addComponent(clid, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(18, 18, 18)
-                    .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(viewallrecord, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(printallrecord, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(44, 44, 44))))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGap(4, 4, 4)))
+            .addGap(50, 50, 50))
         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, datapanelLayout.createSequentialGroup()
             .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(clid, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGap(123, 123, 123)
             .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGap(35, 35, 35))
+        .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(datapanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(backtorderbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE)))
     );
     datapanelLayout.setVerticalGroup(
         datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
         .addGroup(datapanelLayout.createSequentialGroup()
-            .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
             .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(datapanelLayout.createSequentialGroup()
-                    .addComponent(viewallrecord, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(printallrecord, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, datapanelLayout.createSequentialGroup()
-                    .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(clid)
-                        .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cashierid, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(clname, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(orderid, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(32, 32, 32)))
+                    .addContainerGap()
+                    .addComponent(clid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGap(10, 10, 10)
+            .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cashierid, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(clname, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(backtorderbtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(orderid, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGap(32, 32, 32)
             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGap(18, 18, 18)
             .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -4030,6 +4033,11 @@ public class recipes extends javax.swing.JFrame {
                         .addComponent(choosedelivery, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(printdelivery, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))))
             .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        .addGroup(datapanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(datapanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(backtorderbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE)))
     );
 
     javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
@@ -4199,6 +4207,32 @@ public class recipes extends javax.swing.JFrame {
             System.out.print(e.toString());
         }
         return cashierid;
+        
+    }
+       
+       
+       private String currentcashiername() {
+       String cashiername=" "; 
+       Connection connection= getConnection();
+        String query="SELECT * FROM `cashiers` WHERE `cashier_state`=1";  
+        Statement st;
+        ResultSet rs;
+        try{
+            st=connection.createStatement();
+            rs=st.executeQuery(query);
+           if(rs.next())
+           {
+               cashiername=rs.getString(2);
+                 
+           }
+            
+        }
+        catch(Exception e)
+        {
+          
+            System.out.print(e.toString());
+        }
+        return cashiername;
         
     }
       
@@ -4629,109 +4663,9 @@ try {
         // TODO add your handling code here:
     }//GEN-LAST:event_orderidActionPerformed
 
-    
-
-
-
-
-
-
-             
-
-    private void viewallrecordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewallrecordActionPerformed
-        // TODO add your handling code here:
-     //  this.setVisible(false);
-      //  LogOut out=new LogOut();
-      //  out.setVisible(true);
-      view_All_records();
-      
-    }//GEN-LAST:event_viewallrecordActionPerformed
+     
  
 
-        public void view_All_records() 
-{
-     try { 
-     Connection con =getConnection();
-     Map map = new HashMap();
-     int id=maxorder();
-     map.put("totalid",id);
-
-    JasperDesign jsd = JRXmlLoader.load("C:/Reports/allrecord.jrxml");
-    JasperReport jr = JasperCompileManager.compileReport(jsd);
-    JasperPrint jp = JasperFillManager.fillReport(jr, map,con);
-    JasperViewer.viewReport(jp,false);
-    //JasperPrintManager.printPage(jp, 0, false);
-    //JasperPrint jp =reportEngine.fillReport() ;//it returns stream 
-                
-        }
-     catch (NullPointerException ex) {
-           JOptionPane.showMessageDialog(null,"هناك خطا لا يمكن العرض");
-        }
-    catch (JRException ex) {
-            Logger.getLogger(InvoicesDetails.class.getName()).log(Level.SEVERE, null, ex);
-        }
-      catch (IllegalArgumentException ex) {
-          JOptionPane.showMessageDialog(null," لا توجد اوردرات موجوده");
-        }
-}       
-   
-      
-        
-public void print_All_records() 
-{
-   
-
-   try { 
-     Connection con =getConnection();
-     Map map = new HashMap();
-     int id=maxorder();
-     map.put("totalid",id);
-
-    JasperDesign jsd = JRXmlLoader.load("C:/Reports/allrecord.jrxml");
-    JasperReport jr = JasperCompileManager.compileReport(jsd);
-    JasperPrint jp = JasperFillManager.fillReport(jr, map,con);
-  
-   // JasperPrintManager.printPage(jp, 0, false);
-   // JasperPrint jp =reportEngine.fillReport() ;//it returns stream 
-    print_All_records(jp);//call method
-         JOptionPane.showMessageDialog(null, "تم طباعه كل الاوردرات بنجاح"); 
-
-}      
- catch (NullPointerException ex) {
-           JOptionPane.showMessageDialog(null," لم تتم طباعه الاوردرات بنجاح");
-        }
-catch (JRException ex) {
-            Logger.getLogger(InvoicesDetails.class.getName()).log(Level.SEVERE, null, ex);
-        }
-   catch (IllegalArgumentException ex) {
-          JOptionPane.showMessageDialog(null," لا توجد اوردرات موجوده");
-        }
-   
-}        
-    
-    
-     private void print_All_records(JasperPrint jp) throws JRException {
-    // TODO Auto-generated method stub
-    PrintRequestAttributeSet printRequestAttributeSet = new HashPrintRequestAttributeSet();
-    // printRequestAttributeSet.add(MediaSizeNdame.ISO_A4); //setting page size
-    printRequestAttributeSet.add(new Copies(1));
-    //PrinterName printerName = new PrinterName("Microsoft XPS Document Writer", null);
-
-      PrinterName printerName = new PrinterName("XP-80C (copy 5)", null); //gets printer 
-
-
-    PrintServiceAttributeSet printServiceAttributeSet = new HashPrintServiceAttributeSet();
-    printServiceAttributeSet.add(printerName);
-
-    JRPrintServiceExporter exporter = new JRPrintServiceExporter();
-
-    exporter.setParameter(JRExporterParameter.JASPER_PRINT, jp);
-    exporter.setParameter(JRPrintServiceExporterParameter.PRINT_REQUEST_ATTRIBUTE_SET, printRequestAttributeSet);
-    exporter.setParameter(JRPrintServiceExporterParameter.PRINT_SERVICE_ATTRIBUTE_SET, printServiceAttributeSet);
-    exporter.setParameter(JRPrintServiceExporterParameter.DISPLAY_PAGE_DIALOG, Boolean.FALSE);
-    exporter.setParameter(JRPrintServiceExporterParameter.DISPLAY_PRINT_DIALOG, Boolean.FALSE);
-    exporter.exportReport();
-}   
     
     private void TotalCostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalCostActionPerformed
         // TODO add your handling code here:
@@ -5782,11 +5716,19 @@ catch (JRException ex) {
         item_sandwich(itemid);
     }//GEN-LAST:event_cheese41ActionPerformed
 
-    private void printallrecordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printallrecordActionPerformed
-        // TODO add your handling code here:
-         print_All_records();
-                            
-    }//GEN-LAST:event_printallrecordActionPerformed
+    private void backtorderbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backtorderbtnActionPerformed
+        this.setVisible(false);
+        backtoorder back=new backtoorder();
+        back.setVisible(true);
+
+    }//GEN-LAST:event_backtorderbtnActionPerformed
+
+    private void backtorderbtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backtorderbtn1ActionPerformed
+       
+        backtoorder back=new backtoorder();
+        back.setVisible(true);
+
+    }//GEN-LAST:event_backtorderbtn1ActionPerformed
 
     
     
@@ -5852,6 +5794,8 @@ catch (JRException ex) {
     private javax.swing.JButton add82;
     private javax.swing.JPanel adds;
     private javax.swing.JTextArea area;
+    private javax.swing.JButton backtorderbtn;
+    private javax.swing.JButton backtorderbtn1;
     private javax.swing.JTextField cashierid;
     private javax.swing.JTextField cashierid1;
     private javax.swing.JButton cheese34;
@@ -6027,7 +5971,6 @@ catch (JRException ex) {
     private javax.swing.JButton pasta56;
     private javax.swing.JButton pasta57;
     private javax.swing.JButton pasta58;
-    private javax.swing.JButton printallrecord;
     public static javax.swing.JButton printdelivery;
     public static javax.swing.JButton printdelivery1;
     private javax.swing.JButton printsheek;
@@ -6085,7 +6028,6 @@ catch (JRException ex) {
     private javax.swing.JLabel takeaway1;
     private javax.swing.JTextField taxs;
     private javax.swing.JTextField taxs1;
-    private javax.swing.JButton viewallrecord;
     private javax.swing.JPanel wafel;
     private javax.swing.JButton wafel63;
     private javax.swing.JButton wafel64;

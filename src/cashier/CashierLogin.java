@@ -267,8 +267,25 @@ public class CashierLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_usernameActionPerformed
 
+         public void exitdata()
+    {
+        Connection con;
+        try {
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "");
+             Statement s;    
+             Cash cashier=new Cash();
+             cashier.clockOut();
+             String query="UPDATE `cashiers` SET `cashier_state`='"+cashier.getWorkState()+"'WHERE `cashier_state`=1;";
+             s = con.createStatement();
+             s.executeUpdate(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(CashMain.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
     private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:  
+        exitdata();             
         System.exit(0);
     }//GEN-LAST:event_exitActionPerformed
 
