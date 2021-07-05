@@ -16,13 +16,20 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import admin.AdminMain;
 import com.mysql.jdbc.exceptions.MySQLIntegrityConstraintViolationException;
+import java.awt.Color;
+import java.awt.Font;
 import java.sql.SQLIntegrityConstraintViolationException;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.JTableHeader;
 
 /**
  *
  * @author Amer Osama
  */
 public class CashiersDetails extends javax.swing.JFrame {
+    ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
 
     /**
      * Creates new form Cashiers
@@ -33,6 +40,8 @@ public class CashiersDetails extends javax.swing.JFrame {
         this.setTitle("Cashiers Data");
         this.setLocationRelativeTo(null);
         this.setResizable(false);
+                this.setIconImage(uplogo.getImage());
+
     }
 
     /**
@@ -73,7 +82,7 @@ public class CashiersDetails extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102), 2));
 
         jLabel1.setBackground(new java.awt.Color(255, 51, 51));
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("بيانات الكاشير    ");
         jLabel1.setOpaque(true);
@@ -97,7 +106,7 @@ public class CashiersDetails extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 204, 0));
-        jLabel7.setText("User Name");
+        jLabel7.setText("Username");
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 204, 0));
@@ -113,18 +122,18 @@ public class CashiersDetails extends javax.swing.JFrame {
             }
         });
 
-        txtname.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        txtname.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
         txtname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtnameActionPerformed(evt);
             }
         });
 
-        txtphone.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        txtphone.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
 
-        txtaddress.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        txtaddress.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
 
-        txtemail.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        txtemail.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
 
         addcashier.setBackground(new java.awt.Color(153, 51, 255));
         addcashier.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
@@ -176,6 +185,13 @@ public class CashiersDetails extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        JTableHeader Theader = cashierstable.getTableHeader();
+
+        Theader.setForeground(Color.DARK_GRAY); // change the Foreground
+
+        Theader.setFont(new Font("Tahoma", Font.BOLD, 16)); // font name style size
+        ((DefaultTableCellRenderer)Theader.getDefaultRenderer())
+        .setHorizontalAlignment(JLabel.LEFT);
         cashierstable.setGridColor(new java.awt.Color(0, 153, 153));
         cashierstable.setRowHeight(20);
         cashierstable.setRowMargin(3);
@@ -191,7 +207,7 @@ public class CashiersDetails extends javax.swing.JFrame {
             cashierstable.getColumnModel().getColumn(0).setMaxWidth(0);
         }
 
-        txtpassword.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        txtpassword.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
 
         exit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         exit.setForeground(new java.awt.Color(0, 0, 102));
@@ -378,7 +394,7 @@ public class CashiersDetails extends javax.swing.JFrame {
         Connection con;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/xmix","root","");
             return con;
         } catch(Exception e)
         {
@@ -446,8 +462,9 @@ public class CashiersDetails extends javax.swing.JFrame {
                txtaddress.setText("");
                txtemail.setText("");
                txtpassword.setText("");
-               
-               JOptionPane.showMessageDialog(null, "تم "+message+"الكاشير بنجاح  "+"  ");
+                ImageIcon icon = new ImageIcon(this.getClass().getResource("correct.png"));
+                JLabel label = new JLabel("خطا السرفر غير متصل يرجي الاتصال اولا واعاده المحاوله");
+    JOptionPane.showMessageDialog(null, "تم "+message+"الكاشير بنجاح  "+"  ","DONE",JOptionPane.PLAIN_MESSAGE,icon); 
            }else{
                JOptionPane.showMessageDialog(null, "لم يتم "+message+"الكاشير ");
            }

@@ -20,16 +20,22 @@ import javax.swing.table.TableModel;
 import admin.AdminMain;
 import client.Client;
 import items.Items;
+import javax.swing.table.JTableHeader;
 import static orders.recipes.printdelivery;
 import static orders.recipes.clname;
 import static orders.recipes.clid;
-
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.table.DefaultTableCellRenderer;
 
 /**
  *
  * @author Amer Osama
  */
 public class Delivery extends javax.swing.JFrame {
+    ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
 
     /**
      * Creates new form Cashiers
@@ -37,9 +43,11 @@ public class Delivery extends javax.swing.JFrame {
     public Delivery() {
         initComponents();
         show_client();
-        this.setTitle("Cashiers Data");
+        this.setTitle("Delivery ");
         this.setLocationRelativeTo(null);
         this.setResizable(false);
+                this.setIconImage(uplogo.getImage());
+
     }
 
     /**
@@ -72,6 +80,7 @@ public class Delivery extends javax.swing.JFrame {
         exit = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         addorder = new javax.swing.JButton();
+        showalldata = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -80,9 +89,9 @@ public class Delivery extends javax.swing.JFrame {
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 2, true));
 
         jLabel1.setBackground(new java.awt.Color(204, 0, 0));
-        jLabel1.setFont(new java.awt.Font("Orbitron", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 51));
-        jLabel1.setText("Delivery");
+        jLabel1.setText("الدليفري  ");
         jLabel1.setOpaque(true);
 
         name.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
@@ -101,7 +110,7 @@ public class Delivery extends javax.swing.JFrame {
         notes.setForeground(new java.awt.Color(255, 102, 0));
         notes.setText("ملاحظات");
 
-        txtname.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtname.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         txtname.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtname.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -114,10 +123,10 @@ public class Delivery extends javax.swing.JFrame {
             }
         });
 
-        txtphone.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtphone.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         txtphone.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        txtaddress.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtaddress.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         txtaddress.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         addclient.setBackground(new java.awt.Color(255, 51, 51));
@@ -158,6 +167,13 @@ public class Delivery extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        JTableHeader Theader = deliverytable.getTableHeader();
+
+        Theader.setForeground(Color.DARK_GRAY); // change the Foreground
+
+        Theader.setFont(new Font("Tahoma", Font.BOLD, 16)); // font name style size
+        ((DefaultTableCellRenderer)Theader.getDefaultRenderer())
+        .setHorizontalAlignment(JLabel.LEFT); // center header text
         deliverytable.setGridColor(new java.awt.Color(0, 153, 153));
         deliverytable.setRowHeight(20);
         deliverytable.setRowMargin(3);
@@ -170,7 +186,10 @@ public class Delivery extends javax.swing.JFrame {
         if (deliverytable.getColumnModel().getColumnCount() > 0) {
             deliverytable.getColumnModel().getColumn(0).setMinWidth(0);
             deliverytable.getColumnModel().getColumn(0).setMaxWidth(0);
-            deliverytable.getColumnModel().getColumn(1).setPreferredWidth(12);
+            deliverytable.getColumnModel().getColumn(1).setMinWidth(200);
+            deliverytable.getColumnModel().getColumn(1).setMaxWidth(200);
+            deliverytable.getColumnModel().getColumn(2).setMinWidth(160);
+            deliverytable.getColumnModel().getColumn(2).setMaxWidth(160);
         }
 
         searchclient.setBackground(new java.awt.Color(255, 51, 51));
@@ -184,7 +203,7 @@ public class Delivery extends javax.swing.JFrame {
         });
 
         txtnotes.setColumns(20);
-        txtnotes.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtnotes.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         txtnotes.setRows(5);
         jScrollPane2.setViewportView(txtnotes);
 
@@ -235,54 +254,70 @@ public class Delivery extends javax.swing.JFrame {
             }
         });
 
+        showalldata.setBackground(new java.awt.Color(255, 51, 153));
+        showalldata.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        showalldata.setForeground(new java.awt.Color(255, 255, 255));
+        showalldata.setText("اظهار الكل");
+        showalldata.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                showalldataActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 46, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtphone)
-                                    .addComponent(txtaddress)
-                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Address, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(notes, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(phone, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(textid, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(name1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(txtname, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(name, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(6, 6, 6))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addGap(23, 23, 23)
-                                .addComponent(searchclient, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(addorder, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(addclient)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(updateclient)))))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addGap(0, 46, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(txtphone)
+                                            .addComponent(txtaddress)
+                                            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(Address, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(notes, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(phone, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(textid, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(name1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(txtname, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(name, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGap(6, 6, 6))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                        .addGap(23, 23, 23)
+                                        .addComponent(searchclient, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(addorder, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(addclient)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(updateclient)))))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton1)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(showalldata)
+                        .addGap(21, 21, 21)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 706, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -294,7 +329,9 @@ public class Delivery extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(61, 61, 61)
+                .addGap(10, 10, 10)
+                .addComponent(showalldata, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(textid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(name1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -344,15 +381,28 @@ public class Delivery extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+   
+    
     
     //for searching about a person in clients table
+    private void checksizeforsearch(){
+    if (deliverytable.getColumnModel().getColumnCount() > 0) {
+    deliverytable.getColumnModel().getColumn(0).setMinWidth(0);
+    deliverytable.getColumnModel().getColumn(0).setMaxWidth(0);
+    deliverytable.getColumnModel().getColumn(1).setMinWidth(200);
+    deliverytable.getColumnModel().getColumn(1).setMaxWidth(200);
+    deliverytable.getColumnModel().getColumn(2).setMinWidth(160);
+    deliverytable.getColumnModel().getColumn(2).setMaxWidth(160);
+    }
+    }
+
     
     private void searchclientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchclientActionPerformed
         // TODO add your handling code here:
        
 
        find_client();
-           
+      
        
         
     }//GEN-LAST:event_searchclientActionPerformed
@@ -361,11 +411,18 @@ public class Delivery extends javax.swing.JFrame {
         {
             ArrayList<Client>clients= ListClients(txtname.getText());
             if (clients.isEmpty())
-                JOptionPane.showMessageDialog(null, "لا يوجد مستخدم بهذا الاسم");
+            {
+            JLabel label = new JLabel("لا يوجد مستخدم بهذا الاسم");
+            label.setFont(new Font("Tahoma", Font.BOLD, 14));
+            JOptionPane.showMessageDialog(null, label);
+            }
+               
                 else
             {
+
         DefaultTableModel model=new DefaultTableModel();
           model.setColumnIdentifiers(new Object[]{"id","الاسم ","الهاتف","العنوان","ملاحظات"});
+
         Object[] row=new Object[5];
         for(int i=0;i<clients.size();i++)
         {
@@ -378,7 +435,10 @@ public class Delivery extends javax.swing.JFrame {
             
             model.addRow(row);
         }  
+          
         deliverytable.setModel(model);
+          checksizeforsearch();  
+          
                     }
         }
         
@@ -486,12 +546,17 @@ public class Delivery extends javax.swing.JFrame {
              clientList.add(client);
              clientid =clientList.get(0).getid();
            clientname =clientList.get(0).getName();
-            JOptionPane.showMessageDialog(null, "تمت اضافه"+" "+clientname+" "+"الي الطلب");
+           
+             JLabel label = new JLabel("تمت اضافه"+" "+clientname+" "+"الي الطلب");
+            label.setFont(new Font("Tahoma", Font.BOLD, 14));
+            JOptionPane.showMessageDialog(null, label);
       
         }
         catch(ArrayIndexOutOfBoundsException ex)
         {
-         JOptionPane.showMessageDialog(null, "يرجي تحديد العميل الذي تريده");
+            JLabel label = new JLabel("يرجي تحديد العميل الذي تريده");
+            label.setFont(new Font("Tahoma", Font.BOLD, 14));
+            JOptionPane.showMessageDialog(null, label);
   
         }
         
@@ -519,7 +584,37 @@ public class Delivery extends javax.swing.JFrame {
  this.setVisible(false);
     }//GEN-LAST:event_addorderActionPerformed
 
-    
+    private void showalldataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showalldataActionPerformed
+        // TODO add your handling code here:
+        Display_All();
+    }//GEN-LAST:event_showalldataActionPerformed
+
+     public void Display_All()
+    {
+       
+        
+            ArrayList<Client> list=getClientList();
+        DefaultTableModel model=new DefaultTableModel();
+          model.setColumnIdentifiers(new Object[]{"id","الاسم ","الهاتف","العنوان","ملاحظات"});
+        Object[] row=new Object[5];
+        for(int i=0;i<list.size();i++)
+        {
+            row[0]=list.get(i).getid();
+            row[1]=list.get(i).getName();
+            row[2]=list.get(i).getPhone();
+            row[3]=list.get(i).getAddress();
+            row[4]=list.get(i).getNotes();
+
+            
+            model.addRow(row);
+        }
+        
+               deliverytable.setModel(model);
+          checksizeforsearch();  
+
+       
+        
+    }
     
     
      public Connection getConnection()
@@ -527,7 +622,7 @@ public class Delivery extends javax.swing.JFrame {
         Connection con;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/xmix","root","");
             return con;
         } catch(Exception e)
         {
@@ -636,12 +731,16 @@ public class Delivery extends javax.swing.JFrame {
                txtphone.setText("");
                txtaddress.setText("");
                txtnotes.setText("");               
-               JOptionPane.showMessageDialog(null, "تم "+message+"العميل بنجاح  "+"  ");
+               
+ ImageIcon icon = new ImageIcon(this.getClass().getResource("correct.png"));
+    JOptionPane.showMessageDialog(null, "تم "+message+"العميل بنجاح  "+"  ","DONE",JOptionPane.PLAIN_MESSAGE,icon); 
            }else{
                JOptionPane.showMessageDialog(null, "لم يتم "+message+"العميل ");
            }
        }catch(Exception ex){
-           JOptionPane.showMessageDialog(null, "حدد ماذا تريد");
+           JLabel label = new JLabel("حدد ماذا تريد");
+            label.setFont(new Font("Tahoma", Font.BOLD, 14));
+            JOptionPane.showMessageDialog(null, label);
        }
          }
     
@@ -712,6 +811,7 @@ public class Delivery extends javax.swing.JFrame {
     private javax.swing.JLabel notes;
     private javax.swing.JLabel phone;
     private javax.swing.JButton searchclient;
+    private javax.swing.JButton showalldata;
     public static javax.swing.JTextField textid;
     private javax.swing.JTextField txtaddress;
     private javax.swing.JTextField txtname;

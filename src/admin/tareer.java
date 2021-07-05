@@ -5,6 +5,7 @@
  */
 package admin;
 
+import java.awt.Font;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -19,6 +20,8 @@ import javax.print.attribute.PrintRequestAttributeSet;
 import javax.print.attribute.PrintServiceAttributeSet;
 import javax.print.attribute.standard.Copies;
 import javax.print.attribute.standard.PrinterName;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JRExporterParameter;
@@ -38,6 +41,7 @@ import orders.recipes;
  * @author Amer Osama
  */
 public class tareer extends javax.swing.JFrame {
+    ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
 
     /**
      * Creates new form tareer
@@ -45,6 +49,8 @@ public class tareer extends javax.swing.JFrame {
     public tareer() {
         initComponents();
            this.setLocationRelativeTo(null);
+                   this.setIconImage(uplogo.getImage());
+
     }
 
     /**
@@ -61,6 +67,7 @@ public class tareer extends javax.swing.JFrame {
         viewallrecord = new javax.swing.JButton();
         printallrecord = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -107,6 +114,13 @@ public class tareer extends javax.swing.JFrame {
         jLabel4.setText("الشيك اليومي");
         jLabel4.setOpaque(true);
 
+        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("يرجي العلم انه يتم اظهار جميع الاوردرات المطلوبه حتي الان ");
+        jLabel1.setOpaque(true);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -123,6 +137,7 @@ public class tareer extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,11 +145,12 @@ public class tareer extends javax.swing.JFrame {
                 .addComponent(exit)
                 .addGap(3, 3, 3)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(printallrecord, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(viewallrecord, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(45, 45, 45))
+                .addGap(43, 43, 43)
+                .addComponent(jLabel1))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -145,7 +161,7 @@ public class tareer extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -154,6 +170,9 @@ public class tareer extends javax.swing.JFrame {
     private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
         // TODO add your handling code here:
         this.dispose();
+
+        AdminMain main =new AdminMain();
+        main.setVisible(true);
     }//GEN-LAST:event_exitActionPerformed
 
  
@@ -162,7 +181,7 @@ public class tareer extends javax.swing.JFrame {
         Connection con;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/xmix","root","");
             return con;
         } catch(Exception e)
         {
@@ -214,13 +233,17 @@ public class tareer extends javax.swing.JFrame {
                 
         }
      catch (NullPointerException ex) {
-           JOptionPane.showMessageDialog(null,"هناك خطا لا يمكن العرض");
+           JLabel label = new JLabel("هناك خطا لا يمكن العرض");
+           label.setFont(new Font("Tahoma", Font.BOLD, 14));
+           JOptionPane.showMessageDialog(null,label);
         }
     catch (JRException ex) {
             Logger.getLogger(InvoicesDetails.class.getName()).log(Level.SEVERE, null, ex);
         }
       catch (IllegalArgumentException ex) {
-          JOptionPane.showMessageDialog(null," لا توجد اوردرات موجوده");
+           JLabel label = new JLabel(" لا توجد اوردرات موجوده");
+           label.setFont(new Font("Tahoma", Font.BOLD, 14));
+           JOptionPane.showMessageDialog(null,label);
         }
 }       
    
@@ -243,22 +266,32 @@ public void print_All_records()
    // JasperPrintManager.printPage(jp, 0, false);
    // JasperPrint jp =reportEngine.fillReport() ;//it returns stream 
     print_All_records(jp);//call method
-         JOptionPane.showMessageDialog(null, "تم طباعه كل الاوردرات بنجاح"); 
+    ImageIcon icon = new ImageIcon(this.getClass().getResource("correct.png"));
+
+           JLabel label = new JLabel(" تم طباعه كل الاوردرات بنجاح");
+           label.setFont(new Font("Tahoma", Font.BOLD, 14));
+           JOptionPane.showMessageDialog(null, label,"DONE",JOptionPane.PLAIN_MESSAGE,icon); 
 
 }      
  catch (NullPointerException ex) {
-           JOptionPane.showMessageDialog(null," لم تتم طباعه الاوردرات بنجاح");
+     JLabel label = new JLabel(" لم تتم طباعه الاوردرات بنجاح");
+           label.setFont(new Font("Tahoma", Font.BOLD, 14));
+           JOptionPane.showMessageDialog(null,label);
         }
 catch (JRException ex) {
             Logger.getLogger(tareer.class.getName()).log(Level.SEVERE, null, ex);
         }
    catch (IllegalArgumentException ex) {
-          JOptionPane.showMessageDialog(null," لا توجد اوردرات موجوده");
+       JLabel label = new JLabel(" لا توجد اوردرات موجوده");
+           label.setFont(new Font("Tahoma", Font.BOLD, 14));
+          JOptionPane.showMessageDialog(null,label);
         }
    
 }        
     
-    
+ 
+  
+
      private void print_All_records(JasperPrint jp) throws JRException {
     // TODO Auto-generated method stub
     PrintRequestAttributeSet printRequestAttributeSet = new HashPrintRequestAttributeSet();
@@ -266,7 +299,7 @@ catch (JRException ex) {
     printRequestAttributeSet.add(new Copies(1));
     //PrinterName printerName = new PrinterName("Microsoft XPS Document Writer", null);
 
-      PrinterName printerName = new PrinterName("XP-80C (copy 5)", null); //gets printer 
+      PrinterName printerName = new PrinterName("XP-80C", null); //gets printer 
 
 
     PrintServiceAttributeSet printServiceAttributeSet = new HashPrintServiceAttributeSet();
@@ -330,6 +363,7 @@ catch (JRException ex) {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton exit;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton printallrecord;

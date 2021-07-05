@@ -7,6 +7,7 @@ package orders;
 
 import admin.InvoicesDetails;
 import cashier.CashMain;
+import java.awt.Font;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.text.SimpleDateFormat;
@@ -20,6 +21,8 @@ import javax.print.attribute.PrintRequestAttributeSet;
 import javax.print.attribute.PrintServiceAttributeSet;
 import javax.print.attribute.standard.Copies;
 import javax.print.attribute.standard.PrinterName;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JRExporterParameter;
@@ -45,6 +48,8 @@ public class backtoorder extends javax.swing.JFrame {
     public backtoorder() {
         initComponents();
         this.setLocationRelativeTo(null);
+                this.setIconImage(uplogo.getImage());
+
     }
 
     /**
@@ -68,6 +73,8 @@ public class backtoorder extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+
+        txtid.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
         vieworder.setBackground(new java.awt.Color(255, 102, 0));
         vieworder.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -176,7 +183,7 @@ public class backtoorder extends javax.swing.JFrame {
         Connection con;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/xmix","root","");
             return con;
         } catch(Exception e)
         {
@@ -202,14 +209,17 @@ public class backtoorder extends javax.swing.JFrame {
     //JasperPrint jp =reportEngine.fillReport() ;//it returns stream 
     }
  catch (NullPointerException ex) {
-           JOptionPane.showMessageDialog(null," الاوردر غير موجود");
+            JLabel label = new JLabel(" الاوردر غير موجود");
+            label.setFont(new Font("Tahoma", Font.BOLD, 14));
+            JOptionPane.showMessageDialog(null, label);
         }
 catch (JRException ex) {
             Logger.getLogger(backtoorder.class.getName()).log(Level.SEVERE, null, ex);
         }
    catch (IllegalArgumentException ex) {
-          JOptionPane.showMessageDialog(null," الاوردر غير موجود");
-        }
+            JLabel label = new JLabel(" الاوردر غير موجود");
+            label.setFont(new Font("Tahoma", Font.BOLD, 14));
+            JOptionPane.showMessageDialog(null, label);        }
    
 }    
 
@@ -231,17 +241,24 @@ public void print_Order()
    // JasperPrintManager.printPage(jp, 0, false);
    // JasperPrint jp =reportEngine.fillReport() ;//it returns stream 
     PrintOrder(jp);//call method
-         JOptionPane.showMessageDialog(null, "تم طباعه الاوردر بنجاح"); 
+    ImageIcon icon = new ImageIcon(this.getClass().getResource("correct.png"));
+    JLabel label = new JLabel(" تم طباعه الاوردر بنجاح");
+            label.setFont(new Font("Tahoma", Font.BOLD, 14));
+    JOptionPane.showMessageDialog(null, label,"DONE",JOptionPane.PLAIN_MESSAGE,icon); 
 
 }      
  catch (NullPointerException ex) {
-           JOptionPane.showMessageDialog(null," لم تتم طباعه الاوردر بنجاح");
+            JLabel label = new JLabel(" الاوردر غير موجود");
+            label.setFont(new Font("Tahoma", Font.BOLD, 14));
+            JOptionPane.showMessageDialog(null, label);
         }
 catch (JRException ex) {
             Logger.getLogger(backtoorder.class.getName()).log(Level.SEVERE, null, ex);
         }
    catch (IllegalArgumentException ex) {
-          JOptionPane.showMessageDialog(null," الاوردر غير موجود");
+           JLabel label = new JLabel(" الاوردر غير موجود");
+            label.setFont(new Font("Tahoma", Font.BOLD, 14));
+            JOptionPane.showMessageDialog(null, label);
         }
    
 }             
@@ -254,7 +271,7 @@ catch (JRException ex) {
     printRequestAttributeSet.add(new Copies(1));
     //PrinterName printerName = new PrinterName("Microsoft XPS Document Writer", null);
 
-      PrinterName printerName = new PrinterName("XP-80C (copy 5)", null); //gets printer 
+      PrinterName printerName = new PrinterName("XP-80C", null); //gets printer 
 
 
     PrintServiceAttributeSet printServiceAttributeSet = new HashPrintServiceAttributeSet();
@@ -303,6 +320,7 @@ catch (JRException ex) {
             }
         });
     }
+    ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton exit;

@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package admin;
+import java.awt.Font;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -23,6 +24,8 @@ import javax.print.attribute.PrintRequestAttributeSet;
 import javax.print.attribute.PrintServiceAttributeSet;
 import javax.print.attribute.standard.Copies;
 import javax.print.attribute.standard.PrinterName;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JRExporterParameter;
@@ -43,6 +46,8 @@ import net.sf.jasperreports.view.JasperViewer;
  * @author Amer Osama
  */
 public class InvoicesDetails extends javax.swing.JFrame {
+        ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
+
 
     /**
      * Creates new form InvoicesDetails
@@ -50,6 +55,8 @@ public class InvoicesDetails extends javax.swing.JFrame {
     public InvoicesDetails() {
         initComponents();
         this.setLocationRelativeTo(null);
+                this.setIconImage(uplogo.getImage());
+
         
     }
 
@@ -316,7 +323,7 @@ public class InvoicesDetails extends javax.swing.JFrame {
         Connection con;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/xmix","root","");
             return con;
         } catch(Exception e)
         {
@@ -345,7 +352,9 @@ public class InvoicesDetails extends javax.swing.JFrame {
     
         }
      catch (NullPointerException ex) {
-           JOptionPane.showMessageDialog(null,"يرجي ادخال اليوم المحدد");
+          JLabel label = new JLabel("يرجي ادخال اليوم المحدد");
+           label.setFont(new Font("Tahoma", Font.BOLD, 14));
+           JOptionPane.showMessageDialog(null,label);
         }
     catch (JRException ex) {
             Logger.getLogger(InvoicesDetails.class.getName()).log(Level.SEVERE, null, ex);
@@ -383,15 +392,24 @@ Connection con =getConnection();
    // JasperPrintManager.printPage(jp, 0, false);
    // JasperPrint jp =reportEngine.fillReport() ;//it returns stream 
     PrintSales(jp);//call method
-}      
+ ImageIcon icon = new ImageIcon(this.getClass().getResource("correct.png"));
+  JLabel label = new JLabel("تم طباعه الشيك بنجاح");
+                           label.setFont(new Font("Tahoma", Font.BOLD, 14));
+    JOptionPane.showMessageDialog(null, label,"DONE",JOptionPane.PLAIN_MESSAGE,icon); 
+   
+   }      
  catch (NullPointerException ex) {
-           JOptionPane.showMessageDialog(null,"يرجي ادخال الوقت المحدد");
+           JLabel label = new JLabel("يرجي ادخال اليوم المحدد");
+           label.setFont(new Font("Tahoma", Font.BOLD, 14));
+           JOptionPane.showMessageDialog(null,label);
         }
 catch (JRException ex) {
-            Logger.getLogger(InvoicesDetails.class.getName()).log(Level.SEVERE, null, ex);
+    JLabel label = new JLabel(" لم تتم طباعه الشيك ");
+           label.setFont(new Font("Tahoma", Font.BOLD, 14));
+           JOptionPane.showMessageDialog(null,label);
         }
 }        
-    
+  
     
      private void PrintSales(JasperPrint jp) throws JRException {
     // TODO Auto-generated method stub
@@ -400,7 +418,7 @@ catch (JRException ex) {
     printRequestAttributeSet.add(new Copies(1));
     //PrinterName printerName = new PrinterName("Microsoft XPS Document Writer", null);
 
-      PrinterName printerName = new PrinterName("XP-80C (copy 5)", null); //gets printer 
+      PrinterName printerName = new PrinterName("XP-80C", null); //gets printer 
 
 
     PrintServiceAttributeSet printServiceAttributeSet = new HashPrintServiceAttributeSet();
@@ -465,7 +483,9 @@ catch (JRException ex) {
     
         }      
  catch (NullPointerException ex) {
-           JOptionPane.showMessageDialog(null,"يرجي ادخال الوقت المحدد");
+           JLabel label = new JLabel("يرجي ادخال اليوم المحدد");
+           label.setFont(new Font("Tahoma", Font.BOLD, 14)); 
+           JOptionPane.showMessageDialog(null,label);
         }
    catch (JRException ex) {
             Logger.getLogger(InvoicesDetails.class.getName()).log(Level.SEVERE, null, ex);
@@ -497,11 +517,7 @@ Connection con =getConnection();
     String todate=df.format(jDateChooser3.getDate());
      map.put("fromdate",fromdate);
      map.put("todate",todate);
-}
-     catch (NullPointerException ex) {
-           JOptionPane.showMessageDialog(null,"يرجي ادخال الوقت المحدد");
-        }
-try {
+
     JasperDesign jsd = JRXmlLoader.load("C:/Reports/soldrange.jrxml");
     JasperReport jr = JasperCompileManager.compileReport(jsd);
     JasperPrint jp = JasperFillManager.fillReport(jr, map,con);
@@ -509,14 +525,23 @@ try {
    // JasperPrintManager.printPage(jp, 0, false);
    // JasperPrint jp =reportEngine.fillReport() ;//it returns stream 
     PrintSales(jp);//call method
-}
-
+    ImageIcon icon = new ImageIcon(this.getClass().getResource("correct.png"));
+     JLabel label = new JLabel("تم طباعه الشيك بنجاح");
+           label.setFont(new Font("Tahoma", Font.BOLD, 14)); 
+    JOptionPane.showMessageDialog(null, label,"DONE",JOptionPane.PLAIN_MESSAGE,icon);  
+}      
+ catch (NullPointerException ex) {
+ JLabel label = new JLabel("يرجي ادخال اليوم المحدد");
+           label.setFont(new Font("Tahoma", Font.BOLD, 14)); 
+           JOptionPane.showMessageDialog(null,label);        }
 catch (JRException ex) {
-            Logger.getLogger(InvoicesDetails.class.getName()).log(Level.SEVERE, null, ex);
+     JLabel label = new JLabel(" لم تتم طباعه الشيك ");
+           label.setFont(new Font("Tahoma", Font.BOLD, 14)); 
+           JOptionPane.showMessageDialog(null,label);
+    
         }
-
-}       
-
+}        
+  
 
 
     private void print1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_print1ActionPerformed

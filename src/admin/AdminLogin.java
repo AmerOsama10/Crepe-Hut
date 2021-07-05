@@ -5,6 +5,7 @@
  */
 package admin;
 
+import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 import java.sql.Connection;
@@ -14,6 +15,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 /**
@@ -21,6 +24,7 @@ import javax.swing.JOptionPane;
  * @author Amer Osama
  */
 public class AdminLogin extends javax.swing.JFrame {
+    ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
 
     /**
      * Creates new form CashierLogin
@@ -28,7 +32,8 @@ public class AdminLogin extends javax.swing.JFrame {
     public AdminLogin() {
         initComponents();
          this.setResizable(false);
-      
+              this.setIconImage(uplogo.getImage());
+
           this.setLocationRelativeTo(null);
           this.setTitle("Admin Login");
     }
@@ -48,13 +53,11 @@ public void close(){
         jPanel1 = new javax.swing.JPanel();
         password = new javax.swing.JPasswordField();
         username = new javax.swing.JTextField();
-        btnLogin = new javax.swing.JButton();
         checkshowpassword = new javax.swing.JCheckBox();
         labelexit = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 255, 255));
@@ -62,8 +65,11 @@ public void close(){
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 102));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102), 2));
+        jPanel1.setToolTipText(null);
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         password.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jPanel1.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 330, 280, 37));
 
         username.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         username.addActionListener(new java.awt.event.ActionListener() {
@@ -71,113 +77,58 @@ public void close(){
                 usernameActionPerformed(evt);
             }
         });
+        jPanel1.add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 280, 280, 39));
 
-        btnLogin.setBackground(new java.awt.Color(0, 51, 51));
-        btnLogin.setFont(new java.awt.Font("Orbitron", 1, 14)); // NOI18N
-        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
-        btnLogin.setText("               CONTINUE                >");
-        btnLogin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLoginActionPerformed(evt);
-            }
-        });
-
-        checkshowpassword.setBackground(new java.awt.Color(255, 255, 204));
+        checkshowpassword.setBackground(new java.awt.Color(255, 255, 255));
         checkshowpassword.setText("show password");
         checkshowpassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 checkshowpasswordActionPerformed(evt);
             }
         });
+        jPanel1.add(checkshowpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 380, 129, -1));
 
         labelexit.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         labelexit.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelexit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exit.png"))); // NOI18N
-        labelexit.setText("Exit");
         labelexit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 labelexitMouseClicked(evt);
             }
         });
+        jPanel1.add(labelexit, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 0, 30, 30));
 
-        jLabel4.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
-        jLabel4.setText("Hello Admin,");
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("    Only for Admin");
+        jLabel1.setToolTipText("فقط يمكن لصاحب المطعم الدخول لهنا");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 350, 140, 30));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/password.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
+        jButton1.setBackground(new java.awt.Color(51, 170, 153));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("الدخول");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(469, 420, 160, 44));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/user.jpg"))); // NOI18N
-        jLabel6.setText("jLabel1");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(37, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(44, 44, 44)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(checkshowpassword, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                            .addGap(0, 6, Short.MAX_VALUE)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(username, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addGap(39, 39, 39))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelexit, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(labelexit, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(username, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(checkshowpassword)
-                .addGap(46, 46, 46)
-                .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jLabel5.setBackground(new java.awt.Color(0, 0, 51));
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/adminbackground.jpg"))); // NOI18N
-        jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102), 2));
-        jLabel5.setOpaque(true);
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loginadmin.png"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 509, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(0, 0, 0)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -185,33 +136,6 @@ public void close(){
 
   
      
-    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-        // TODO add your handling code here:
-               // close();
-                Connection con;
-                PreparedStatement ps;
-                try {
-                        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "");
-                        ps=con.prepareStatement("SELECT `username`,`password` FROM `admins` WHERE `username`=? AND `password`=?;");
-                        ps.setString(1,username.getText());
-                        ps.setString(2, String.valueOf(password.getPassword()));
-                        ResultSet result=ps.executeQuery();
-                        if(result.next())
-                        {
-                        this.setVisible(false);
-                        this.dispose();
-                        AdminMain main =new AdminMain();
-                        main.setVisible(true);
-                        }else
-                        {
-                         JOptionPane.showMessageDialog(null, "اسم المستخدم او الرقم السري غير صحيح");
-                         username.setText("");
-                         password.setText("");
-                        }
-                    } catch (SQLException ex) {
-                       JOptionPane.showMessageDialog(null, "خطا السرفر غير متصل يرجي الاتصال اولا واعاده المحاوله");                    }
-    }//GEN-LAST:event_btnLoginActionPerformed
-
     private void usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_usernameActionPerformed
@@ -232,6 +156,39 @@ public void close(){
           EnterSystem back =new EnterSystem();
           back.setVisible(true);
     }//GEN-LAST:event_labelexitMouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+       
+               // close();
+                Connection con;
+                PreparedStatement ps;
+                try {
+                        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/xmix", "root", "");
+                        ps=con.prepareStatement("SELECT `username`,`password` FROM `admins` WHERE `username`=? AND `password`=?;");
+                        ps.setString(1,username.getText());
+                        ps.setString(2, String.valueOf(password.getPassword()));
+                        ResultSet result=ps.executeQuery();
+                        if(result.next())
+                        {
+                        this.setVisible(false);
+                        this.dispose();
+                        AdminMain main =new AdminMain();
+                        main.setVisible(true);
+                        }else
+                        {
+                             JLabel label = new JLabel("اسم المستخدم او الرقم السري غير صحيح");
+                           label.setFont(new Font("Tahoma", Font.BOLD, 14));
+                         JOptionPane.showMessageDialog(null, label);
+                         username.setText("");
+                         password.setText("");
+                        }
+                    } catch (SQLException ex) {
+                          JLabel label = new JLabel("خطا السرفر غير متصل يرجي الاتصال اولا واعاده المحاوله");
+                           label.setFont(new Font("Tahoma", Font.BOLD, 14));
+                         JOptionPane.showMessageDialog(null, label);
+                                          }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -270,11 +227,9 @@ public void close(){
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnLogin;
     private javax.swing.JCheckBox checkshowpassword;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel labelexit;

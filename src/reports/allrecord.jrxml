@@ -35,16 +35,16 @@ inner join dates on orders.order_id=dates.order_id)
 			<staticText>
 				<reportElement style="Title" mode="Opaque" x="-15" y="0" width="213" height="43" forecolor="#FFFFFF" backcolor="#006699" uuid="50f613fe-70d5-44c7-97e1-e85432c7a0df"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="SansSerif" size="20" pdfFontName="Times-Roman"/>
+					<font fontName="Tahoma" size="20" pdfFontName="Times-Roman"/>
 				</textElement>
 				<text><![CDATA[شيك يومي]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="31" y="33" width="118" height="20" forecolor="#330000" backcolor="#65D3FD" uuid="a361c380-a003-4c81-89fe-397cc3b5492d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="10" isBold="true"/>
+					<font fontName="Tahoma" size="13" isBold="true"/>
 				</textElement>
-				<text><![CDATA[CREPE HUT ]]></text>
+				<text><![CDATA[X.MIX]]></text>
 			</staticText>
 			<frame>
 				<reportElement style="Row" mode="Opaque" x="49" y="70" width="148" height="20" uuid="040e3321-e471-4d70-8b32-4e45f5ef511a"/>
@@ -121,7 +121,7 @@ inner join dates on orders.order_id=dates.order_id)
 	<detail>
 		<band height="15" splitType="Stretch">
 			<frame>
-				<reportElement style="Row" mode="Opaque" x="0" y="0" width="209" height="15" uuid="f2cca1ff-7075-40ce-84ec-5a39fb052aea"/>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="198" height="15" uuid="f2cca1ff-7075-40ce-84ec-5a39fb052aea"/>
 				<textField isStretchWithOverflow="true">
 					<reportElement style="Detail" x="44" y="0" width="37" height="15" uuid="88e205fd-9af3-45b8-abf1-d90819d6f010"/>
 					<box>
@@ -164,16 +164,16 @@ inner join dates on orders.order_id=dates.order_id)
 	<summary>
 		<band height="33">
 			<textField>
-				<reportElement x="31" y="4" width="66" height="20" uuid="a5a03ce6-1018-4688-b624-a602a4ba68f7"/>
+				<reportElement mode="Opaque" x="31" y="4" width="66" height="20" forecolor="#FFFFFF" backcolor="#000000" uuid="a5a03ce6-1018-4688-b624-a602a4ba68f7"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true" isItalic="false" isStrikeThrough="false"/>
+					<font size="14" isBold="true" isItalic="false" isStrikeThrough="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{total}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="97" y="4" width="75" height="20" uuid="38104974-5e46-4395-8426-701e4179b271"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="13" isBold="true" isUnderline="false"/>
+					<font fontName="Tahoma" size="11" isBold="true" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[الاجمالي : ]]></text>
 			</staticText>

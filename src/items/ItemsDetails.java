@@ -19,6 +19,15 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import admin.AdminMain;
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.JTableHeader;
+import static orders.recipes.printdelivery;
+
 
 /**
  *
@@ -64,7 +73,7 @@ public class ItemsDetails extends javax.swing.JFrame {
         exit = new javax.swing.JButton();
         phone1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        mysize = new javax.swing.JComboBox<>();
+        mymenu = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -87,7 +96,7 @@ public class ItemsDetails extends javax.swing.JFrame {
         phone.setForeground(new java.awt.Color(255, 102, 0));
         phone.setText("السعر");
 
-        txtname.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtname.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         txtname.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtname.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -100,7 +109,7 @@ public class ItemsDetails extends javax.swing.JFrame {
             }
         });
 
-        txtcost.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtcost.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         txtcost.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         additem.setBackground(new java.awt.Color(255, 51, 51));
@@ -138,12 +147,22 @@ public class ItemsDetails extends javax.swing.JFrame {
 
         Itemstable.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Itemstable.setForeground(new java.awt.Color(0, 102, 102));
+        JTableHeader Theader = Itemstable.getTableHeader();
+
+        Theader.setBackground(Color.DARK_GRAY); // change the Background color
+        Theader.setForeground(Color.DARK_GRAY); // change the Foreground
+
+        Theader.setFont(new Font("Tahome", Font.BOLD, 20)); // font name style size
+        ((DefaultTableCellRenderer)Theader.getDefaultRenderer())
+        .setHorizontalAlignment(JLabel.LEFT); // center header text
+
+        Itemstable.setFont(new Font("Tahome", Font.BOLD, 15));
         Itemstable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "السعر", "الحجم", "اسم الصنف", "id"
+                "السعر", "المنيو", "اسم الصنف", "id"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -219,7 +238,7 @@ public class ItemsDetails extends javax.swing.JFrame {
 
         phone1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         phone1.setForeground(new java.awt.Color(255, 102, 0));
-        phone1.setText("الحجم");
+        phone1.setText("المنيو");
 
         jButton1.setBackground(new java.awt.Color(255, 51, 51));
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -232,12 +251,11 @@ public class ItemsDetails extends javax.swing.JFrame {
             }
         });
 
-        mysize.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        mysize.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "كبير", "وسط", "صغير", " " }));
-        mysize.setSelectedIndex(3);
-        mysize.addActionListener(new java.awt.event.ActionListener() {
+        mymenu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        mymenu.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "عادي", "صيامي" }));
+        mymenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mysizeActionPerformed(evt);
+                mymenuActionPerformed(evt);
             }
         });
 
@@ -278,7 +296,7 @@ public class ItemsDetails extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(name, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                        .addComponent(mysize, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(mymenu, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(phone1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -321,7 +339,7 @@ public class ItemsDetails extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(phone1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(mysize, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(mymenu, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(14, 14, 14)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtcost, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -365,6 +383,13 @@ public class ItemsDetails extends javax.swing.JFrame {
         
     }//GEN-LAST:event_searchclientActionPerformed
 
+    
+        private void checksizeforsearch(){
+    if (Itemstable.getColumnModel().getColumnCount() > 0) {
+    Itemstable.getColumnModel().getColumn(3).setMinWidth(0);
+    Itemstable.getColumnModel().getColumn(3).setMaxWidth(0);
+    }
+    }
          public void find_item()
         {
             ArrayList<Items>clients= ListItems(txtname.getText());
@@ -373,18 +398,19 @@ public class ItemsDetails extends javax.swing.JFrame {
                 else
             {
         DefaultTableModel model=new DefaultTableModel();
-          model.setColumnIdentifiers(new Object[]{"السعر","الحجم ","اسم الصنف","id"});
+          model.setColumnIdentifiers(new Object[]{"السعر","المنيو ","اسم الصنف","id"});
           
         Object[] row=new Object[5];
         for(int i=0;i<clients.size();i++)
         {
             row[0]=clients.get(i).getCost();
-            row[1]=clients.get(i).getSize();
+            row[1]=clients.get(i).getMenu();
             row[2]=clients.get(i).getName();
             row[3]=clients.get(i).getId();   
             model.addRow(row);
         }  
         Itemstable.setModel(model);
+        checksizeforsearch();
             }
         }
         
@@ -407,7 +433,7 @@ public class ItemsDetails extends javax.swing.JFrame {
             Items item;
             while(rs.next())
             {
-                item = new Items(rs.getInt("item_id"),rs.getString("item_name"),rs.getString("item_size"),rs.getFloat("item_cost"));
+                item = new Items(rs.getInt("item_id"),rs.getString("item_name"),rs.getString("item_menu"),rs.getFloat("item_cost"));
                 itemsList.add(item);
             }
             
@@ -421,7 +447,7 @@ public class ItemsDetails extends javax.swing.JFrame {
         
         
          
-        
+     
        
         
         // show the Row that is selected from client table on the text field
@@ -429,8 +455,8 @@ public class ItemsDetails extends javax.swing.JFrame {
         int i=Itemstable.getSelectedRow();       
         TableModel model=Itemstable.getModel();
         txtcost.setText(model.getValueAt(i, 0).toString());
-        //txtsize.setText(model.getValueAt(i, 1).toString());
-        mysize.setSelectedItem(model.getValueAt(i, 1).toString());
+        //txtmenu.setText(model.getValueAt(i, 1).toString());
+        mymenu.setSelectedItem(model.getValueAt(i, 1).toString());
         txtname.setText(model.getValueAt(i, 2).toString());
         txtid.setText(model.getValueAt(i, 3).toString());
         
@@ -443,12 +469,12 @@ public class ItemsDetails extends javax.swing.JFrame {
     }//GEN-LAST:event_deleteclientActionPerformed
 
     private void updateclientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateclientActionPerformed
-        String query="UPDATE `Items` SET `item_name`='"+txtname.getText()+"',`item_size`='"+mysize.getSelectedItem()+"',`item_cost`='"+txtcost.getText()+"' WHERE `item_id`="+txtid.getText();
+        String query="UPDATE `Items` SET `item_name`='"+txtname.getText()+"',`item_menu`='"+mymenu.getSelectedItem()+"',`item_cost`='"+txtcost.getText()+"' WHERE `item_id`="+txtid.getText();
         executeSQlQuery(query," تعديل ");
     }//GEN-LAST:event_updateclientActionPerformed
 
     private void additemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_additemActionPerformed
-//        String query="INSERT INTO `Items`(`item_name`,`item_size`,`item_cost`) VALUES('"+txtname.getText()+"','"+mysize.getSelectedItem()+"','"+txtcost.getText()+"');";
+//        String query="INSERT INTO `Items`(`item_name`,`item_menu`,`item_cost`) VALUES('"+txtname.getText()+"','"+mymenu.getSelectedItem()+"','"+txtcost.getText()+"');";
 //        executeSQlQuery(query, "اضافه ");
               JOptionPane.showMessageDialog(null,"لا تمتلك صلاحيه اضافه العناصر");
 
@@ -487,19 +513,19 @@ public class ItemsDetails extends javax.swing.JFrame {
                txtid.setText("");
                txtname.setText("");
                txtcost.setText("");
-               mysize.setSelectedItem("");
+               mymenu.setSelectedItem("");
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void mysizeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mysizeActionPerformed
+    private void mymenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mymenuActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_mysizeActionPerformed
+    }//GEN-LAST:event_mymenuActionPerformed
 
      public Connection getConnection()
     {
         Connection con;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/xmix","root","");
             return con;
         } catch(Exception e)
         {
@@ -521,7 +547,7 @@ public class ItemsDetails extends javax.swing.JFrame {
             Items item;
             while(rs.next())
             {
-                item = new Items(rs.getInt("item_id"),rs.getString("item_name"),rs.getString("item_size"),rs.getFloat("item_cost"));
+                item = new Items(rs.getInt("item_id"),rs.getString("item_name"),rs.getString("item_menu"),rs.getFloat("item_cost"));
                 itemList.add(item);
             }
             
@@ -542,7 +568,7 @@ public class ItemsDetails extends javax.swing.JFrame {
         for(int i=0;i<list.size();i++)
         {
             row[0]=list.get(i).getCost();
-            row[1]=list.get(i).getSize();
+            row[1]=list.get(i).getMenu();
             row[2]=list.get(i).getName();
             row[3]=list.get(i).getId();
 
@@ -557,14 +583,14 @@ public class ItemsDetails extends javax.swing.JFrame {
         
         ArrayList<Items> list=getItemList();
         DefaultTableModel model=new DefaultTableModel();
-          model.setColumnIdentifiers(new Object[]{"السعر","الحجم ","اسم الصنف","id"});
+          model.setColumnIdentifiers(new Object[]{"السعر","المنيو ","اسم الصنف","Id"});
           
         Object[] row=new Object[4];
         for(int i=0;i<list.size();i++)
         {
 
             row[0]=list.get(i).getCost();
-            row[1]=list.get(i).getSize();
+            row[1]=list.get(i).getMenu();
             row[2]=list.get(i).getName();
             row[3]=list.get(i).getId();
 
@@ -572,7 +598,7 @@ public class ItemsDetails extends javax.swing.JFrame {
             model.addRow(row);
         }  
                 Itemstable.setModel(model);
-
+checksizeforsearch();
         
                
 
@@ -598,9 +624,10 @@ public class ItemsDetails extends javax.swing.JFrame {
                show_item();
                txtid.setText("");
                txtname.setText("");
-               mysize.setSelectedItem(""); 
+               mymenu.setSelectedItem(""); 
                txtcost.setText("");  
-              JOptionPane.showMessageDialog(null, "تم "+" "+message+"العنصر بنجاح  "+"  ");
+                ImageIcon icon = new ImageIcon(this.getClass().getResource("correct.png"));
+    JOptionPane.showMessageDialog(null, "تم "+message+"العنصر بنجاح  "+"  ","DONE",JOptionPane.PLAIN_MESSAGE,icon); 
            }else{
                JOptionPane.showMessageDialog(null, "لم يتم "+" "+message+"العنصر ");
            }
@@ -662,7 +689,7 @@ public class ItemsDetails extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JComboBox<String> mysize;
+    private javax.swing.JComboBox<String> mymenu;
     private javax.swing.JLabel name;
     private javax.swing.JLabel name1;
     private javax.swing.JLabel phone;

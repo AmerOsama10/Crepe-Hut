@@ -22,13 +22,17 @@ import java.awt.Color;
 import java.awt.Font;
 import java.io.UnsupportedEncodingException;
 import java.sql.SQLIntegrityConstraintViolationException;
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.JTableHeader;
 
 /*
  *
  * @author Amer Osama
  */
 public class ClientsDetails extends javax.swing.JFrame {
+    ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
 
     /**
      * Creates new form Cashiers
@@ -36,9 +40,11 @@ public class ClientsDetails extends javax.swing.JFrame {
     public ClientsDetails() {
         initComponents();
         show_client();
-        this.setTitle("Cashiers Data");
+        this.setTitle("Clients Data");
         this.setLocationRelativeTo(null);
         this.setResizable(false);
+                this.setIconImage(uplogo.getImage());
+
     }
 
     /**
@@ -101,7 +107,7 @@ public class ClientsDetails extends javax.swing.JFrame {
         notes.setForeground(new java.awt.Color(255, 0, 102));
         notes.setText("ملاحظات");
 
-        txtname.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtname.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         txtname.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtname.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -114,10 +120,10 @@ public class ClientsDetails extends javax.swing.JFrame {
             }
         });
 
-        txtphone.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtphone.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         txtphone.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        txtaddress.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtaddress.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         txtaddress.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         addclient.setBackground(new java.awt.Color(153, 153, 255));
@@ -170,6 +176,13 @@ public class ClientsDetails extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        JTableHeader Theader = Clientstable.getTableHeader();
+
+        Theader.setForeground(Color.DARK_GRAY); // change the Foreground
+
+        Theader.setFont(new Font("Tahoma", Font.BOLD, 16)); // font name style size
+        ((DefaultTableCellRenderer)Theader.getDefaultRenderer())
+        .setHorizontalAlignment(JLabel.LEFT); //
         Clientstable.setGridColor(new java.awt.Color(0, 153, 153));
         Clientstable.setRowHeight(20);
         Clientstable.setRowMargin(3);
@@ -197,7 +210,7 @@ public class ClientsDetails extends javax.swing.JFrame {
         });
 
         txtnotes.setColumns(20);
-        txtnotes.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtnotes.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         txtnotes.setRows(5);
         jScrollPane2.setViewportView(txtnotes);
 
@@ -362,7 +375,17 @@ public class ClientsDetails extends javax.swing.JFrame {
 
     
     //for searching about a person in clients table
-    
+        private void checksizeforsearch(){
+    if (Clientstable.getColumnModel().getColumnCount() > 0) {
+    Clientstable.getColumnModel().getColumn(0).setMinWidth(0);
+    Clientstable.getColumnModel().getColumn(0).setMaxWidth(0);
+    Clientstable.getColumnModel().getColumn(1).setMinWidth(200);
+    Clientstable.getColumnModel().getColumn(1).setMaxWidth(200);
+    Clientstable.getColumnModel().getColumn(2).setMinWidth(160);
+    Clientstable.getColumnModel().getColumn(2).setMaxWidth(160);
+    }
+    }
+
     private void searchclientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchclientActionPerformed
         // TODO add your handling code here:
        
@@ -395,6 +418,8 @@ public class ClientsDetails extends javax.swing.JFrame {
             model.addRow(row);
         }  
         Clientstable.setModel(model);
+                  checksizeforsearch();  
+
                     }
         }
         
@@ -502,7 +527,7 @@ public class ClientsDetails extends javax.swing.JFrame {
         Connection con;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/xmix","root","");
             return con;
         } catch(Exception e)
         {
@@ -563,7 +588,7 @@ public class ClientsDetails extends javax.swing.JFrame {
         
             ArrayList<Client> list=getClientList();
         DefaultTableModel model=new DefaultTableModel();
-          model.setColumnIdentifiers(new Object[]{"id","الاسم ","الهاتف","العنوان","ملاخظات"});
+          model.setColumnIdentifiers(new Object[]{"id","الاسم ","الهاتف","العنوان","ملاحظات"});
         Object[] row=new Object[5];
         for(int i=0;i<list.size();i++)
         {
@@ -578,6 +603,7 @@ public class ClientsDetails extends javax.swing.JFrame {
         }
         
                Clientstable.setModel(model);
+          checksizeforsearch();  
 
        
         
@@ -608,7 +634,8 @@ public class ClientsDetails extends javax.swing.JFrame {
                txtphone.setText("");
                txtaddress.setText("");
                txtnotes.setText("");               
-               JOptionPane.showMessageDialog(null, "تم "+message+"العميل بنجاح  "+"  ");
+               ImageIcon icon = new ImageIcon(this.getClass().getResource("correct.png"));
+    JOptionPane.showMessageDialog(null, "تم "+message+"العميل بنجاح  "+"  ","DONE",JOptionPane.PLAIN_MESSAGE,icon); 
            }else{
                JOptionPane.showMessageDialog(null, "لم يتم "+message+"العميل ");
            }

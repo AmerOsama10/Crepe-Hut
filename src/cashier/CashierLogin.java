@@ -17,7 +17,10 @@ import admin.AdminLogin;
 import admin.AdminMain;
 import admin.EnterSystem;
 import items.Items;
+import java.awt.Font;
 import java.sql.Statement;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import static javax.swing.UIManager.getInt;
 
 /**
@@ -25,6 +28,7 @@ import static javax.swing.UIManager.getInt;
  * @author Amer Osama
  */
 public class CashierLogin extends javax.swing.JFrame {
+    ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
 
     /**
      * Creates new form AdminLogin
@@ -35,6 +39,8 @@ public class CashierLogin extends javax.swing.JFrame {
         this.setResizable(false);
          this.setLocationRelativeTo(null);
         this.setTitle("Cashier Login");
+                this.setIconImage(uplogo.getImage());
+
     }
 
     /**
@@ -46,60 +52,43 @@ public class CashierLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        btnlogin = new javax.swing.JButton();
         username = new javax.swing.JTextField();
         password = new javax.swing.JPasswordField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         checkshowpassword = new javax.swing.JCheckBox();
         exit = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-
         jPanel1.setBackground(new java.awt.Color(255, 204, 102));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102), 2));
+        jPanel1.setToolTipText(null);
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnlogin.setBackground(new java.awt.Color(0, 51, 51));
-        btnlogin.setFont(new java.awt.Font("Orbitron", 1, 14)); // NOI18N
-        btnlogin.setForeground(new java.awt.Color(255, 255, 255));
-        btnlogin.setText("CONTINUE");
-        btnlogin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnloginActionPerformed(evt);
-            }
-        });
-
-        username.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        username.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         username.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernameActionPerformed(evt);
             }
         });
+        jPanel1.add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, 200, 30));
 
-        password.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        password.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jPanel1.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 320, 200, 30));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel1.setText("تسجيل الدخول");
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/user.jpg"))); // NOI18N
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/password.png"))); // NOI18N
-
-        checkshowpassword.setBackground(new java.awt.Color(255, 255, 204));
+        checkshowpassword.setBackground(new java.awt.Color(255, 255, 255));
+        checkshowpassword.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         checkshowpassword.setText("show password");
         checkshowpassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 checkshowpasswordActionPerformed(evt);
             }
         });
+        jPanel1.add(checkshowpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, 100, 20));
 
         exit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         exit.setForeground(new java.awt.Color(0, 0, 102));
@@ -111,90 +100,41 @@ public class CashierLogin extends javax.swing.JFrame {
                 exitActionPerformed(evt);
             }
         });
+        jPanel1.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 0, 40, 30));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(80, 80, 80)
-                        .addComponent(btnlogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(username))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(password))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGap(0, 193, Short.MAX_VALUE)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(checkshowpassword, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(34, 34, 34))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(90, 90, 90)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(username, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addGap(21, 21, 21)
-                .addComponent(checkshowpassword)
-                .addGap(38, 38, 38)
-                .addComponent(btnlogin, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jLabel1.setToolTipText("فقط المسجلين بواسطه المطعم يمكن دخوله للسستم");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, 100, 10));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        jButton1.setBackground(new java.awt.Color(57, 153, 52));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("الدخول");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 390, 100, -1));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cashierbackground.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logincashier.jpg"))); // NOI18N
         jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102), 2));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 545));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 545, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 0, 0)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
 
         pack();
@@ -211,15 +151,41 @@ public class CashierLogin extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_checkshowpasswordActionPerformed
 
-    private void btnloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnloginActionPerformed
+    private void usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameActionPerformed
         // TODO add your handling code here:
-       
-       
+    }//GEN-LAST:event_usernameActionPerformed
+
+         public void exitdata()
+    {
+        Connection con;
+        try {
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/xmix", "root", "");
+             Statement s;    
+             Cash cashier=new Cash();
+             cashier.clockOut();
+             String query="UPDATE `cashiers` SET `cashier_state`='"+cashier.getWorkState()+"'WHERE `cashier_state`=1;";
+             s = con.createStatement();
+             s.executeUpdate(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(CashMain.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
+        // TODO add your handling code here:  
+        exitdata();             
+        System.exit(0);
+    }//GEN-LAST:event_exitActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+          // TODO add your handling code here:
+        
                 Connection con;
                 PreparedStatement ps; 
                 try {
                     
-                        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "");
+                        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/xmix", "root", "");
 //                       //to check username and password
                         ps=con.prepareStatement("SELECT `cashier_email`,`cashier_password`,`cashier_state` FROM `cashiers` WHERE `cashier_email`=? AND `cashier_password`=?;");                      
                         ps.setString(1,username.getText());
@@ -249,45 +215,21 @@ public class CashierLogin extends javax.swing.JFrame {
                         
                         }else
                         {
-                         JOptionPane.showMessageDialog(null, "اسم المستخدم او الرقم السري غير صحيح");
+                        JLabel label = new JLabel("اسم المستخدم او الرقم السري غير صحيح");
+                        label.setFont(new Font("Tahoma", Font.BOLD, 14));
+                        JOptionPane.showMessageDialog(null, label);
                          username.setText("");
                          password.setText("");
                         }
                         
                     }
                 catch (SQLException ex) {
-                        System.out.print(ex.toString());
-                       JOptionPane.showMessageDialog(null, "خطا السرفر غير متصل يرجي الاتصال اولا واعاده المحاوله")     ;
+                        //System.out.print(ex.toString());
+                        JLabel label = new JLabel("خطا السرفر غير متصل يرجي الاتصال اولا واعاده المحاوله");
+                        label.setFont(new Font("Tahoma", Font.BOLD, 14));
+                        JOptionPane.showMessageDialog(null, label);
                     }
-                                           
-                                
-    }//GEN-LAST:event_btnloginActionPerformed
-
-    private void usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_usernameActionPerformed
-
-         public void exitdata()
-    {
-        Connection con;
-        try {
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "");
-             Statement s;    
-             Cash cashier=new Cash();
-             cashier.clockOut();
-             String query="UPDATE `cashiers` SET `cashier_state`='"+cashier.getWorkState()+"'WHERE `cashier_state`=1;";
-             s = con.createStatement();
-             s.executeUpdate(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(CashMain.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-    
-    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
-        // TODO add your handling code here:  
-        exitdata();             
-        System.exit(0);
-    }//GEN-LAST:event_exitActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -328,15 +270,12 @@ public class CashierLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnlogin;
     private javax.swing.JCheckBox checkshowpassword;
     private javax.swing.JButton exit;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPasswordField password;
     private javax.swing.JTextField username;
     // End of variables declaration//GEN-END:variables

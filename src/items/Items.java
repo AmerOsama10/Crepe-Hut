@@ -15,17 +15,17 @@ import java.util.Date;
  */
      public class Items {
      private int id;
-     private String name,size;
+     private String name,menu;
      private Float cost;
    
     
      
       
-     public Items(int id  ,String name,String size,Float cost)
+     public Items(int id  ,String name,String menu,Float cost)
     {
     this.id=id;
     this.name=name;
-    this.size=size;
+    this.menu=menu;
     this.cost=cost;
     }
     /**
@@ -50,10 +50,10 @@ import java.util.Date;
     }
 
     /**
-     * @return the size
+     * @return the menu
      */
-    public String getSize() {
-        return size;
+    public String getMenu() {
+        return menu;
     }
 
      }

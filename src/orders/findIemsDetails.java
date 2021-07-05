@@ -32,7 +32,7 @@ public Connection getConnection()
         Connection con;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/xmix","root","");
             return con;
         } catch(Exception e)
         {
@@ -52,7 +52,7 @@ public Connection getConnection()
             Items item;
             while(rs.next())
             {
-                item = new Items(rs.getInt("item_id"),rs.getString("item_name"),rs.getString("item_size"),rs.getFloat("item_cost"));
+                item = new Items(rs.getInt("item_id"),rs.getString("item_name"),rs.getString("item_menu"),rs.getFloat("item_cost"));
                 itemList.add(item);
             }
             

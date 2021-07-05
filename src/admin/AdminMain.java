@@ -3,13 +3,16 @@ package admin;
 import cashier.CashiersDetails;
 import client.ClientsDetails;
 import items.ItemsDetails;
+import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 
@@ -25,6 +28,7 @@ import javax.swing.JOptionPane;
  * @author Amer Osama
  */
 public class AdminMain extends javax.swing.JFrame {
+    ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
 
     /**
      * Creates new form CashMain
@@ -33,6 +37,8 @@ public class AdminMain extends javax.swing.JFrame {
         initComponents();
         this.setTitle("Home");
         this.setLocationRelativeTo(null);
+                this.setIconImage(uplogo.getImage());
+
     }
 
     /**
@@ -45,12 +51,13 @@ public class AdminMain extends javax.swing.JFrame {
     private void initComponents() {
 
         homepanel = new javax.swing.JPanel();
-        ItemsData = new javax.swing.JButton();
-        cashiersData = new javax.swing.JButton();
-        InvoicesData = new javax.swing.JButton();
-        deletedb = new javax.swing.JButton();
-        exit = new javax.swing.JButton();
-        tareer = new javax.swing.JButton();
+        exitlb = new javax.swing.JLabel();
+        deletelb = new javax.swing.JLabel();
+        InvoicesDatalb = new javax.swing.JLabel();
+        tareerlb = new javax.swing.JLabel();
+        ItemsDatalb = new javax.swing.JLabel();
+        cashiersDatalb = new javax.swing.JLabel();
+        tareercenter = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -61,85 +68,81 @@ public class AdminMain extends javax.swing.JFrame {
         homepanel.setBackground(new java.awt.Color(153, 0, 0));
         homepanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        ItemsData.setBackground(new java.awt.Color(255, 255, 255));
-        ItemsData.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        ItemsData.setForeground(new java.awt.Color(0, 102, 102));
-        ItemsData.setText("بيانات الاصناف");
-        ItemsData.setBorder(null);
-        ItemsData.setContentAreaFilled(true);
-        ItemsData.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ItemsDataActionPerformed(evt);
+        exitlb.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exit.png"))); // NOI18N
+        exitlb.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                exitlbMouseClicked(evt);
             }
         });
-        homepanel.add(ItemsData, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 100, 110, 40));
+        homepanel.add(exitlb, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 0, -1, -1));
 
-        cashiersData.setBackground(new java.awt.Color(255, 255, 255));
-        cashiersData.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        cashiersData.setForeground(new java.awt.Color(0, 102, 102));
-        cashiersData.setText("بيانات الكاشير");
-        cashiersData.setBorder(null);
-        cashiersData.setContentAreaFilled(true);
-        cashiersData.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cashiersDataActionPerformed(evt);
+        deletelb.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        deletelb.setForeground(new java.awt.Color(255, 255, 255));
+        deletelb.setText("حذف الاوردرات");
+        deletelb.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                deletelbMouseClicked(evt);
             }
         });
-        homepanel.add(cashiersData, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 100, 120, 40));
+        homepanel.add(deletelb, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 90, 30));
 
-        InvoicesData.setBackground(new java.awt.Color(255, 255, 255));
-        InvoicesData.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        InvoicesData.setForeground(new java.awt.Color(0, 102, 102));
-        InvoicesData.setText("حصر المبيعات");
-        InvoicesData.setBorder(null);
-        InvoicesData.setContentAreaFilled(true);
-        InvoicesData.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                InvoicesDataActionPerformed(evt);
+        InvoicesDatalb.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        InvoicesDatalb.setForeground(new java.awt.Color(255, 255, 255));
+        InvoicesDatalb.setText("حصر المبيعات");
+        InvoicesDatalb.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                InvoicesDatalbMouseClicked(evt);
             }
         });
-        homepanel.add(InvoicesData, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 110, 40));
+        homepanel.add(InvoicesDatalb, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, 90, 30));
 
-        deletedb.setBackground(new java.awt.Color(255, 255, 255));
-        deletedb.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        deletedb.setForeground(new java.awt.Color(0, 102, 102));
-        deletedb.setText("حذف الاوردرات");
-        deletedb.setBorder(null);
-        deletedb.setContentAreaFilled(true);
-        deletedb.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deletedbActionPerformed(evt);
+        tareerlb.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        tareerlb.setForeground(new java.awt.Color(255, 255, 255));
+        tareerlb.setText("      Your  Cash ");
+        tareerlb.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tareerlbMouseClicked(evt);
             }
         });
-        homepanel.add(deletedb, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 110, 40));
+        homepanel.add(tareerlb, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 266, 90, 20));
 
-        exit.setBackground(new java.awt.Color(255, 204, 51));
-        exit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        exit.setForeground(new java.awt.Color(153, 153, 255));
-        exit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exit.png"))); // NOI18N
-        exit.setBorder(null);
-        exit.setContentAreaFilled(true);
-        exit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitActionPerformed(evt);
+        ItemsDatalb.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        ItemsDatalb.setForeground(new java.awt.Color(255, 255, 255));
+        ItemsDatalb.setText("بيانات الاصناف");
+        ItemsDatalb.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ItemsDatalbMouseClicked(evt);
             }
         });
-        homepanel.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 0, 30, 40));
+        homepanel.add(ItemsDatalb, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, 90, 30));
 
-        tareer.setBackground(new java.awt.Color(255, 255, 255));
-        tareer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        tareer.setForeground(new java.awt.Color(0, 102, 102));
-        tareer.setText("الشيك اليومي");
-        tareer.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tareerActionPerformed(evt);
+        cashiersDatalb.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        cashiersDatalb.setForeground(new java.awt.Color(255, 255, 255));
+        cashiersDatalb.setText("بيانات الكاشير");
+        cashiersDatalb.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cashiersDatalbMouseClicked(evt);
             }
         });
-        homepanel.add(tareer, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, -1, 40));
+        homepanel.add(cashiersDatalb, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 50, 90, 30));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu2.jpg"))); // NOI18N
+        tareercenter.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        tareercenter.setForeground(new java.awt.Color(255, 255, 255));
+        tareercenter.setText("الشيك اليومي");
+        tareercenter.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tareercenterMouseClicked(evt);
+            }
+        });
+        homepanel.add(tareercenter, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, 90, 30));
+
+        jLabel1.setBackground(new java.awt.Color(49, 51, 63));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/mainadmin.jpg"))); // NOI18N
+        jLabel1.setToolTipText(null);
         jLabel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 102), 2, true));
-        homepanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 440));
+        jLabel1.setOpaque(true);
+        homepanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 440));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -161,40 +164,13 @@ public class AdminMain extends javax.swing.JFrame {
         Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(winClosingEvent);
     }
     
-    private void cashiersDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cashiersDataActionPerformed
-       this.setVisible(false);
-      CashiersDetails cashierdata=new CashiersDetails();
-      cashierdata.setVisible(true);
-     
-    }//GEN-LAST:event_cashiersDataActionPerformed
-
-    private void ItemsDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemsDataActionPerformed
-       this.setVisible(false);
-     ItemsDetails item = new ItemsDetails();
-     item.setVisible(true);    
-    }//GEN-LAST:event_ItemsDataActionPerformed
-
-    private void InvoicesDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InvoicesDataActionPerformed
-       this.setVisible(false);
-                 InvoicesDetails invoice=new InvoicesDetails();
-                 invoice.setVisible(true);
-    }//GEN-LAST:event_InvoicesDataActionPerformed
-
-    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
-
-       this.dispose();
-       EnterSystem e=new EnterSystem();
-       e.setVisible(true);
-       
-    }//GEN-LAST:event_exitActionPerformed
-
     
          public Connection getConnection()
     {
         Connection con;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/xmix","root","");
             return con;
         } catch(Exception e)
         {
@@ -212,11 +188,15 @@ public class AdminMain extends javax.swing.JFrame {
             st=connection.createStatement();
             st.executeUpdate(query1);
             st.executeUpdate(query2);
-            JOptionPane.showMessageDialog(null, "تم حذف جميع الاوردرات بتجاح");         
+                        JLabel label = new JLabel( "تم حذف جميع الاوردرات بتجاح");  
+                        label.setFont(new Font("Tahoma", Font.BOLD, 14));
+                        JOptionPane.showMessageDialog(null, label);
         }
             catch(Exception e)
         {
-               JOptionPane.showMessageDialog(null, "لم يتم الحذف بنحاح");
+                        JLabel label = new JLabel( "لم يتم الحذف بنحاح");  
+                        label.setFont(new Font("Tahoma", Font.BOLD, 14));
+                        JOptionPane.showMessageDialog(null, label);
         }
         
     }
@@ -228,20 +208,59 @@ public class AdminMain extends javax.swing.JFrame {
     
     
     
-    private void deletedbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deletedbActionPerformed
+    private void exitlbMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitlbMouseClicked
         // TODO add your handling code here:
-  int a=JOptionPane.showConfirmDialog(null,"هل تود بالفعل حذف جميع الاوردرات");  
-  if(a==JOptionPane.YES_OPTION){  
-    deletedata();
-}
-    }//GEN-LAST:event_deletedbActionPerformed
+        
+       this.dispose();
+       EnterSystem e=new EnterSystem();
+       e.setVisible(true);
+    }//GEN-LAST:event_exitlbMouseClicked
 
-    private void tareerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tareerActionPerformed
-    
+    private void cashiersDatalbMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cashiersDatalbMouseClicked
+        // TODO add your handling code here:
+           this.setVisible(false);
+      CashiersDetails cashierdata=new CashiersDetails();
+      cashierdata.setVisible(true);
+    }//GEN-LAST:event_cashiersDatalbMouseClicked
+
+    private void ItemsDatalbMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ItemsDatalbMouseClicked
+        // TODO add your handling code here:
+          this.setVisible(false);
+     ItemsDetails item = new ItemsDetails();
+     item.setVisible(true);  
+    }//GEN-LAST:event_ItemsDatalbMouseClicked
+
+    private void tareerlbMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tareerlbMouseClicked
+        // TODO add your handling code here:
+         this.setVisible(false);    
       tareer t=new tareer();
       t.setVisible(true);
-    }//GEN-LAST:event_tareerActionPerformed
+    }//GEN-LAST:event_tareerlbMouseClicked
 
+    private void InvoicesDatalbMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InvoicesDatalbMouseClicked
+        // TODO add your handling code here:
+         this.setVisible(false);
+                 InvoicesDetails invoice=new InvoicesDetails();
+                 invoice.setVisible(true);
+    }//GEN-LAST:event_InvoicesDatalbMouseClicked
+
+    private void deletelbMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_deletelbMouseClicked
+        // TODO add your handling code here:
+         JLabel label = new JLabel( "هل تود بالفعل حذف جميع الاوردرات");  
+         label.setFont(new Font("Tahoma", Font.BOLD, 14));
+          int a=JOptionPane.showConfirmDialog(null,label);  
+  if(a==JOptionPane.YES_OPTION){  
+    deletedata();
+  }
+    }//GEN-LAST:event_deletelbMouseClicked
+
+    private void tareercenterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tareercenterMouseClicked
+        // TODO add your handling code here:
+           this.setVisible(false);    
+      tareer t=new tareer();
+      t.setVisible(true);
+    }//GEN-LAST:event_tareercenterMouseClicked
+    
     /**
      * @param args the command line arguments
      */
@@ -281,13 +300,14 @@ public class AdminMain extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton InvoicesData;
-    private javax.swing.JButton ItemsData;
-    private javax.swing.JButton cashiersData;
-    private javax.swing.JButton deletedb;
-    private javax.swing.JButton exit;
+    private javax.swing.JLabel InvoicesDatalb;
+    private javax.swing.JLabel ItemsDatalb;
+    private javax.swing.JLabel cashiersDatalb;
+    private javax.swing.JLabel deletelb;
+    private javax.swing.JLabel exitlb;
     private javax.swing.JPanel homepanel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JButton tareer;
+    private javax.swing.JLabel tareercenter;
+    private javax.swing.JLabel tareerlb;
     // End of variables declaration//GEN-END:variables
 }

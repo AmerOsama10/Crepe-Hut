@@ -47,21 +47,21 @@ where order_date between $P{fromdate} and $P{todate}
 					<bottomPen lineWidth="2.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="12" isBold="false"/>
+					<font size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{fromdate} +"  الي  " + $P{todate}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement mode="Opaque" x="44" y="43" width="118" height="20" forecolor="#330000" backcolor="#65D3FD" uuid="c8dfb536-4626-4e6e-843a-a1e459862904"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="10" isBold="true"/>
+					<font fontName="Tahoma" size="13" isBold="true"/>
 				</textElement>
-				<text><![CDATA[CREPE HUT ]]></text>
+				<text><![CDATA[X.MIX]]></text>
 			</staticText>
 			<staticText>
 				<reportElement style="Title" mode="Opaque" x="0" y="0" width="213" height="43" forecolor="#FFFFFF" backcolor="#006699" uuid="b456c066-4183-4303-b2c7-a64da50838f5"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="SansSerif" size="20" pdfFontName="Times-Roman"/>
+					<font fontName="Tahoma" size="20" pdfFontName="Times-Roman"/>
 				</textElement>
 				<text><![CDATA[حصر المبيعات]]></text>
 			</staticText>
@@ -116,7 +116,7 @@ where order_date between $P{fromdate} and $P{todate}
 	<detail>
 		<band height="15" splitType="Stretch">
 			<frame>
-				<reportElement style="Row" mode="Opaque" x="0" y="0" width="209" height="15" uuid="88d32104-d4a3-4144-99d7-93f9750bcdee"/>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="197" height="15" uuid="88d32104-d4a3-4144-99d7-93f9750bcdee"/>
 				<textField isStretchWithOverflow="true">
 					<reportElement style="Detail" x="44" y="0" width="37" height="15" uuid="f7d27891-cdd9-446f-ba7d-df163d485a00"/>
 					<box>
@@ -126,7 +126,7 @@ where order_date between $P{fromdate} and $P{todate}
 						<bottomPen lineWidth="1.0"/>
 						<rightPen lineWidth="1.0"/>
 					</box>
-					<textElement textAlignment="Center"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA[$F{SUM(order_quantity)}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
@@ -138,7 +138,7 @@ where order_date between $P{fromdate} and $P{todate}
 						<bottomPen lineWidth="1.0"/>
 						<rightPen lineWidth="1.0"/>
 					</box>
-					<textElement textAlignment="Center"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA[$F{item_name}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
@@ -150,7 +150,7 @@ where order_date between $P{fromdate} and $P{todate}
 						<bottomPen lineWidth="1.0"/>
 						<rightPen lineWidth="1.0"/>
 					</box>
-					<textElement textAlignment="Center"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA[$F{item_cost*SUM(order_quantity)}]]></textFieldExpression>
 				</textField>
 			</frame>
@@ -165,9 +165,9 @@ where order_date between $P{fromdate} and $P{todate}
 				<reportElement x="38" y="27" width="100" height="1" uuid="acbb664e-fec2-4741-9eab-23b19bd57b3a"/>
 			</line>
 			<textField>
-				<reportElement x="21" y="4" width="66" height="20" uuid="55b3a582-3f25-4aa5-b866-34c935b8c6cd"/>
+				<reportElement mode="Opaque" x="21" y="4" width="66" height="20" forecolor="#FFFFFF" backcolor="#000000" uuid="55b3a582-3f25-4aa5-b866-34c935b8c6cd"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true" isItalic="false" isStrikeThrough="false"/>
+					<font fontName="Tahoma" size="10" isBold="true" isItalic="false" isStrikeThrough="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{total}]]></textFieldExpression>
 			</textField>
@@ -177,7 +177,7 @@ where order_date between $P{fromdate} and $P{todate}
 			<staticText>
 				<reportElement x="87" y="4" width="75" height="20" uuid="c0725944-c2ca-4052-87ae-c481028a9883"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="13" isBold="true" isUnderline="false"/>
+					<font fontName="Tahoma" size="10" isBold="true" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[الاجمالي : ]]></text>
 			</staticText>
