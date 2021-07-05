@@ -19,6 +19,11 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import admin.AdminMain;
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.JLabel;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.JTableHeader;
 
 /**
  *
@@ -138,6 +143,16 @@ public class ItemsDetails extends javax.swing.JFrame {
 
         Itemstable.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Itemstable.setForeground(new java.awt.Color(0, 102, 102));
+        JTableHeader Theader = Itemstable.getTableHeader();
+
+        Theader.setBackground(Color.DARK_GRAY); // change the Background color
+        Theader.setForeground(Color.DARK_GRAY); // change the Foreground
+
+        Theader.setFont(new Font("Tahome", Font.BOLD, 20)); // font name style size
+        ((DefaultTableCellRenderer)Theader.getDefaultRenderer())
+        .setHorizontalAlignment(JLabel.LEFT); // center header text
+
+        Itemstable.setFont(new Font("Tahome", Font.BOLD, 15));
         Itemstable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -365,6 +380,12 @@ public class ItemsDetails extends javax.swing.JFrame {
         
     }//GEN-LAST:event_searchclientActionPerformed
 
+            private void checksizeforsearch(){
+    if (Itemstable.getColumnModel().getColumnCount() > 0) {
+    Itemstable.getColumnModel().getColumn(3).setMinWidth(0);
+    Itemstable.getColumnModel().getColumn(3).setMaxWidth(0);
+    }
+    }
          public void find_item()
         {
             ArrayList<Items>clients= ListItems(txtname.getText());
@@ -385,9 +406,13 @@ public class ItemsDetails extends javax.swing.JFrame {
             model.addRow(row);
         }  
         Itemstable.setModel(model);
+        checksizeforsearch();
             }
         }
         
+    
+    
+
     
     
     
@@ -499,7 +524,7 @@ public class ItemsDetails extends javax.swing.JFrame {
         Connection con;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/crepehut","root","");
             return con;
         } catch(Exception e)
         {

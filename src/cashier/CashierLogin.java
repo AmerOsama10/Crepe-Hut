@@ -219,7 +219,7 @@ public class CashierLogin extends javax.swing.JFrame {
                 PreparedStatement ps; 
                 try {
                     
-                        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "");
+                        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/crepehut", "root", "");
 //                       //to check username and password
                         ps=con.prepareStatement("SELECT `cashier_email`,`cashier_password`,`cashier_state` FROM `cashiers` WHERE `cashier_email`=? AND `cashier_password`=?;");                      
                         ps.setString(1,username.getText());
@@ -271,7 +271,7 @@ public class CashierLogin extends javax.swing.JFrame {
     {
         Connection con;
         try {
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/crepehut", "root", "");
              Statement s;    
              Cash cashier=new Cash();
              cashier.clockOut();

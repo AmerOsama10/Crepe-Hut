@@ -105,7 +105,7 @@ public class CashiersDetails extends javax.swing.JFrame {
 
         txtid.setEditable(false);
         txtid.setBackground(new java.awt.Color(204, 204, 204));
-        txtid.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        txtid.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
         txtid.setVisible(false);
         txtid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,18 +113,18 @@ public class CashiersDetails extends javax.swing.JFrame {
             }
         });
 
-        txtname.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        txtname.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
         txtname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtnameActionPerformed(evt);
             }
         });
 
-        txtphone.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        txtphone.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
 
-        txtaddress.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        txtaddress.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
 
-        txtemail.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        txtemail.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
 
         addcashier.setBackground(new java.awt.Color(153, 51, 255));
         addcashier.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
@@ -191,7 +191,7 @@ public class CashiersDetails extends javax.swing.JFrame {
             cashierstable.getColumnModel().getColumn(0).setMaxWidth(0);
         }
 
-        txtpassword.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        txtpassword.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
 
         exit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         exit.setForeground(new java.awt.Color(0, 0, 102));
@@ -378,7 +378,7 @@ public class CashiersDetails extends javax.swing.JFrame {
         Connection con;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/crepehut","root","");
             return con;
         } catch(Exception e)
         {

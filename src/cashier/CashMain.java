@@ -1,7 +1,6 @@
 package cashier;
 
 import admin.EnterSystem;
-import orders.recipes;
 import client.ClientsDetails;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -14,6 +13,7 @@ import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import orders.backtoorder;
+import orders.recipes;
 
 
 
@@ -109,14 +109,14 @@ public class CashMain extends javax.swing.JFrame {
                 exitActionPerformed(evt);
             }
         });
-        jPanel1.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 0, 40, 30));
+        jPanel1.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 0, 40, 30));
 
         jLabel1.setBackground(new java.awt.Color(153, 0, 0));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu2.jpg"))); // NOI18N
-        jLabel1.setToolTipText("");
+        jLabel1.setToolTipText(null);
         jLabel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 102), 2, true));
         jLabel1.setOpaque(true);
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 440));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 440));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -141,7 +141,7 @@ public class CashMain extends javax.swing.JFrame {
     {
         Connection con;
         try {
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/crepehut", "root", "");
              Statement s;    
              Cash cashier=new Cash();
              cashier.clockOut();
@@ -162,8 +162,8 @@ public class CashMain extends javax.swing.JFrame {
     }//GEN-LAST:event_exitActionPerformed
 
     private void deliverorderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deliverorderActionPerformed
-   this.setVisible(false);
-        recipes recipe=new recipes();
+    this.setVisible(false);
+    recipes recipe=new recipes();
     recipe.setVisible(true);
         
         
@@ -173,7 +173,7 @@ public class CashMain extends javax.swing.JFrame {
         Connection con;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/crepehut","root","");
             return con;
         } catch(Exception e)
         {

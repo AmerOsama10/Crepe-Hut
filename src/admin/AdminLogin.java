@@ -191,7 +191,7 @@ public void close(){
                 Connection con;
                 PreparedStatement ps;
                 try {
-                        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "");
+                        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/crepehut", "root", "");
                         ps=con.prepareStatement("SELECT `username`,`password` FROM `admins` WHERE `username`=? AND `password`=?;");
                         ps.setString(1,username.getText());
                         ps.setString(2, String.valueOf(password.getPassword()));
