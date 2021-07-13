@@ -121,7 +121,7 @@ inner join dates on orders.order_id=dates.order_id)
 	<detail>
 		<band height="15" splitType="Stretch">
 			<frame>
-				<reportElement style="Row" mode="Opaque" x="0" y="0" width="209" height="15" uuid="f2cca1ff-7075-40ce-84ec-5a39fb052aea"/>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="197" height="15" uuid="f2cca1ff-7075-40ce-84ec-5a39fb052aea"/>
 				<textField isStretchWithOverflow="true">
 					<reportElement style="Detail" x="44" y="0" width="37" height="15" uuid="88e205fd-9af3-45b8-abf1-d90819d6f010"/>
 					<box>

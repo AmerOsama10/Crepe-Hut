@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="232" pageHeight="864" columnWidth="206" leftMargin="13" rightMargin="13" topMargin="13" bottomMargin="13" uuid="cad44d53-af5b-4dfc-b6ce-216f903d055f">
 	<property name="ireport.zoom" value="2.8531167061100033"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="47"/>
 	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
 	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
 	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
@@ -66,21 +66,21 @@ WHERE
 				<textFieldExpression><![CDATA[$F{dates_order_id}%200]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="140" y="82" width="53" height="20" uuid="afb93714-9267-473d-ad48-d254ebc78ad3"/>
+				<reportElement x="140" y="82" width="52" height="20" uuid="afb93714-9267-473d-ad48-d254ebc78ad3"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="SansSerif" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[الهاتف :]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="140" y="137" width="52" height="20" uuid="fd1c57bf-baad-42fb-8286-564ab56cf4ef"/>
+				<reportElement x="140" y="102" width="52" height="20" uuid="fd1c57bf-baad-42fb-8286-564ab56cf4ef"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="SansSerif" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[العنوان :]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="137" y="102" width="55" height="20" uuid="37e5f3c9-efb8-4175-8fc7-5190142f1758"/>
+				<reportElement x="137" y="122" width="55" height="20" uuid="37e5f3c9-efb8-4175-8fc7-5190142f1758"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="SansSerif" size="12" isBold="true"/>
 				</textElement>
@@ -101,26 +101,26 @@ WHERE
 				<textFieldExpression><![CDATA[$F{clients_client_phone}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="-16" y="137" width="156" height="20" uuid="d39bd64b-083b-4e58-9c85-d3606be181a5"/>
+				<reportElement x="-16" y="102" width="156" height="20" uuid="d39bd64b-083b-4e58-9c85-d3606be181a5"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="SansSerif" size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{clients_client_address}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="-16" y="102" width="153" height="35" uuid="83b86631-fb64-4f57-a5ea-d037fa06d712"/>
+				<reportElement x="-16" y="122" width="153" height="35" uuid="83b86631-fb64-4f57-a5ea-d037fa06d712"/>
 				<textElement textAlignment="Right" verticalAlignment="Top">
 					<font fontName="SansSerif" size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{clients_client_notes}]]></textFieldExpression>
 			</textField>
 			<textField pattern="EEEEE dd.MMM - hh:mm aaa">
-				<reportElement x="0" y="157" width="159" height="20" uuid="d3a5f92c-e7e7-4506-bdfb-88b40dd406be"/>
+				<reportElement x="0" y="157" width="159" height="13" uuid="d3a5f92c-e7e7-4506-bdfb-88b40dd406be"/>
 				<textElement verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement x="0" y="177" width="125" height="1" uuid="7b395a64-061e-4872-abe0-9e93b91d7b33"/>
+				<reportElement x="1" y="170" width="113" height="1" uuid="7b395a64-061e-4872-abe0-9e93b91d7b33"/>
 			</line>
 			<staticText>
 				<reportElement x="140" y="62" width="52" height="20" uuid="62c39803-1cd4-4256-9280-c07da5167d57"/>
