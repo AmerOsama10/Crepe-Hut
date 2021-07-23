@@ -39,37 +39,37 @@ inner join dates on orders.order_id=dates.order_id)
 				</textElement>
 				<text><![CDATA[شيك يومي]]></text>
 			</staticText>
-			<staticText>
-				<reportElement mode="Opaque" x="31" y="33" width="118" height="20" forecolor="#330000" backcolor="#65D3FD" uuid="a361c380-a003-4c81-89fe-397cc3b5492d"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="10" isBold="true"/>
-				</textElement>
-				<text><![CDATA[CREPE HUT ]]></text>
-			</staticText>
 			<frame>
 				<reportElement style="Row" mode="Opaque" x="49" y="70" width="148" height="20" uuid="040e3321-e471-4d70-8b32-4e45f5ef511a"/>
 				<staticText>
 					<reportElement x="84" y="0" width="64" height="20" uuid="558b093c-5d26-4fee-94db-89f1d3586b65"/>
-					<textElement>
-						<font size="12" isBold="true"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Tahoma" size="10" isBold="true"/>
 					</textElement>
 					<text><![CDATA[تم طلب]]></text>
 				</staticText>
 				<textField>
 					<reportElement x="52" y="0" width="32" height="20" uuid="85cdfe23-f43b-4535-a0a5-7c8d1d717c9c"/>
-					<textElement textAlignment="Center">
-						<font size="12" isBold="true"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Tahoma" size="10" isBold="true"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$P{totalid}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement x="16" y="0" width="36" height="20" uuid="a1e40db6-9085-46c4-b71d-362c3fd7e213"/>
-					<textElement textAlignment="Right">
-						<font size="12" isBold="true"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Tahoma" size="10" isBold="true"/>
 					</textElement>
 					<text><![CDATA[اوردر]]></text>
 				</staticText>
 			</frame>
+			<staticText>
+				<reportElement mode="Opaque" x="31" y="33" width="118" height="20" forecolor="#330000" backcolor="#65D3FD" uuid="c84b4a11-f23d-4381-8b2d-3afae4a8088e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CREPE & PIZZA HUT ]]></text>
+			</staticText>
 		</band>
 	</title>
 	<columnHeader>
@@ -131,7 +131,7 @@ inner join dates on orders.order_id=dates.order_id)
 						<bottomPen lineWidth="1.0"/>
 						<rightPen lineWidth="1.0"/>
 					</box>
-					<textElement textAlignment="Center"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA[$F{SUM(order_quantity)}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
@@ -143,7 +143,7 @@ inner join dates on orders.order_id=dates.order_id)
 						<bottomPen lineWidth="1.0"/>
 						<rightPen lineWidth="1.0"/>
 					</box>
-					<textElement textAlignment="Center"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA[$F{item_name}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
@@ -155,7 +155,7 @@ inner join dates on orders.order_id=dates.order_id)
 						<bottomPen lineWidth="1.0"/>
 						<rightPen lineWidth="1.0"/>
 					</box>
-					<textElement textAlignment="Center"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA[$F{item_cost*SUM(order_quantity)}]]></textFieldExpression>
 				</textField>
 			</frame>

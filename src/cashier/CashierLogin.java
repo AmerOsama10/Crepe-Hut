@@ -18,6 +18,7 @@ import admin.AdminMain;
 import admin.EnterSystem;
 import items.Items;
 import java.sql.Statement;
+import javax.swing.ImageIcon;
 import static javax.swing.UIManager.getInt;
 
 /**
@@ -25,7 +26,7 @@ import static javax.swing.UIManager.getInt;
  * @author Amer Osama
  */
 public class CashierLogin extends javax.swing.JFrame {
-
+   ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
     /**
      * Creates new form AdminLogin
      */
@@ -35,6 +36,8 @@ public class CashierLogin extends javax.swing.JFrame {
         this.setResizable(false);
          this.setLocationRelativeTo(null);
         this.setTitle("Cashier Login");
+                       this.setIconImage(uplogo.getImage());
+
     }
 
     /**

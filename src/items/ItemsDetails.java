@@ -21,6 +21,7 @@ import javax.swing.table.TableModel;
 import admin.AdminMain;
 import java.awt.Color;
 import java.awt.Font;
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
@@ -30,6 +31,7 @@ import javax.swing.table.JTableHeader;
  * @author Amer Osama
  */
 public class ItemsDetails extends javax.swing.JFrame {
+       ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
 
     /**
      * Creates new form Cashiers
@@ -40,6 +42,7 @@ public class ItemsDetails extends javax.swing.JFrame {
         this.setTitle("Items Data");
         this.setLocationRelativeTo(null);
         this.setResizable(false);
+        this.setIconImage(uplogo.getImage());
     }
 
     /**
@@ -145,14 +148,11 @@ public class ItemsDetails extends javax.swing.JFrame {
         Itemstable.setForeground(new java.awt.Color(0, 102, 102));
         JTableHeader Theader = Itemstable.getTableHeader();
 
-        Theader.setBackground(Color.DARK_GRAY); // change the Background color
         Theader.setForeground(Color.DARK_GRAY); // change the Foreground
 
-        Theader.setFont(new Font("Tahome", Font.BOLD, 20)); // font name style size
+        Theader.setFont(new Font("Tahoma", Font.BOLD, 16)); // font name style size
         ((DefaultTableCellRenderer)Theader.getDefaultRenderer())
-        .setHorizontalAlignment(JLabel.LEFT); // center header text
-
-        Itemstable.setFont(new Font("Tahome", Font.BOLD, 15));
+        .setHorizontalAlignment(JLabel.LEFT);
         Itemstable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -248,8 +248,8 @@ public class ItemsDetails extends javax.swing.JFrame {
         });
 
         mysize.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        mysize.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "كبير", "وسط", "صغير", " " }));
-        mysize.setSelectedIndex(3);
+        mysize.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "عائلي", "كبير", "وسط", "صغير", " " }));
+        mysize.setSelectedIndex(4);
         mysize.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mysizeActionPerformed(evt);
@@ -598,12 +598,14 @@ public class ItemsDetails extends javax.swing.JFrame {
         }  
                 Itemstable.setModel(model);
 
-        
-               
+      checksizeforsearch();  
 
        
         
     }
+     
+
+    
     
 
     public void executeSQlQuery(String query, String message)
@@ -630,7 +632,7 @@ public class ItemsDetails extends javax.swing.JFrame {
                JOptionPane.showMessageDialog(null, "لم يتم "+" "+message+"العنصر ");
            }
        }catch(Exception ex){
-           ex.printStackTrace();
+          
            JOptionPane.showMessageDialog(null, "حدد ماذا تريد");
        }
    }

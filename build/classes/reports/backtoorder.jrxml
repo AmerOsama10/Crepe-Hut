@@ -74,21 +74,24 @@ WHERE
 				<text><![CDATA[الكاشير : ]]></text>
 			</staticText>
 			<line>
-				<reportElement x="1" y="118" width="113" height="1" uuid="659e1297-052b-4a7b-9f00-e53095d47271"/>
+				<reportElement x="0" y="118" width="113" height="1" uuid="659e1297-052b-4a7b-9f00-e53095d47271"/>
 			</line>
 			<textField pattern="EEEEE dd.MMM - hh:mm aaa">
 				<reportElement x="0" y="105" width="149" height="13" uuid="6f72c6cf-4104-4051-a0a5-1f16c6993a58"/>
+				<textElement>
+					<font fontName="Tahoma" size="9" isBold="true"/>
+				</textElement>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
 			<ellipse>
 				<reportElement x="47" y="8" width="108" height="37" backcolor="#000000" uuid="0f3e7a94-64fa-47d0-b562-396ba04df0cf"/>
 			</ellipse>
 			<staticText>
-				<reportElement x="47" y="8" width="108" height="37" forecolor="#FFFFFF" uuid="eb6705c4-99c4-4660-ae93-62ce2e9dbcf4"/>
+				<reportElement mode="Transparent" x="47" y="8" width="108" height="37" forecolor="#FFFFFF" backcolor="#000000" uuid="8031d149-410b-41a7-88fe-87a5668618db"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="12" isBold="true"/>
+					<font fontName="Tahoma" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[CREPE HUT]]></text>
+				<text><![CDATA[CREPE & PIZZA HUT ]]></text>
 			</staticText>
 		</band>
 	</title>
@@ -260,18 +263,18 @@ WHERE
 				<text><![CDATA[خدمه :]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="0" y="90" width="186" height="20" backcolor="#666666" uuid="5dc24cca-5b40-4c90-acbb-69d44088db47"/>
+				<reportElement mode="Opaque" x="-12" y="90" width="212" height="20" backcolor="#666666" uuid="5dc24cca-5b40-4c90-acbb-69d44088db47"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
 				<text><![CDATA[01271652283  -  01067024362]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="0" y="75" width="186" height="15" backcolor="#666666" uuid="316ce090-a90d-49ef-b80d-1d3c620b4b0b"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Tahoma" size="10" isBold="true" isItalic="false"/>
+				<reportElement mode="Opaque" x="-12" y="75" width="212" height="15" backcolor="#666666" uuid="5c136357-f7e4-4dc8-8323-18c5686c5a4b"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Tahoma" isBold="true"/>
 				</textElement>
-				<text><![CDATA[كريب هات]]></text>
+				<text><![CDATA[كريب وبيتزا هات]]></text>
 			</staticText>
 		</band>
 	</summary>

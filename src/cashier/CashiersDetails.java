@@ -7,7 +7,7 @@ package cashier;
 
 import cashier.Cash;
 import java.sql.Connection;
-import java.sql.DriverManager;
+import java.sql.DriverManager;  
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -17,12 +17,14 @@ import javax.swing.table.TableModel;
 import admin.AdminMain;
 import com.mysql.jdbc.exceptions.MySQLIntegrityConstraintViolationException;
 import java.sql.SQLIntegrityConstraintViolationException;
+import javax.swing.ImageIcon;
 
 /**
  *
  * @author Amer Osama
  */
 public class CashiersDetails extends javax.swing.JFrame {
+       ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
 
     /**
      * Creates new form Cashiers
@@ -33,6 +35,8 @@ public class CashiersDetails extends javax.swing.JFrame {
         this.setTitle("Cashiers Data");
         this.setLocationRelativeTo(null);
         this.setResizable(false);
+                       this.setIconImage(uplogo.getImage());
+
     }
 
     /**

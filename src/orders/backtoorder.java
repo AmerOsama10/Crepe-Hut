@@ -20,6 +20,7 @@ import javax.print.attribute.PrintRequestAttributeSet;
 import javax.print.attribute.PrintServiceAttributeSet;
 import javax.print.attribute.standard.Copies;
 import javax.print.attribute.standard.PrinterName;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JRExporterParameter;
@@ -38,6 +39,7 @@ import net.sf.jasperreports.view.JasperViewer;
  * @author Amer Osama
  */
 public class backtoorder extends javax.swing.JFrame {
+       ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
 
     /**
      * Creates new form backtoorder
@@ -45,6 +47,8 @@ public class backtoorder extends javax.swing.JFrame {
     public backtoorder() {
         initComponents();
         this.setLocationRelativeTo(null);
+                this.setIconImage(uplogo.getImage());
+
     }
 
     /**
@@ -68,6 +72,8 @@ public class backtoorder extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+
+        txtid.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
         vieworder.setBackground(new java.awt.Color(255, 102, 0));
         vieworder.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N

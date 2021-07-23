@@ -305,7 +305,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="1"/>
                 </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor" postCode="JTableHeader Theader = Itemstable.getTableHeader();&#xa;        &#xa;        Theader.setBackground(Color.DARK_GRAY); // change the Background color&#xa;        Theader.setForeground(Color.DARK_GRAY); // change the Foreground&#xa;        &#xa;        Theader.setFont(new Font(&quot;Tahome&quot;, Font.BOLD, 20)); // font name style size&#xa;        ((DefaultTableCellRenderer)Theader.getDefaultRenderer())&#xa;                .setHorizontalAlignment(JLabel.LEFT); // center header text&#xa;        &#xa;        Itemstable.setFont(new Font(&quot;Tahome&quot;, Font.BOLD, 15));">
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor" postCode="JTableHeader Theader = Itemstable.getTableHeader();&#xa;        &#xa;        Theader.setForeground(Color.DARK_GRAY); // change the Foreground&#xa;        &#xa;        Theader.setFont(new Font(&quot;Tahoma&quot;, Font.BOLD, 16)); // font name style size&#xa;        ((DefaultTableCellRenderer)Theader.getDefaultRenderer())&#xa;                .setHorizontalAlignment(JLabel.LEFT);">
                   <Color blue="66" green="66" red="0" type="rgb"/>
                 </Property>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
@@ -481,14 +481,15 @@
               <Font name="Tahoma" size="12" style="1"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="&#x643;&#x628;&#x64a;&#x631;"/>
-                <StringItem index="1" value="&#x648;&#x633;&#x637;"/>
-                <StringItem index="2" value="&#x635;&#x63a;&#x64a;&#x631;"/>
-                <StringItem index="3" value=" "/>
+              <StringArray count="5">
+                <StringItem index="0" value="&#x639;&#x627;&#x626;&#x644;&#x64a;"/>
+                <StringItem index="1" value="&#x643;&#x628;&#x64a;&#x631;"/>
+                <StringItem index="2" value="&#x648;&#x633;&#x637;"/>
+                <StringItem index="3" value="&#x635;&#x63a;&#x64a;&#x631;"/>
+                <StringItem index="4" value=" "/>
               </StringArray>
             </Property>
-            <Property name="selectedIndex" type="int" value="3"/>
+            <Property name="selectedIndex" type="int" value="4"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mysizeActionPerformed"/>

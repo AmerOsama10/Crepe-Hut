@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -25,14 +26,17 @@ import javax.swing.JOptionPane;
  * @author Amer Osama
  */
 public class AdminMain extends javax.swing.JFrame {
+        ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
 
-    /**
+        /**
      * Creates new form CashMain
      */
     public AdminMain() {
         initComponents();
         this.setTitle("Home");
         this.setLocationRelativeTo(null);
+             this.setIconImage(uplogo.getImage());
+
     }
 
     /**

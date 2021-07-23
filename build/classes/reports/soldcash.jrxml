@@ -51,16 +51,16 @@ where order_date LIKE $P{date}
 					<bottomPen lineWidth="2.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="12" isBold="false"/>
+					<font fontName="Tahoma" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{order_date}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement mode="Opaque" x="31" y="33" width="118" height="20" forecolor="#330000" backcolor="#65D3FD" uuid="a361c380-a003-4c81-89fe-397cc3b5492d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="10" isBold="true"/>
+					<font fontName="Tahoma" size="10" isBold="true"/>
 				</textElement>
-				<text><![CDATA[CREPE HUT ]]></text>
+				<text><![CDATA[CREPE & PIZZA HUT ]]></text>
 			</staticText>
 		</band>
 	</title>
@@ -113,7 +113,7 @@ where order_date LIKE $P{date}
 	<detail>
 		<band height="15" splitType="Stretch">
 			<frame>
-				<reportElement style="Row" mode="Opaque" x="0" y="0" width="209" height="15" uuid="f2cca1ff-7075-40ce-84ec-5a39fb052aea"/>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="197" height="15" uuid="f2cca1ff-7075-40ce-84ec-5a39fb052aea"/>
 				<textField isStretchWithOverflow="true">
 					<reportElement style="Detail" x="44" y="0" width="37" height="15" uuid="88e205fd-9af3-45b8-abf1-d90819d6f010"/>
 					<box>
@@ -123,7 +123,7 @@ where order_date LIKE $P{date}
 						<bottomPen lineWidth="1.0"/>
 						<rightPen lineWidth="1.0"/>
 					</box>
-					<textElement textAlignment="Center"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA[$F{SUM(order_quantity)}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
@@ -135,7 +135,7 @@ where order_date LIKE $P{date}
 						<bottomPen lineWidth="1.0"/>
 						<rightPen lineWidth="1.0"/>
 					</box>
-					<textElement textAlignment="Center"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA[$F{item_name}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
@@ -147,7 +147,7 @@ where order_date LIKE $P{date}
 						<bottomPen lineWidth="1.0"/>
 						<rightPen lineWidth="1.0"/>
 					</box>
-					<textElement textAlignment="Center"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA[$F{item_cost*SUM(order_quantity)}]]></textFieldExpression>
 				</textField>
 			</frame>

@@ -6,6 +6,7 @@ import cashier.CashMain;
 import cashier.CashierLogin;
 import java.awt.event.*;
 import java.awt.*;
+import javax.swing.ImageIcon;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -19,6 +20,9 @@ import java.awt.*;
  */
 public class EnterSystem extends javax.swing.JFrame {
 
+            ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
+
+   
     /**
      * Creates new form EnterSystem
      */
@@ -28,7 +32,11 @@ public class EnterSystem extends javax.swing.JFrame {
          this.setTitle("Restaurant System");
         this.setLocationRelativeTo(null);
         this.setResizable(false);
+           this.setIconImage(uplogo.getImage());
+
     }
+    
+    
     public void close(){
         WindowEvent winClosingEvent=new WindowEvent(this,WindowEvent.WINDOW_CLOSING);
         Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(winClosingEvent);

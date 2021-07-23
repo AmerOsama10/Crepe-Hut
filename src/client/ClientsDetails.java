@@ -22,13 +22,17 @@ import java.awt.Color;
 import java.awt.Font;
 import java.io.UnsupportedEncodingException;
 import java.sql.SQLIntegrityConstraintViolationException;
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.JTableHeader;
 
 /*
  *
  * @author Amer Osama
  */
 public class ClientsDetails extends javax.swing.JFrame {
+       ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
 
     /**
      * Creates new form Cashiers
@@ -39,6 +43,8 @@ public class ClientsDetails extends javax.swing.JFrame {
         this.setTitle("Cashiers Data");
         this.setLocationRelativeTo(null);
         this.setResizable(false);
+                       this.setIconImage(uplogo.getImage());
+
     }
 
     /**
@@ -170,6 +176,13 @@ public class ClientsDetails extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        JTableHeader Theader = Clientstable.getTableHeader();
+
+        Theader.setForeground(Color.DARK_GRAY); // change the Foreground
+
+        Theader.setFont(new Font("Tahoma", Font.BOLD, 16)); // font name style size
+        ((DefaultTableCellRenderer)Theader.getDefaultRenderer())
+        .setHorizontalAlignment(JLabel.LEFT); // center header text
         Clientstable.setGridColor(new java.awt.Color(0, 153, 153));
         Clientstable.setRowHeight(20);
         Clientstable.setRowMargin(3);
@@ -578,13 +591,23 @@ public class ClientsDetails extends javax.swing.JFrame {
         }
         
                Clientstable.setModel(model);
+                
+          checksizeforsearch();  
 
        
         
     }
-    
-    
- 
+     
+        private void checksizeforsearch(){
+    if (Clientstable.getColumnModel().getColumnCount() > 0) {
+    Clientstable.getColumnModel().getColumn(0).setMinWidth(0);
+    Clientstable.getColumnModel().getColumn(0).setMaxWidth(0);
+    Clientstable.getColumnModel().getColumn(1).setMinWidth(200);
+    Clientstable.getColumnModel().getColumn(1).setMaxWidth(200);
+    Clientstable.getColumnModel().getColumn(2).setMinWidth(160);
+    Clientstable.getColumnModel().getColumn(2).setMaxWidth(160);
+    }
+    }
     
     
     

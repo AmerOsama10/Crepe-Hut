@@ -23,6 +23,7 @@ import javax.print.attribute.PrintRequestAttributeSet;
 import javax.print.attribute.PrintServiceAttributeSet;
 import javax.print.attribute.standard.Copies;
 import javax.print.attribute.standard.PrinterName;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JRExporterParameter;
@@ -43,6 +44,7 @@ import net.sf.jasperreports.view.JasperViewer;
  * @author Amer Osama
  */
 public class InvoicesDetails extends javax.swing.JFrame {
+            ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
 
     /**
      * Creates new form InvoicesDetails
@@ -50,7 +52,8 @@ public class InvoicesDetails extends javax.swing.JFrame {
     public InvoicesDetails() {
         initComponents();
         this.setLocationRelativeTo(null);
-        
+           this.setIconImage(uplogo.getImage());
+
     }
 
     /**
@@ -353,13 +356,6 @@ public class InvoicesDetails extends javax.swing.JFrame {
 }       
    
         
-        
-        
-        
-        
-
-
-
 
 
         
@@ -383,6 +379,7 @@ Connection con =getConnection();
    // JasperPrintManager.printPage(jp, 0, false);
    // JasperPrint jp =reportEngine.fillReport() ;//it returns stream 
     PrintSales(jp);//call method
+      JOptionPane.showMessageDialog(null, "تم طباعه كل الاوردرات بنجاح"); 
 }      
  catch (NullPointerException ex) {
            JOptionPane.showMessageDialog(null,"يرجي ادخال الوقت المحدد");
@@ -471,19 +468,7 @@ catch (JRException ex) {
             Logger.getLogger(InvoicesDetails.class.getName()).log(Level.SEVERE, null, ex);
         }
 }       
-   
-        
-        
-        
-        
-        
-
-
-
-
-
-        
-        
+         
 public void print_Sales_Range() 
 {
    
@@ -509,6 +494,7 @@ try {
    // JasperPrintManager.printPage(jp, 0, false);
    // JasperPrint jp =reportEngine.fillReport() ;//it returns stream 
     PrintSales(jp);//call method
+      JOptionPane.showMessageDialog(null, "تم طباعه كل الاوردرات بنجاح"); 
 }
 
 catch (JRException ex) {

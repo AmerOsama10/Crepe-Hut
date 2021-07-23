@@ -47,23 +47,23 @@ where order_date between $P{fromdate} and $P{todate}
 					<bottomPen lineWidth="2.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="12" isBold="false"/>
+					<font fontName="Tahoma" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{fromdate} +"  الي  " + $P{todate}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="44" y="43" width="118" height="20" forecolor="#330000" backcolor="#65D3FD" uuid="c8dfb536-4626-4e6e-843a-a1e459862904"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="10" isBold="true"/>
-				</textElement>
-				<text><![CDATA[CREPE HUT ]]></text>
-			</staticText>
-			<staticText>
-				<reportElement style="Title" mode="Opaque" x="0" y="0" width="213" height="43" forecolor="#FFFFFF" backcolor="#006699" uuid="b456c066-4183-4303-b2c7-a64da50838f5"/>
+				<reportElement style="Title" mode="Opaque" x="-11" y="0" width="224" height="43" forecolor="#FFFFFF" backcolor="#006699" uuid="b456c066-4183-4303-b2c7-a64da50838f5"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
 					<font fontName="SansSerif" size="20" pdfFontName="Times-Roman"/>
 				</textElement>
 				<text><![CDATA[حصر المبيعات]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="44" y="33" width="118" height="20" forecolor="#330000" backcolor="#65D3FD" uuid="598401b0-0d45-4a96-9380-1b610a1676cb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CREPE & PIZZA HUT ]]></text>
 			</staticText>
 		</band>
 	</title>
@@ -126,7 +126,7 @@ where order_date between $P{fromdate} and $P{todate}
 						<bottomPen lineWidth="1.0"/>
 						<rightPen lineWidth="1.0"/>
 					</box>
-					<textElement textAlignment="Center"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA[$F{SUM(order_quantity)}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
@@ -138,7 +138,7 @@ where order_date between $P{fromdate} and $P{todate}
 						<bottomPen lineWidth="1.0"/>
 						<rightPen lineWidth="1.0"/>
 					</box>
-					<textElement textAlignment="Center"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA[$F{item_name}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
@@ -150,7 +150,7 @@ where order_date between $P{fromdate} and $P{todate}
 						<bottomPen lineWidth="1.0"/>
 						<rightPen lineWidth="1.0"/>
 					</box>
-					<textElement textAlignment="Center"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA[$F{item_cost*SUM(order_quantity)}]]></textFieldExpression>
 				</textField>
 			</frame>

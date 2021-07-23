@@ -10,10 +10,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import orders.backtoorder;
-import orders.recipes;
+import orders.recipes1;
+import orders.recipes2;
 
 
 
@@ -28,13 +30,14 @@ import orders.recipes;
  * @author Amer Osama
  */
 public class CashMain extends javax.swing.JFrame {
-
+   ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
     /**
      * Creates new form CashMain
      */
     public CashMain() {
         initComponents();
                this.setLocationRelativeTo(null);
+               this.setIconImage(uplogo.getImage());
 
     }
 
@@ -50,8 +53,8 @@ public class CashMain extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         deliverorder = new javax.swing.JButton();
         clientdatabtn = new javax.swing.JButton();
-        backtorderbtn = new javax.swing.JButton();
         exit = new javax.swing.JButton();
+        deliverorder1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -63,7 +66,7 @@ public class CashMain extends javax.swing.JFrame {
         deliverorder.setBackground(new java.awt.Color(255, 153, 0));
         deliverorder.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         deliverorder.setForeground(new java.awt.Color(255, 255, 255));
-        deliverorder.setText("قائمه الطعام");
+        deliverorder.setText("مطبخ 2");
         deliverorder.setBorder(null);
         deliverorder.setContentAreaFilled(true);
         deliverorder.addActionListener(new java.awt.event.ActionListener() {
@@ -71,7 +74,7 @@ public class CashMain extends javax.swing.JFrame {
                 deliverorderActionPerformed(evt);
             }
         });
-        jPanel1.add(deliverorder, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, 140, 40));
+        jPanel1.add(deliverorder, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, 140, 40));
 
         clientdatabtn.setBackground(new java.awt.Color(153, 0, 0));
         clientdatabtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -84,20 +87,7 @@ public class CashMain extends javax.swing.JFrame {
                 clientdatabtnActionPerformed(evt);
             }
         });
-        jPanel1.add(clientdatabtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 130, 40));
-
-        backtorderbtn.setBackground(new java.awt.Color(153, 0, 0));
-        backtorderbtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        backtorderbtn.setForeground(new java.awt.Color(255, 255, 255));
-        backtorderbtn.setText("الرجوع للاوردر");
-        backtorderbtn.setBorder(null);
-        backtorderbtn.setContentAreaFilled(true);
-        backtorderbtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backtorderbtnActionPerformed(evt);
-            }
-        });
-        jPanel1.add(backtorderbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 130, 40));
+        jPanel1.add(clientdatabtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 130, 40));
 
         exit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         exit.setForeground(new java.awt.Color(0, 0, 102));
@@ -110,6 +100,19 @@ public class CashMain extends javax.swing.JFrame {
             }
         });
         jPanel1.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 0, 40, 30));
+
+        deliverorder1.setBackground(new java.awt.Color(255, 153, 0));
+        deliverorder1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        deliverorder1.setForeground(new java.awt.Color(255, 255, 255));
+        deliverorder1.setText("مطبخ 1");
+        deliverorder1.setBorder(null);
+        deliverorder1.setContentAreaFilled(true);
+        deliverorder1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deliverorder1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(deliverorder1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 100, 140, 40));
 
         jLabel1.setBackground(new java.awt.Color(153, 0, 0));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu2.jpg"))); // NOI18N
@@ -163,8 +166,8 @@ public class CashMain extends javax.swing.JFrame {
 
     private void deliverorderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deliverorderActionPerformed
     this.setVisible(false);
-    recipes recipe=new recipes();
-    recipe.setVisible(true);
+    recipes2 myrecipe2=new recipes2();
+    myrecipe2.setVisible(true);
         
         
     }//GEN-LAST:event_deliverorderActionPerformed
@@ -200,13 +203,12 @@ public class CashMain extends javax.swing.JFrame {
         
     }
     
-    private void backtorderbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backtorderbtnActionPerformed
-     this.setVisible(false);
-     backtoorder back=new backtoorder(); 
-     back.setVisible(true);
-     
-     
-    }//GEN-LAST:event_backtorderbtnActionPerformed
+    private void deliverorder1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deliverorder1ActionPerformed
+        // TODO add your handling code here:
+            this.setVisible(false);
+    recipes1 myrecipe1=new recipes1();
+    myrecipe1.setVisible(true);
+    }//GEN-LAST:event_deliverorder1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -244,9 +246,9 @@ public class CashMain extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton backtorderbtn;
     private javax.swing.JButton clientdatabtn;
     private javax.swing.JButton deliverorder;
+    private javax.swing.JButton deliverorder1;
     private javax.swing.JButton exit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;

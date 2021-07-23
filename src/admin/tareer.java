@@ -19,6 +19,7 @@ import javax.print.attribute.PrintRequestAttributeSet;
 import javax.print.attribute.PrintServiceAttributeSet;
 import javax.print.attribute.standard.Copies;
 import javax.print.attribute.standard.PrinterName;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JRExporterParameter;
@@ -37,6 +38,7 @@ import net.sf.jasperreports.view.JasperViewer;
  * @author Amer Osama
  */
 public class tareer extends javax.swing.JFrame {
+            ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
 
     /**
      * Creates new form tareer
@@ -44,6 +46,8 @@ public class tareer extends javax.swing.JFrame {
     public tareer() {
         initComponents();
            this.setLocationRelativeTo(null);
+              this.setIconImage(uplogo.getImage());
+
     }
 
     /**
