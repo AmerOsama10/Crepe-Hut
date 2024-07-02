@@ -91,137 +91,113 @@ public class recipes extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         krybs = new javax.swing.JPanel();
-        kryb1 = new javax.swing.JButton();
-        kryb2 = new javax.swing.JButton();
-        kryb3 = new javax.swing.JButton();
-        kryb12 = new javax.swing.JButton();
         kryb4 = new javax.swing.JButton();
-        kryb5 = new javax.swing.JButton();
-        kryb6 = new javax.swing.JButton();
-        kryb15 = new javax.swing.JButton();
-        kryb7 = new javax.swing.JButton();
+        kryb3 = new javax.swing.JButton();
+        kryb2 = new javax.swing.JButton();
+        kryb13 = new javax.swing.JButton();
+        kryb1 = new javax.swing.JButton();
         kryb8 = new javax.swing.JButton();
+        kryb7 = new javax.swing.JButton();
+        kryb11 = new javax.swing.JButton();
+        kryb6 = new javax.swing.JButton();
+        kryb5 = new javax.swing.JButton();
         kryb9 = new javax.swing.JButton();
         kryb14 = new javax.swing.JButton();
-        kryb10 = new javax.swing.JButton();
-        kryb11 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        kryb12 = new javax.swing.JButton();
+        kryb15 = new javax.swing.JButton();
+        jLabel1x = new javax.swing.JLabel();
         quantity1 = new javax.swing.JTextField();
-        kryb13 = new javax.swing.JButton();
-        kryb82 = new javax.swing.JButton();
-        kryb81 = new javax.swing.JButton();
-        kryb83 = new javax.swing.JButton();
+        kryb16 = new javax.swing.JButton();
+        kryb10 = new javax.swing.JButton();
+        kryb19 = new javax.swing.JButton();
+        kryb20 = new javax.swing.JButton();
+        kryb18 = new javax.swing.JButton();
+        kryb17 = new javax.swing.JButton();
+        mix = new javax.swing.JPanel();
+        mix27 = new javax.swing.JButton();
         mix24 = new javax.swing.JButton();
         mix23 = new javax.swing.JButton();
-        mix = new javax.swing.JPanel();
-        mix21 = new javax.swing.JButton();
-        mix16 = new javax.swing.JButton();
-        mix17 = new javax.swing.JButton();
-        mix18 = new javax.swing.JButton();
-        mix19 = new javax.swing.JButton();
-        mix20 = new javax.swing.JButton();
-        quantity2 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
         mix22 = new javax.swing.JButton();
-        mix89 = new javax.swing.JButton();
-        mix75 = new javax.swing.JButton();
-        mix76 = new javax.swing.JButton();
-        mix80 = new javax.swing.JButton();
-        mix79 = new javax.swing.JButton();
-        mix78 = new javax.swing.JButton();
-        mix77 = new javax.swing.JButton();
-        mix88 = new javax.swing.JButton();
-        mix74 = new javax.swing.JButton();
+        mix21 = new javax.swing.JButton();
+        mix28 = new javax.swing.JButton();
+        quantity2 = new javax.swing.JTextField();
+        jLabel2x = new javax.swing.JLabel();
+        mix30 = new javax.swing.JButton();
+        mix29 = new javax.swing.JButton();
+        mix25 = new javax.swing.JButton();
+        mix26 = new javax.swing.JButton();
         cheese = new javax.swing.JPanel();
-        cheese25 = new javax.swing.JButton();
-        cheese26 = new javax.swing.JButton();
-        cheese32 = new javax.swing.JButton();
-        cheese31 = new javax.swing.JButton();
-        cheese33 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        cheese43 = new javax.swing.JButton();
+        cheese44 = new javax.swing.JButton();
+        cheese42 = new javax.swing.JButton();
+        jLabel3x = new javax.swing.JLabel();
         quantity3 = new javax.swing.JTextField();
-        cheese27 = new javax.swing.JButton();
-        cheese30 = new javax.swing.JButton();
-        cheese28 = new javax.swing.JButton();
-        cheese87 = new javax.swing.JButton();
-        cheese86 = new javax.swing.JButton();
-        cheese85 = new javax.swing.JButton();
-        cheese84 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        sandwich = new javax.swing.JPanel();
-        sandwich38 = new javax.swing.JButton();
-        sandwich34 = new javax.swing.JButton();
-        sandwich39 = new javax.swing.JButton();
+        cheese41 = new javax.swing.JButton();
+        cheese45 = new javax.swing.JButton();
+        cheese46 = new javax.swing.JButton();
+        cheese47 = new javax.swing.JButton();
+        cheese48 = new javax.swing.JButton();
+        sandwitch = new javax.swing.JPanel();
+        sandwithch63 = new javax.swing.JButton();
+        sandwithch62 = new javax.swing.JButton();
+        sandwithch61 = new javax.swing.JButton();
+        sandwithch72 = new javax.swing.JButton();
+        sandwithch60 = new javax.swing.JButton();
+        sandwithch67 = new javax.swing.JButton();
+        sandwithch66 = new javax.swing.JButton();
+        sandwithch70 = new javax.swing.JButton();
+        sandwithch65 = new javax.swing.JButton();
+        sandwithch64 = new javax.swing.JButton();
+        sandwithch68 = new javax.swing.JButton();
+        sandwithch73 = new javax.swing.JButton();
+        sandwithch71 = new javax.swing.JButton();
+        sandwithch74 = new javax.swing.JButton();
+        jLabel4x = new javax.swing.JLabel();
         quantity4 = new javax.swing.JTextField();
-        jLabel13 = new javax.swing.JLabel();
-        sandwich35 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        sandwich37 = new javax.swing.JButton();
-        sandwich36 = new javax.swing.JButton();
-        sandwich40 = new javax.swing.JButton();
-        sandwich41 = new javax.swing.JButton();
-        sandwich46 = new javax.swing.JButton();
-        sandwich47 = new javax.swing.JButton();
-        sandwich48 = new javax.swing.JButton();
-        sandwich49 = new javax.swing.JButton();
-        sandwich45 = new javax.swing.JButton();
-        sandwich44 = new javax.swing.JButton();
-        sandwich43 = new javax.swing.JButton();
-        sandwich42 = new javax.swing.JButton();
-        adds = new javax.swing.JPanel();
+        sandwithch75 = new javax.swing.JButton();
+        sandwithch69 = new javax.swing.JButton();
+        sandwithch78 = new javax.swing.JButton();
+        sandwithch79 = new javax.swing.JButton();
+        sandwithch77 = new javax.swing.JButton();
+        sandwithch76 = new javax.swing.JButton();
+        meals = new javax.swing.JPanel();
+        meals86 = new javax.swing.JButton();
+        meals83 = new javax.swing.JButton();
+        meals82 = new javax.swing.JButton();
+        meals81 = new javax.swing.JButton();
+        meals80 = new javax.swing.JButton();
+        meals87 = new javax.swing.JButton();
         quantity5 = new javax.swing.JTextField();
-        jLabel14 = new javax.swing.JLabel();
-        add52 = new javax.swing.JButton();
-        add51 = new javax.swing.JButton();
-        add55 = new javax.swing.JButton();
-        add54 = new javax.swing.JButton();
-        add50 = new javax.swing.JButton();
-        notes = new javax.swing.JLabel();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        area = new javax.swing.JTextArea();
-        add53 = new javax.swing.JButton();
-        add58 = new javax.swing.JButton();
-        add57 = new javax.swing.JButton();
-        add56 = new javax.swing.JButton();
-        fasting = new javax.swing.JPanel();
-        fast59 = new javax.swing.JButton();
-        fast60 = new javax.swing.JButton();
-        fast61 = new javax.swing.JButton();
-        fast70 = new javax.swing.JButton();
-        fast62 = new javax.swing.JButton();
-        fast63 = new javax.swing.JButton();
-        fast64 = new javax.swing.JButton();
-        fast73 = new javax.swing.JButton();
-        fast65 = new javax.swing.JButton();
-        fast66 = new javax.swing.JButton();
-        fast67 = new javax.swing.JButton();
-        fast72 = new javax.swing.JButton();
-        fast68 = new javax.swing.JButton();
-        fast69 = new javax.swing.JButton();
-        jLabel15 = new javax.swing.JLabel();
-        fast71 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        meals84 = new javax.swing.JButton();
+        meals85 = new javax.swing.JButton();
+        sweet = new javax.swing.JPanel();
         quantity6 = new javax.swing.JTextField();
-        newmex = new javax.swing.JPanel();
-        newmex95 = new javax.swing.JButton();
-        newmex90 = new javax.swing.JButton();
-        newmex91 = new javax.swing.JButton();
-        newmex92 = new javax.swing.JButton();
-        newmex93 = new javax.swing.JButton();
-        newmex94 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        add101 = new javax.swing.JButton();
+        add102 = new javax.swing.JButton();
+        add105 = new javax.swing.JButton();
+        add103 = new javax.swing.JButton();
+        add100 = new javax.swing.JButton();
+        add104 = new javax.swing.JButton();
+        adds = new javax.swing.JPanel();
         quantity7 = new javax.swing.JTextField();
-        jLabel17 = new javax.swing.JLabel();
-        newmex99 = new javax.swing.JButton();
-        newmex104 = new javax.swing.JButton();
-        newmex100 = new javax.swing.JButton();
-        newmex101 = new javax.swing.JButton();
-        newmex102 = new javax.swing.JButton();
-        newmex103 = new javax.swing.JButton();
-        newmex97 = new javax.swing.JButton();
-        newmex96 = new javax.swing.JButton();
-        newmex98 = new javax.swing.JButton();
-        newmex105 = new javax.swing.JButton();
+        jLabel7x = new javax.swing.JLabel();
+        add141 = new javax.swing.JButton();
+        add142 = new javax.swing.JButton();
+        add145 = new javax.swing.JButton();
+        add146 = new javax.swing.JButton();
+        add143 = new javax.swing.JButton();
+        notes7x = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        area7x = new javax.swing.JTextArea();
+        add147 = new javax.swing.JButton();
+        add149 = new javax.swing.JButton();
+        add150 = new javax.swing.JButton();
+        add151 = new javax.swing.JButton();
+        add140 = new javax.swing.JButton();
+        add144 = new javax.swing.JButton();
+        add148 = new javax.swing.JButton();
         header = new javax.swing.JPanel();
         takeaway = new javax.swing.JLabel();
         delivery = new javax.swing.JLabel();
@@ -267,7 +243,7 @@ public class recipes extends javax.swing.JFrame {
         UIManager.put("TabbedPane.selected",ColorUIResource.lightGray);
         jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
         jTabbedPane1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
-        jTabbedPane1.setForeground(new java.awt.Color(0, 51, 51));
+        jTabbedPane1.setForeground(new java.awt.Color(51, 51, 51));
         jTabbedPane1.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
         jTabbedPane1.setToolTipText(null);
         jTabbedPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -281,111 +257,111 @@ public class recipes extends javax.swing.JFrame {
         krybs.setToolTipText(null);
         krybs.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        kryb1.setBackground(new java.awt.Color(255, 153, 0));
-        kryb1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        kryb1.setForeground(new java.awt.Color(255, 255, 255));
-        kryb1.setText("بانيه");
-        kryb1.setBorder(null);
-        kryb1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kryb1ActionPerformed(evt);
-            }
-        });
-
-        kryb2.setBackground(new java.awt.Color(255, 153, 0));
-        kryb2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        kryb2.setForeground(new java.awt.Color(255, 255, 255));
-        kryb2.setText("زنجر سوبريم");
-        kryb2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kryb2ActionPerformed(evt);
-            }
-        });
-
-        kryb3.setBackground(new java.awt.Color(255, 153, 0));
-        kryb3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        kryb3.setForeground(new java.awt.Color(255, 255, 255));
-        kryb3.setText("سوبر كرانشي");
-        kryb3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kryb3ActionPerformed(evt);
-            }
-        });
-
-        kryb12.setBackground(new java.awt.Color(102, 0, 0));
-        kryb12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        kryb12.setForeground(new java.awt.Color(255, 255, 255));
-        kryb12.setText("شاورما لحم");
-        kryb12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kryb12ActionPerformed(evt);
-            }
-        });
-
         kryb4.setBackground(new java.awt.Color(255, 153, 0));
         kryb4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         kryb4.setForeground(new java.awt.Color(255, 255, 255));
-        kryb4.setText("مشوي صدور");
+        kryb4.setText("شيش طاووق");
+        kryb4.setBorder(null);
         kryb4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 kryb4ActionPerformed(evt);
             }
         });
 
-        kryb5.setBackground(new java.awt.Color(255, 153, 0));
-        kryb5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        kryb5.setForeground(new java.awt.Color(255, 255, 255));
-        kryb5.setText("شيش طاووق");
-        kryb5.addActionListener(new java.awt.event.ActionListener() {
+        kryb3.setBackground(new java.awt.Color(255, 153, 0));
+        kryb3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb3.setForeground(new java.awt.Color(255, 255, 255));
+        kryb3.setText("زنجر");
+        kryb3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kryb5ActionPerformed(evt);
+                kryb3ActionPerformed(evt);
             }
         });
 
-        kryb6.setBackground(new java.awt.Color(255, 153, 0));
-        kryb6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        kryb6.setForeground(new java.awt.Color(255, 255, 255));
-        kryb6.setText("فاهيتا فراخ");
-        kryb6.addActionListener(new java.awt.event.ActionListener() {
+        kryb2.setBackground(new java.awt.Color(255, 153, 0));
+        kryb2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb2.setForeground(new java.awt.Color(255, 255, 255));
+        kryb2.setText("ايطاليانو");
+        kryb2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kryb6ActionPerformed(evt);
+                kryb2ActionPerformed(evt);
             }
         });
 
-        kryb15.setBackground(new java.awt.Color(102, 0, 0));
-        kryb15.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        kryb15.setForeground(new java.awt.Color(255, 255, 255));
-        kryb15.setText("كفته");
-        kryb15.addActionListener(new java.awt.event.ActionListener() {
+        kryb13.setBackground(new java.awt.Color(255, 153, 0));
+        kryb13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb13.setForeground(new java.awt.Color(255, 255, 255));
+        kryb13.setText("كونو بيتزا");
+        kryb13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kryb15ActionPerformed(evt);
+                kryb13ActionPerformed(evt);
             }
         });
 
-        kryb7.setBackground(new java.awt.Color(255, 153, 0));
-        kryb7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        kryb7.setForeground(new java.awt.Color(255, 255, 255));
-        kryb7.setText("كوردن بلو");
-        kryb7.addActionListener(new java.awt.event.ActionListener() {
+        kryb1.setBackground(new java.awt.Color(255, 153, 0));
+        kryb1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb1.setForeground(new java.awt.Color(255, 255, 255));
+        kryb1.setText("سوبر كرانشي");
+        kryb1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kryb7ActionPerformed(evt);
+                kryb1ActionPerformed(evt);
             }
         });
 
         kryb8.setBackground(new java.awt.Color(255, 153, 0));
         kryb8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         kryb8.setForeground(new java.awt.Color(255, 255, 255));
-        kryb8.setText("فراي داي");
+        kryb8.setText("فاهيتا فراخ");
         kryb8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 kryb8ActionPerformed(evt);
             }
         });
 
+        kryb7.setBackground(new java.awt.Color(255, 153, 0));
+        kryb7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb7.setForeground(new java.awt.Color(255, 255, 255));
+        kryb7.setText("كرسبي");
+        kryb7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kryb7ActionPerformed(evt);
+            }
+        });
+
+        kryb11.setBackground(new java.awt.Color(255, 153, 0));
+        kryb11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb11.setForeground(new java.awt.Color(255, 255, 255));
+        kryb11.setText("مشوي صدور");
+        kryb11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kryb11ActionPerformed(evt);
+            }
+        });
+
+        kryb6.setBackground(new java.awt.Color(255, 153, 0));
+        kryb6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb6.setForeground(new java.awt.Color(255, 255, 255));
+        kryb6.setText("فراي داي");
+        kryb6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kryb6ActionPerformed(evt);
+            }
+        });
+
+        kryb5.setBackground(new java.awt.Color(255, 153, 0));
+        kryb5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb5.setForeground(new java.awt.Color(255, 255, 255));
+        kryb5.setText("بانيه");
+        kryb5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kryb5ActionPerformed(evt);
+            }
+        });
+
         kryb9.setBackground(new java.awt.Color(255, 153, 0));
         kryb9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         kryb9.setForeground(new java.awt.Color(255, 255, 255));
-        kryb9.setText("شاورما فراخ");
+        kryb9.setText("كوردن بلو");
         kryb9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 kryb9ActionPerformed(evt);
@@ -395,37 +371,37 @@ public class recipes extends javax.swing.JFrame {
         kryb14.setBackground(new java.awt.Color(102, 0, 0));
         kryb14.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         kryb14.setForeground(new java.awt.Color(255, 255, 255));
-        kryb14.setText("سوسيس");
+        kryb14.setText("برجر");
         kryb14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 kryb14ActionPerformed(evt);
             }
         });
 
-        kryb10.setBackground(new java.awt.Color(102, 0, 0));
-        kryb10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        kryb10.setForeground(new java.awt.Color(255, 255, 255));
-        kryb10.setText("بسطرمه");
-        kryb10.addActionListener(new java.awt.event.ActionListener() {
+        kryb12.setBackground(new java.awt.Color(255, 153, 0));
+        kryb12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb12.setForeground(new java.awt.Color(255, 255, 255));
+        kryb12.setText("كونو");
+        kryb12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kryb10ActionPerformed(evt);
+                kryb12ActionPerformed(evt);
             }
         });
 
-        kryb11.setBackground(new java.awt.Color(102, 0, 0));
-        kryb11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        kryb11.setForeground(new java.awt.Color(255, 255, 255));
-        kryb11.setText("تشيز برجر");
-        kryb11.addActionListener(new java.awt.event.ActionListener() {
+        kryb15.setBackground(new java.awt.Color(102, 0, 0));
+        kryb15.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb15.setForeground(new java.awt.Color(255, 255, 255));
+        kryb15.setText("شاورما لحمه");
+        kryb15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kryb11ActionPerformed(evt);
+                kryb15ActionPerformed(evt);
             }
         });
 
-        jLabel2.setBackground(new java.awt.Color(204, 0, 0));
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 204, 0));
-        jLabel2.setText("الكميه :");
+        jLabel1x.setBackground(new java.awt.Color(204, 0, 0));
+        jLabel1x.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1x.setForeground(new java.awt.Color(255, 204, 0));
+        jLabel1x.setText("الكميه :");
 
         quantity1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         quantity1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -437,63 +413,63 @@ public class recipes extends javax.swing.JFrame {
             }
         });
 
-        kryb13.setBackground(new java.awt.Color(102, 0, 0));
-        kryb13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        kryb13.setForeground(new java.awt.Color(255, 255, 255));
-        kryb13.setText("سجق");
-        kryb13.addActionListener(new java.awt.event.ActionListener() {
+        kryb16.setBackground(new java.awt.Color(102, 0, 0));
+        kryb16.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb16.setForeground(new java.awt.Color(255, 255, 255));
+        kryb16.setText("كفته");
+        kryb16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kryb13ActionPerformed(evt);
+                kryb16ActionPerformed(evt);
             }
         });
 
-        kryb82.setBackground(new java.awt.Color(255, 153, 0));
-        kryb82.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        kryb82.setForeground(new java.awt.Color(255, 255, 255));
-        kryb82.setText("شنغهاي");
-        kryb82.addActionListener(new java.awt.event.ActionListener() {
+        kryb10.setBackground(new java.awt.Color(255, 153, 0));
+        kryb10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb10.setForeground(new java.awt.Color(255, 255, 255));
+        kryb10.setText("شاورما فراخ");
+        kryb10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kryb82ActionPerformed(evt);
+                kryb10ActionPerformed(evt);
             }
         });
 
-        kryb81.setBackground(new java.awt.Color(51, 102, 255));
-        kryb81.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        kryb81.setForeground(new java.awt.Color(255, 255, 255));
-        kryb81.setText("جمبري بانيه");
-        kryb81.addActionListener(new java.awt.event.ActionListener() {
+        kryb19.setBackground(new java.awt.Color(102, 0, 0));
+        kryb19.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb19.setForeground(new java.awt.Color(255, 255, 255));
+        kryb19.setText("سجق");
+        kryb19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kryb81ActionPerformed(evt);
+                kryb19ActionPerformed(evt);
             }
         });
 
-        kryb83.setBackground(new java.awt.Color(51, 102, 255));
-        kryb83.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        kryb83.setForeground(new java.awt.Color(255, 255, 255));
-        kryb83.setText("ماشروم");
-        kryb83.addActionListener(new java.awt.event.ActionListener() {
+        kryb20.setBackground(new java.awt.Color(102, 0, 0));
+        kryb20.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb20.setForeground(new java.awt.Color(255, 255, 255));
+        kryb20.setText("جمبري");
+        kryb20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kryb83ActionPerformed(evt);
+                kryb20ActionPerformed(evt);
             }
         });
 
-        mix24.setBackground(new java.awt.Color(51, 102, 255));
-        mix24.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        mix24.setForeground(new java.awt.Color(255, 255, 255));
-        mix24.setText("جمبري مشوي");
-        mix24.addActionListener(new java.awt.event.ActionListener() {
+        kryb18.setBackground(new java.awt.Color(102, 0, 0));
+        kryb18.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb18.setForeground(new java.awt.Color(255, 255, 255));
+        kryb18.setText("سوبر لينو");
+        kryb18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix24ActionPerformed(evt);
+                kryb18ActionPerformed(evt);
             }
         });
 
-        mix23.setBackground(new java.awt.Color(51, 102, 255));
-        mix23.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        mix23.setForeground(new java.awt.Color(255, 255, 255));
-        mix23.setText("سي فود بلاس");
-        mix23.addActionListener(new java.awt.event.ActionListener() {
+        kryb17.setBackground(new java.awt.Color(102, 0, 0));
+        kryb17.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        kryb17.setForeground(new java.awt.Color(255, 255, 255));
+        kryb17.setText("سوسيس");
+        kryb17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix23ActionPerformed(evt);
+                kryb17ActionPerformed(evt);
             }
         });
 
@@ -506,54 +482,54 @@ public class recipes extends javax.swing.JFrame {
                 .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(krybsLayout.createSequentialGroup()
                         .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(kryb1, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(kryb5, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(kryb4, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kryb8, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(15, 15, 15)
                         .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(krybsLayout.createSequentialGroup()
-                                .addComponent(kryb2, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(15, 15, 15)
                                 .addComponent(kryb3, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(15, 15, 15)
-                                .addComponent(kryb4, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(krybsLayout.createSequentialGroup()
-                                .addComponent(kryb6, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(kryb2, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(15, 15, 15)
+                                .addComponent(kryb1, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(krybsLayout.createSequentialGroup()
                                 .addComponent(kryb7, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(15, 15, 15)
-                                .addComponent(kryb8, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(kryb6, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(15, 15, 15)
+                                .addComponent(kryb5, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(krybsLayout.createSequentialGroup()
+                        .addComponent(kryb12, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(kryb11, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
                         .addComponent(kryb10, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(kryb15, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(kryb82, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15)
                         .addComponent(kryb9, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(krybsLayout.createSequentialGroup()
                         .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(kryb13, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
-                            .addComponent(kryb83, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(kryb16, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
+                            .addComponent(kryb20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(15, 15, 15)
                         .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(krybsLayout.createSequentialGroup()
-                                .addComponent(kryb11, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(kryb15, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(15, 15, 15)
                                 .addComponent(kryb14, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(15, 15, 15)
-                                .addComponent(kryb12, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(kryb13, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(krybsLayout.createSequentialGroup()
-                                .addComponent(kryb81, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(kryb19, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(15, 15, 15)
-                                .addComponent(mix24, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(kryb18, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(15, 15, 15)
-                                .addComponent(mix23, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(kryb17, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, krybsLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(quantity1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1x, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(240, 240, 240))
         );
         krybsLayout.setVerticalGroup(
@@ -564,104 +540,104 @@ public class recipes extends javax.swing.JFrame {
                     .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(krybsLayout.createSequentialGroup()
                             .addGap(1, 1, 1)
-                            .addComponent(kryb4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(kryb1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(kryb2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(kryb3, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(kryb1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(kryb3, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kryb2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(kryb4, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
                 .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(kryb5, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kryb6, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kryb8, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(kryb7, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kryb8, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(kryb6, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kryb5, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
                 .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(kryb9, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kryb10, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kryb82, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kryb15, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(15, 15, 15)
-                .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(kryb12, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kryb14, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kryb11, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kryb13, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(kryb10, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kryb11, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
                 .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(kryb81, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(mix24, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(mix23, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kryb83, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(kryb13, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kryb14, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kryb15, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kryb16, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(kryb19, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kryb18, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kryb17, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kryb20, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(44, 44, 44)
                 .addGroup(krybsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(quantity1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel1x, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(685, 685, 685))
         );
 
-        jTabbedPane1.addTab("     الفراخ واللحوم   ", krybs);
+        jTabbedPane1.addTab("   الفراخ واللحوم   ", krybs);
 
         mix.setBackground(new java.awt.Color(51, 51, 51));
         mix.setToolTipText(null);
 
+        mix27.setBackground(new java.awt.Color(204, 102, 0));
+        mix27.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        mix27.setForeground(new java.awt.Color(255, 255, 255));
+        mix27.setText("جحيم");
+        mix27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mix27ActionPerformed(evt);
+            }
+        });
+
+        mix24.setBackground(new java.awt.Color(204, 102, 0));
+        mix24.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        mix24.setForeground(new java.awt.Color(255, 255, 255));
+        mix24.setText("جوليانو");
+        mix24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mix24ActionPerformed(evt);
+            }
+        });
+
+        mix23.setBackground(new java.awt.Color(204, 102, 0));
+        mix23.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        mix23.setForeground(new java.awt.Color(255, 255, 255));
+        mix23.setText("مزاجنجي");
+        mix23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mix23ActionPerformed(evt);
+            }
+        });
+
+        mix22.setBackground(new java.awt.Color(204, 102, 0));
+        mix22.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        mix22.setForeground(new java.awt.Color(255, 255, 255));
+        mix22.setText("ميكس لحوم");
+        mix22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mix22ActionPerformed(evt);
+            }
+        });
+
         mix21.setBackground(new java.awt.Color(204, 102, 0));
         mix21.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         mix21.setForeground(new java.awt.Color(255, 255, 255));
-        mix21.setText("جوليان");
+        mix21.setText("ميكس فراخ");
         mix21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mix21ActionPerformed(evt);
             }
         });
 
-        mix16.setBackground(new java.awt.Color(204, 102, 0));
-        mix16.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        mix16.setForeground(new java.awt.Color(255, 255, 255));
-        mix16.setText("ميكس شاورما");
-        mix16.addActionListener(new java.awt.event.ActionListener() {
+        mix28.setBackground(new java.awt.Color(204, 102, 0));
+        mix28.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        mix28.setForeground(new java.awt.Color(255, 255, 255));
+        mix28.setText("العالمي");
+        mix28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix16ActionPerformed(evt);
-            }
-        });
-
-        mix17.setBackground(new java.awt.Color(204, 102, 0));
-        mix17.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        mix17.setForeground(new java.awt.Color(255, 255, 255));
-        mix17.setText("كوكتيل لحوم");
-        mix17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix17ActionPerformed(evt);
-            }
-        });
-
-        mix18.setBackground(new java.awt.Color(204, 102, 0));
-        mix18.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        mix18.setForeground(new java.awt.Color(255, 255, 255));
-        mix18.setText("كوكتيل فراخ");
-        mix18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix18ActionPerformed(evt);
-            }
-        });
-
-        mix19.setBackground(new java.awt.Color(204, 102, 0));
-        mix19.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        mix19.setForeground(new java.awt.Color(255, 255, 255));
-        mix19.setText("الجحيم");
-        mix19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix19ActionPerformed(evt);
-            }
-        });
-
-        mix20.setBackground(new java.awt.Color(204, 102, 0));
-        mix20.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        mix20.setForeground(new java.awt.Color(255, 255, 255));
-        mix20.setText("العالمي");
-        mix20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix20ActionPerformed(evt);
+                mix28ActionPerformed(evt);
             }
         });
 
@@ -675,107 +651,47 @@ public class recipes extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 204, 0));
-        jLabel6.setText("الكميه:  ");
+        jLabel2x.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2x.setForeground(new java.awt.Color(255, 204, 0));
+        jLabel2x.setText("الكميه:  ");
 
-        mix22.setBackground(new java.awt.Color(204, 102, 0));
-        mix22.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        mix22.setForeground(new java.awt.Color(255, 255, 255));
-        mix22.setText("سجق بدبس الرمان");
-        mix22.addActionListener(new java.awt.event.ActionListener() {
+        mix30.setBackground(new java.awt.Color(204, 102, 0));
+        mix30.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        mix30.setForeground(new java.awt.Color(255, 255, 255));
+        mix30.setText("كريب اوفر");
+        mix30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix22ActionPerformed(evt);
+                mix30ActionPerformed(evt);
             }
         });
 
-        mix89.setBackground(new java.awt.Color(204, 102, 0));
-        mix89.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        mix89.setForeground(new java.awt.Color(255, 255, 255));
-        mix89.setText(" ميكس");
-        mix89.addActionListener(new java.awt.event.ActionListener() {
+        mix29.setBackground(new java.awt.Color(204, 102, 0));
+        mix29.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        mix29.setForeground(new java.awt.Color(255, 255, 255));
+        mix29.setText("كريب Z");
+        mix29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix89ActionPerformed(evt);
+                mix29ActionPerformed(evt);
             }
         });
 
-        mix75.setBackground(new java.awt.Color(204, 102, 0));
-        mix75.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        mix75.setForeground(new java.awt.Color(255, 255, 255));
-        mix75.setText("توربيني لحمه");
-        mix75.addActionListener(new java.awt.event.ActionListener() {
+        mix25.setBackground(new java.awt.Color(204, 102, 0));
+        mix25.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        mix25.setForeground(new java.awt.Color(255, 255, 255));
+        mix25.setText("ميكس شاورما");
+        mix25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix75ActionPerformed(evt);
+                mix25ActionPerformed(evt);
             }
         });
 
-        mix76.setBackground(new java.awt.Color(204, 102, 0));
-        mix76.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        mix76.setForeground(new java.awt.Color(255, 255, 255));
-        mix76.setText("توربيني فراخ");
-        mix76.addActionListener(new java.awt.event.ActionListener() {
+        mix26.setBackground(new java.awt.Color(204, 102, 0));
+        mix26.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        mix26.setForeground(new java.awt.Color(255, 255, 255));
+        mix26.setText("القنبله");
+        mix26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix76ActionPerformed(evt);
-            }
-        });
-
-        mix80.setBackground(new java.awt.Color(204, 102, 0));
-        mix80.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        mix80.setForeground(new java.awt.Color(255, 255, 255));
-        mix80.setText("اختراع");
-        mix80.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix80ActionPerformed(evt);
-            }
-        });
-
-        mix79.setBackground(new java.awt.Color(204, 102, 0));
-        mix79.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        mix79.setForeground(new java.awt.Color(255, 255, 255));
-        mix79.setText("كوردن بلو سلامي");
-        mix79.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix79ActionPerformed(evt);
-            }
-        });
-
-        mix78.setBackground(new java.awt.Color(204, 102, 0));
-        mix78.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        mix78.setForeground(new java.awt.Color(255, 255, 255));
-        mix78.setText("ميكسيكانو");
-        mix78.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix78ActionPerformed(evt);
-            }
-        });
-
-        mix77.setBackground(new java.awt.Color(204, 102, 0));
-        mix77.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        mix77.setForeground(new java.awt.Color(255, 255, 255));
-        mix77.setText("سوبر دويتو لحوم");
-        mix77.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix77ActionPerformed(evt);
-            }
-        });
-
-        mix88.setBackground(new java.awt.Color(204, 102, 0));
-        mix88.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        mix88.setForeground(new java.awt.Color(255, 255, 255));
-        mix88.setText("عالمي رول شيدر");
-        mix88.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix88ActionPerformed(evt);
-            }
-        });
-
-        mix74.setBackground(new java.awt.Color(204, 102, 0));
-        mix74.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        mix74.setForeground(new java.awt.Color(255, 255, 255));
-        mix74.setText("اكس ميكس");
-        mix74.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mix74ActionPerformed(evt);
+                mix26ActionPerformed(evt);
             }
         });
 
@@ -784,46 +700,35 @@ public class recipes extends javax.swing.JFrame {
         mixLayout.setHorizontalGroup(
             mixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mixLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(25, Short.MAX_VALUE)
                 .addGroup(mixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(mixLayout.createSequentialGroup()
-                        .addComponent(mix16, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(mix24, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15)
-                        .addComponent(mix17, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(mix18, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(mix19, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(mixLayout.createSequentialGroup()
-                        .addComponent(mix20, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(mix21, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(mix77, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(mix78, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(mixLayout.createSequentialGroup()
-                        .addComponent(mix88, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(mix23, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15)
                         .addComponent(mix22, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15)
-                        .addComponent(mix75, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(mix76, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(mix21, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(mixLayout.createSequentialGroup()
-                        .addComponent(mix80, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(mix28, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15)
-                        .addComponent(mix79, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(mix27, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15)
-                        .addComponent(mix89, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(mix26, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15)
-                        .addComponent(mix74, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(mix25, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(mixLayout.createSequentialGroup()
+                        .addGap(344, 344, 344)
+                        .addComponent(mix30, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(mix29, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(26, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mixLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(quantity2, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel2x, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(230, 230, 230))
         );
         mixLayout.setVerticalGroup(
@@ -831,97 +736,68 @@ public class recipes extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mixLayout.createSequentialGroup()
                 .addGap(60, 60, 60)
                 .addGroup(mixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(mix16, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(mix17, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(mix18, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(mix19, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(15, 15, 15)
+                    .addComponent(mix24, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(mix23, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(mix22, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(mix21, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
                 .addGroup(mixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(mix20, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(mix28, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(mixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(mix21, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(mix78, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(mix77, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(15, 15, 15)
-                .addGroup(mixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(mixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(mix75, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(mix76, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(mixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(mix22, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(mix88, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(16, 16, 16)
+                        .addComponent(mix27, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(mix25, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(mix26, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(30, 30, 30)
                 .addGroup(mixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(mix79, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(mix80, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(mix89, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(mix74, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44)
+                    .addComponent(mix30, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(mix29, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(114, 114, 114)
                 .addGroup(mixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(quantity2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6))
-                .addContainerGap(161, Short.MAX_VALUE))
+                    .addComponent(jLabel2x))
+                .addContainerGap(150, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("       الميكس     ", mix);
+        jTabbedPane1.addTab("   الميكس   ", mix);
 
-        cheese.setBackground(new java.awt.Color(0, 153, 153));
+        cheese.setBackground(new java.awt.Color(51, 51, 51));
         cheese.setForeground(new java.awt.Color(0, 51, 51));
         cheese.setToolTipText(null);
         cheese.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        cheese25.setBackground(new java.awt.Color(255, 204, 51));
-        cheese25.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        cheese25.setForeground(new java.awt.Color(0, 51, 102));
-        cheese25.setText("جبنه شيدر");
-        cheese25.addActionListener(new java.awt.event.ActionListener() {
+        cheese43.setBackground(new java.awt.Color(204, 102, 0));
+        cheese43.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        cheese43.setForeground(new java.awt.Color(255, 255, 255));
+        cheese43.setText("شنكاح");
+        cheese43.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cheese25ActionPerformed(evt);
+                cheese43ActionPerformed(evt);
             }
         });
 
-        cheese26.setBackground(new java.awt.Color(255, 204, 51));
-        cheese26.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        cheese26.setForeground(new java.awt.Color(0, 51, 102));
-        cheese26.setText("رومي");
-        cheese26.addActionListener(new java.awt.event.ActionListener() {
+        cheese44.setBackground(new java.awt.Color(204, 102, 0));
+        cheese44.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        cheese44.setForeground(new java.awt.Color(255, 255, 255));
+        cheese44.setText("كريب بطاطس");
+        cheese44.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cheese26ActionPerformed(evt);
+                cheese44ActionPerformed(evt);
             }
         });
 
-        cheese32.setBackground(new java.awt.Color(81, 26, 26));
-        cheese32.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        cheese32.setForeground(new java.awt.Color(255, 255, 255));
-        cheese32.setText("نوتيلا هوهوز");
-        cheese32.addActionListener(new java.awt.event.ActionListener() {
+        cheese42.setBackground(new java.awt.Color(204, 102, 0));
+        cheese42.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        cheese42.setForeground(new java.awt.Color(255, 255, 255));
+        cheese42.setText("جبنه رومي");
+        cheese42.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cheese32ActionPerformed(evt);
+                cheese42ActionPerformed(evt);
             }
         });
 
-        cheese31.setBackground(new java.awt.Color(81, 26, 26));
-        cheese31.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        cheese31.setForeground(new java.awt.Color(255, 255, 255));
-        cheese31.setText("نوتيلا مكسرات");
-        cheese31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cheese31ActionPerformed(evt);
-            }
-        });
-
-        cheese33.setBackground(new java.awt.Color(81, 26, 26));
-        cheese33.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        cheese33.setForeground(new java.awt.Color(255, 255, 255));
-        cheese33.setText("نوتيلا موز");
-        cheese33.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cheese33ActionPerformed(evt);
-            }
-        });
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel4.setText("الكميه : ");
+        jLabel3x.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel3x.setForeground(new java.awt.Color(255, 204, 0));
+        jLabel3x.setText("الكميه : ");
 
         quantity3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         quantity3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -933,89 +809,55 @@ public class recipes extends javax.swing.JFrame {
             }
         });
 
-        cheese27.setBackground(new java.awt.Color(255, 204, 51));
-        cheese27.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        cheese27.setForeground(new java.awt.Color(0, 51, 102));
-        cheese27.setText("ميكس جبن ");
-        cheese27.addActionListener(new java.awt.event.ActionListener() {
+        cheese41.setBackground(new java.awt.Color(204, 102, 0));
+        cheese41.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        cheese41.setForeground(new java.awt.Color(255, 255, 255));
+        cheese41.setText("ميكس جبن");
+        cheese41.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cheese27ActionPerformed(evt);
+                cheese41ActionPerformed(evt);
             }
         });
 
-        cheese30.setBackground(new java.awt.Color(255, 204, 51));
-        cheese30.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        cheese30.setForeground(new java.awt.Color(0, 51, 102));
-        cheese30.setText("بطاطس");
-        cheese30.addActionListener(new java.awt.event.ActionListener() {
+        cheese45.setBackground(new java.awt.Color(204, 102, 0));
+        cheese45.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        cheese45.setForeground(new java.awt.Color(255, 255, 255));
+        cheese45.setText("بطاطس شيدر");
+        cheese45.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cheese30ActionPerformed(evt);
+                cheese45ActionPerformed(evt);
             }
         });
 
-        cheese28.setBackground(new java.awt.Color(81, 26, 26));
-        cheese28.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        cheese28.setForeground(new java.awt.Color(255, 255, 255));
-        cheese28.setText("نوتيلا");
-        cheese28.addActionListener(new java.awt.event.ActionListener() {
+        cheese46.setBackground(new java.awt.Color(204, 102, 0));
+        cheese46.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        cheese46.setForeground(new java.awt.Color(255, 255, 255));
+        cheese46.setText("بطاطسينو");
+        cheese46.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cheese28ActionPerformed(evt);
+                cheese46ActionPerformed(evt);
             }
         });
 
-        cheese87.setBackground(new java.awt.Color(81, 26, 26));
-        cheese87.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        cheese87.setForeground(new java.awt.Color(255, 255, 255));
-        cheese87.setText("نوتيلا جلاكسي");
-        cheese87.addActionListener(new java.awt.event.ActionListener() {
+        cheese47.setBackground(new java.awt.Color(204, 102, 0));
+        cheese47.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        cheese47.setForeground(new java.awt.Color(255, 255, 255));
+        cheese47.setText("رول بطاطس");
+        cheese47.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cheese87ActionPerformed(evt);
+                cheese47ActionPerformed(evt);
             }
         });
 
-        cheese86.setBackground(new java.awt.Color(81, 26, 26));
-        cheese86.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        cheese86.setForeground(new java.awt.Color(255, 255, 255));
-        cheese86.setText("نوتيلا كيندر");
-        cheese86.addActionListener(new java.awt.event.ActionListener() {
+        cheese48.setBackground(new java.awt.Color(204, 102, 0));
+        cheese48.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        cheese48.setForeground(new java.awt.Color(255, 255, 255));
+        cheese48.setText("موتزريلا رول بطاطس");
+        cheese48.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cheese86ActionPerformed(evt);
+                cheese48ActionPerformed(evt);
             }
         });
-
-        cheese85.setBackground(new java.awt.Color(81, 26, 26));
-        cheese85.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        cheese85.setForeground(new java.awt.Color(255, 255, 255));
-        cheese85.setText("نوتيلا لوتس");
-        cheese85.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cheese85ActionPerformed(evt);
-            }
-        });
-
-        cheese84.setBackground(new java.awt.Color(81, 26, 26));
-        cheese84.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        cheese84.setForeground(new java.awt.Color(255, 255, 255));
-        cheese84.setText("اوريو");
-        cheese84.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cheese84ActionPerformed(evt);
-            }
-        });
-
-        jLabel1.setBackground(new java.awt.Color(255, 0, 102));
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("الحلو ");
-        jLabel1.setOpaque(true);
-
-        jLabel3.setBackground(new java.awt.Color(255, 0, 102));
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("الجبن  ");
-        jLabel3.setOpaque(true);
 
         javax.swing.GroupLayout cheeseLayout = new javax.swing.GroupLayout(cheese);
         cheese.setLayout(cheeseLayout);
@@ -1025,377 +867,443 @@ public class recipes extends javax.swing.JFrame {
                 .addGap(25, 25, 25)
                 .addGroup(cheeseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(cheeseLayout.createSequentialGroup()
-                        .addComponent(cheese84, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cheese48, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15)
-                        .addComponent(cheese85, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cheese47, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15)
-                        .addComponent(cheese86, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cheese46, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(cheese87, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(cheeseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(cheeseLayout.createSequentialGroup()
-                            .addComponent(cheese31, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(15, 15, 15)
-                            .addComponent(cheese32, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(15, 15, 15)
-                            .addComponent(cheese33, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(15, 15, 15)
-                            .addComponent(cheese28, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(cheeseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(cheeseLayout.createSequentialGroup()
-                                .addComponent(cheese25, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(15, 15, 15)
-                                .addComponent(cheese26, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(15, 15, 15)
-                                .addComponent(cheese27, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(15, 15, 15)
-                                .addGroup(cheeseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(cheese30, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(cheese45, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(cheeseLayout.createSequentialGroup()
+                        .addComponent(cheese44, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(cheese43, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(cheese42, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(cheese41, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(26, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cheeseLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(quantity3, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel3x, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(213, 213, 213))
         );
         cheeseLayout.setVerticalGroup(
             cheeseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(cheeseLayout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(101, 101, 101)
+                .addGroup(cheeseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cheese44, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cheese43, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cheese42, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cheese41, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(cheeseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cheese25, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cheese26, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cheese27, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cheese30, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(cheeseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cheese31, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cheese32, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cheese33, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cheese28, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(cheeseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cheese84, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cheese85, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cheese86, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cheese87, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44)
+                    .addComponent(cheese48, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cheese47, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cheese46, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cheese45, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(100, 100, 100)
                 .addGroup(cheeseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(quantity3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(145, Short.MAX_VALUE))
+                    .addComponent(jLabel3x, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(235, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("      الحلو والجبن    ", cheese);
+        jTabbedPane1.addTab("  البطاطس والجبن  ", cheese);
 
-        sandwich.setBackground(new java.awt.Color(21, 21, 27));
-        sandwich.setToolTipText(null);
+        sandwitch.setBackground(new java.awt.Color(51, 51, 51));
+        sandwitch.setBorder(javax.swing.BorderFactory.createCompoundBorder(new javax.swing.border.MatteBorder(null), new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.gray, java.awt.Color.gray, java.awt.Color.gray, java.awt.Color.gray)));
+        sandwitch.setForeground(new java.awt.Color(51, 51, 51));
+        sandwitch.setToolTipText(null);
+        sandwitch.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        sandwich38.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich38.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        sandwich38.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich38.setText("سوبر كرانشي");
-        sandwich38.setMaximumSize(new java.awt.Dimension(119, 31));
-        sandwich38.setMinimumSize(new java.awt.Dimension(119, 31));
-        sandwich38.addActionListener(new java.awt.event.ActionListener() {
+        sandwithch63.setBackground(new java.awt.Color(255, 153, 0));
+        sandwithch63.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch63.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch63.setText("ميكس Z");
+        sandwithch63.setBorder(null);
+        sandwithch63.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich38ActionPerformed(evt);
+                sandwithch63ActionPerformed(evt);
             }
         });
 
-        sandwich34.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich34.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        sandwich34.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich34.setText("سوسيس");
-        sandwich34.addActionListener(new java.awt.event.ActionListener() {
+        sandwithch62.setBackground(new java.awt.Color(255, 153, 0));
+        sandwithch62.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch62.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch62.setText("سوبر كرانشي");
+        sandwithch62.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich34ActionPerformed(evt);
+                sandwithch62ActionPerformed(evt);
             }
         });
 
-        sandwich39.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich39.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        sandwich39.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich39.setText("فاهيتا فراخ");
-        sandwich39.addActionListener(new java.awt.event.ActionListener() {
+        sandwithch61.setBackground(new java.awt.Color(255, 153, 0));
+        sandwithch61.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch61.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch61.setText("تشيكن اسموك");
+        sandwithch61.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich39ActionPerformed(evt);
+                sandwithch61ActionPerformed(evt);
             }
         });
+
+        sandwithch72.setBackground(new java.awt.Color(102, 0, 0));
+        sandwithch72.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch72.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch72.setText("برجر");
+        sandwithch72.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sandwithch72ActionPerformed(evt);
+            }
+        });
+
+        sandwithch60.setBackground(new java.awt.Color(255, 153, 0));
+        sandwithch60.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch60.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch60.setText("تشيكن بيتزا");
+        sandwithch60.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sandwithch60ActionPerformed(evt);
+            }
+        });
+
+        sandwithch67.setBackground(new java.awt.Color(255, 153, 0));
+        sandwithch67.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch67.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch67.setText("شاورما فراخ");
+        sandwithch67.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sandwithch67ActionPerformed(evt);
+            }
+        });
+
+        sandwithch66.setBackground(new java.awt.Color(255, 153, 0));
+        sandwithch66.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch66.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch66.setText("بانيه");
+        sandwithch66.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sandwithch66ActionPerformed(evt);
+            }
+        });
+
+        sandwithch70.setBackground(new java.awt.Color(102, 0, 0));
+        sandwithch70.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch70.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch70.setText("كفته");
+        sandwithch70.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sandwithch70ActionPerformed(evt);
+            }
+        });
+
+        sandwithch65.setBackground(new java.awt.Color(255, 153, 0));
+        sandwithch65.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch65.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch65.setText("شيش طاووق");
+        sandwithch65.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sandwithch65ActionPerformed(evt);
+            }
+        });
+
+        sandwithch64.setBackground(new java.awt.Color(255, 153, 0));
+        sandwithch64.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch64.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch64.setText("زنجر");
+        sandwithch64.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sandwithch64ActionPerformed(evt);
+            }
+        });
+
+        sandwithch68.setBackground(new java.awt.Color(255, 153, 0));
+        sandwithch68.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch68.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch68.setText("ايطاليانو");
+        sandwithch68.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sandwithch68ActionPerformed(evt);
+            }
+        });
+
+        sandwithch73.setBackground(new java.awt.Color(102, 0, 0));
+        sandwithch73.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch73.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch73.setText("برجر سوسج");
+        sandwithch73.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sandwithch73ActionPerformed(evt);
+            }
+        });
+
+        sandwithch71.setBackground(new java.awt.Color(102, 0, 0));
+        sandwithch71.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch71.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch71.setText("سوسيس");
+        sandwithch71.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sandwithch71ActionPerformed(evt);
+            }
+        });
+
+        sandwithch74.setBackground(new java.awt.Color(102, 0, 0));
+        sandwithch74.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch74.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch74.setText("برجر بيتزا");
+        sandwithch74.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sandwithch74ActionPerformed(evt);
+            }
+        });
+
+        jLabel4x.setBackground(new java.awt.Color(204, 0, 0));
+        jLabel4x.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel4x.setForeground(new java.awt.Color(255, 204, 0));
+        jLabel4x.setText("الكميه :");
 
         quantity4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         quantity4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quantity4.setText("1");
-        quantity4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 0), 2, true));
+        quantity4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 0), 3, true));
         quantity4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 quantity4ActionPerformed(evt);
             }
         });
 
-        jLabel13.setBackground(new java.awt.Color(51, 51, 51));
-        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 204, 0));
-        jLabel13.setText("الكميه : ");
-
-        sandwich35.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich35.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        sandwich35.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich35.setText("بطاطس سوسيس");
-        sandwich35.addActionListener(new java.awt.event.ActionListener() {
+        sandwithch75.setBackground(new java.awt.Color(102, 0, 0));
+        sandwithch75.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch75.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch75.setText("سجق");
+        sandwithch75.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich35ActionPerformed(evt);
+                sandwithch75ActionPerformed(evt);
             }
         });
 
-        quantity6.setVisible(false);
-        jLabel8.setBackground(new java.awt.Color(255, 0, 0));
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 0, 0));
-
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel7.setVisible(false);
-
-        sandwich37.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich37.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        sandwich37.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich37.setText("بطاطس");
-        sandwich37.addActionListener(new java.awt.event.ActionListener() {
+        sandwithch69.setBackground(new java.awt.Color(255, 153, 0));
+        sandwithch69.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch69.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch69.setText("كوردن بلو");
+        sandwithch69.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich37ActionPerformed(evt);
+                sandwithch69ActionPerformed(evt);
             }
         });
 
-        sandwich36.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich36.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        sandwich36.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich36.setText("بطاطس موتزريلا");
-        sandwich36.addActionListener(new java.awt.event.ActionListener() {
+        sandwithch78.setBackground(new java.awt.Color(102, 0, 0));
+        sandwithch78.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch78.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch78.setText("كفته بانيه");
+        sandwithch78.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich36ActionPerformed(evt);
+                sandwithch78ActionPerformed(evt);
             }
         });
 
-        sandwich40.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich40.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        sandwich40.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich40.setText("شاورما فراخ");
-        sandwich40.setMaximumSize(new java.awt.Dimension(119, 31));
-        sandwich40.setMinimumSize(new java.awt.Dimension(119, 31));
-        sandwich40.addActionListener(new java.awt.event.ActionListener() {
+        sandwithch79.setBackground(new java.awt.Color(102, 0, 0));
+        sandwithch79.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        sandwithch79.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch79.setText("حواوشي ميكس جبن");
+        sandwithch79.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich40ActionPerformed(evt);
+                sandwithch79ActionPerformed(evt);
             }
         });
 
-        sandwich41.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich41.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        sandwich41.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich41.setText("شيش طاووق");
-        sandwich41.addActionListener(new java.awt.event.ActionListener() {
+        sandwithch77.setBackground(new java.awt.Color(102, 0, 0));
+        sandwithch77.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch77.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch77.setText("حواوشي بانيه");
+        sandwithch77.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich41ActionPerformed(evt);
+                sandwithch77ActionPerformed(evt);
             }
         });
 
-        sandwich46.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich46.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        sandwich46.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich46.setText("برجر");
-        sandwich46.setMaximumSize(new java.awt.Dimension(119, 31));
-        sandwich46.setMinimumSize(new java.awt.Dimension(119, 31));
-        sandwich46.addActionListener(new java.awt.event.ActionListener() {
+        sandwithch76.setBackground(new java.awt.Color(102, 0, 0));
+        sandwithch76.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        sandwithch76.setForeground(new java.awt.Color(255, 255, 255));
+        sandwithch76.setText("كبده");
+        sandwithch76.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich46ActionPerformed(evt);
+                sandwithch76ActionPerformed(evt);
             }
         });
 
-        sandwich47.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich47.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        sandwich47.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich47.setText("تشيكن بيتزا");
-        sandwich47.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich47ActionPerformed(evt);
-            }
-        });
-
-        sandwich48.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich48.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        sandwich48.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich48.setText("سوسيس");
-        sandwich48.setMaximumSize(new java.awt.Dimension(119, 31));
-        sandwich48.setMinimumSize(new java.awt.Dimension(119, 31));
-        sandwich48.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich48ActionPerformed(evt);
-            }
-        });
-
-        sandwich49.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich49.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        sandwich49.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich49.setText("سجق");
-        sandwich49.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich49ActionPerformed(evt);
-            }
-        });
-
-        sandwich45.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich45.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        sandwich45.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich45.setText("بانيه");
-        sandwich45.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich45ActionPerformed(evt);
-            }
-        });
-
-        sandwich44.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich44.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        sandwich44.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich44.setText("شاورما لحم");
-        sandwich44.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich44ActionPerformed(evt);
-            }
-        });
-
-        sandwich43.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich43.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        sandwich43.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich43.setText("كفته");
-        sandwich43.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich43ActionPerformed(evt);
-            }
-        });
-
-        sandwich42.setBackground(new java.awt.Color(208, 153, 23));
-        sandwich42.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        sandwich42.setForeground(new java.awt.Color(0, 51, 102));
-        sandwich42.setText("كبده");
-        sandwich42.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sandwich42ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout sandwichLayout = new javax.swing.GroupLayout(sandwich);
-        sandwich.setLayout(sandwichLayout);
-        sandwichLayout.setHorizontalGroup(
-            sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sandwichLayout.createSequentialGroup()
+        javax.swing.GroupLayout sandwitchLayout = new javax.swing.GroupLayout(sandwitch);
+        sandwitch.setLayout(sandwitchLayout);
+        sandwitchLayout.setHorizontalGroup(
+            sandwitchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(sandwitchLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(sandwitchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(sandwitchLayout.createSequentialGroup()
+                        .addGroup(sandwitchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(sandwithch63, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(sandwithch67, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(15, 15, 15)
+                        .addGroup(sandwitchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(sandwitchLayout.createSequentialGroup()
+                                .addComponent(sandwithch62, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(15, 15, 15)
+                                .addComponent(sandwithch61, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(15, 15, 15)
+                                .addComponent(sandwithch60, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(sandwitchLayout.createSequentialGroup()
+                                .addComponent(sandwithch66, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(15, 15, 15)
+                                .addComponent(sandwithch65, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(15, 15, 15)
+                                .addComponent(sandwithch64, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(sandwitchLayout.createSequentialGroup()
+                        .addComponent(sandwithch71, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(sandwithch70, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(sandwithch69, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(sandwithch68, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(sandwitchLayout.createSequentialGroup()
+                        .addGroup(sandwitchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(sandwithch79, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(sandwithch75, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(15, 15, 15)
+                        .addGroup(sandwitchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(sandwitchLayout.createSequentialGroup()
+                                .addComponent(sandwithch74, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(15, 15, 15)
+                                .addComponent(sandwithch73, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(15, 15, 15)
+                                .addComponent(sandwithch72, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(sandwitchLayout.createSequentialGroup()
+                                .addComponent(sandwithch78, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(15, 15, 15)
+                                .addComponent(sandwithch77, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(15, 15, 15)
+                                .addComponent(sandwithch76, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sandwitchLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(quantity4, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(172, 172, 172)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(103, 103, 103))
-            .addGroup(sandwichLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(sandwichLayout.createSequentialGroup()
-                        .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(sandwich42, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(sandwich46, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(15, 15, 15)
-                        .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(sandwich43, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(sandwich47, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(15, 15, 15)
-                        .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(sandwichLayout.createSequentialGroup()
-                                .addComponent(sandwich44, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(15, 15, 15)
-                                .addComponent(sandwich45, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(8, 8, 8))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, sandwichLayout.createSequentialGroup()
-                                .addComponent(sandwich48, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(15, 15, 15)
-                                .addComponent(sandwich49, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel7)
-                        .addGap(131, 131, 131))
-                    .addGroup(sandwichLayout.createSequentialGroup()
-                        .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(sandwich34, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(sandwich38, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(15, 15, 15)
-                        .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(sandwich35, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(sandwich39, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(15, 15, 15)
-                        .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(sandwichLayout.createSequentialGroup()
-                                .addComponent(sandwich36, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(15, 15, 15)
-                                .addComponent(sandwich37, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(sandwichLayout.createSequentialGroup()
-                                .addComponent(sandwich40, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(15, 15, 15)
-                                .addComponent(sandwich41, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap())))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel4x, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(240, 240, 240))
         );
-        sandwichLayout.setVerticalGroup(
-            sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(sandwichLayout.createSequentialGroup()
+        sandwitchLayout.setVerticalGroup(
+            sandwitchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sandwitchLayout.createSequentialGroup()
                 .addGap(60, 60, 60)
-                .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(sandwich34, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(sandwich35, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(sandwich36, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(sandwich37, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(sandwitchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(sandwitchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(sandwitchLayout.createSequentialGroup()
+                            .addGap(1, 1, 1)
+                            .addComponent(sandwithch60, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(sandwitchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(sandwithch62, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(sandwithch61, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(sandwithch63, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
-                .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(sandwich38, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(sandwich39, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(sandwich40, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(sandwich41, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(sandwitchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(sandwithch67, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sandwithch66, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sandwithch65, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sandwithch64, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
-                .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(sandwichLayout.createSequentialGroup()
-                        .addGap(115, 115, 115)
-                        .addComponent(jLabel7))
-                    .addGroup(sandwichLayout.createSequentialGroup()
-                        .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(sandwich42, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(sandwich43, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(sandwich44, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(sandwich45, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(15, 15, 15)
-                        .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(sandwich46, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(sandwich47, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(sandwich48, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(sandwich49, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(sandwichLayout.createSequentialGroup()
-                        .addGap(66, 66, 66)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(sandwichLayout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addGroup(sandwichLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quantity4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(134, Short.MAX_VALUE))
+                .addGroup(sandwitchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(sandwithch68, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sandwithch71, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sandwithch69, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sandwithch70, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addGroup(sandwitchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(sandwithch72, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sandwithch73, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sandwithch74, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sandwithch75, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addGroup(sandwitchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(sandwithch78, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sandwithch77, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sandwithch76, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sandwithch79, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(44, 44, 44)
+                .addGroup(sandwitchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(quantity4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4x, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(685, 685, 685))
         );
 
-        jTabbedPane1.addTab("     السندوتشات    ", sandwich);
+        jTabbedPane1.addTab("    السندوتشات   ", sandwitch);
 
-        adds.setBackground(new java.awt.Color(0, 102, 102));
-        adds.setToolTipText(null);
+        meals.setBackground(new java.awt.Color(51, 51, 51));
+        meals.setForeground(new java.awt.Color(51, 51, 51));
+        meals.setToolTipText(null);
+
+        meals86.setBackground(new java.awt.Color(255, 153, 0));
+        meals86.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        meals86.setForeground(new java.awt.Color(96, 66, 22));
+        meals86.setText("وجبه 1");
+        meals86.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                meals86ActionPerformed(evt);
+            }
+        });
+
+        meals83.setBackground(new java.awt.Color(255, 153, 0));
+        meals83.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        meals83.setForeground(new java.awt.Color(96, 66, 22));
+        meals83.setText("وجبه Z");
+        meals83.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                meals83ActionPerformed(evt);
+            }
+        });
+
+        meals82.setBackground(new java.awt.Color(255, 153, 0));
+        meals82.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        meals82.setForeground(new java.awt.Color(96, 66, 22));
+        meals82.setText(" مشوي صدور");
+        meals82.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                meals82ActionPerformed(evt);
+            }
+        });
+
+        meals81.setBackground(new java.awt.Color(255, 153, 0));
+        meals81.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        meals81.setForeground(new java.awt.Color(96, 66, 22));
+        meals81.setText("وجبه بانيه");
+        meals81.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                meals81ActionPerformed(evt);
+            }
+        });
+
+        meals80.setBackground(new java.awt.Color(255, 153, 0));
+        meals80.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        meals80.setForeground(new java.awt.Color(96, 66, 22));
+        meals80.setText("وجبه زنجر");
+        meals80.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                meals80ActionPerformed(evt);
+            }
+        });
+
+        meals87.setBackground(new java.awt.Color(255, 153, 0));
+        meals87.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        meals87.setForeground(new java.awt.Color(96, 66, 22));
+        meals87.setText("وجبه 2");
+        meals87.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                meals87ActionPerformed(evt);
+            }
+        });
 
         quantity5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         quantity5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -1407,352 +1315,90 @@ public class recipes extends javax.swing.JFrame {
             }
         });
 
-        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(255, 255, 102));
-        jLabel14.setText("الكميه : ");
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 204, 0));
+        jLabel5.setText("الكميه:  ");
 
-        add52.setBackground(new java.awt.Color(204, 102, 0));
-        add52.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        add52.setForeground(new java.awt.Color(255, 255, 255));
-        add52.setText("اضافه فراخ");
-        add52.setMaximumSize(new java.awt.Dimension(119, 31));
-        add52.setMinimumSize(new java.awt.Dimension(119, 31));
-        add52.addActionListener(new java.awt.event.ActionListener() {
+        meals84.setBackground(new java.awt.Color(255, 153, 0));
+        meals84.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        meals84.setForeground(new java.awt.Color(96, 66, 22));
+        meals84.setText("وجبه كفته");
+        meals84.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                add52ActionPerformed(evt);
+                meals84ActionPerformed(evt);
             }
         });
 
-        add51.setBackground(new java.awt.Color(204, 102, 0));
-        add51.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        add51.setForeground(new java.awt.Color(255, 255, 255));
-        add51.setText("اضافه لحوم");
-        add51.addActionListener(new java.awt.event.ActionListener() {
+        meals85.setBackground(new java.awt.Color(255, 153, 0));
+        meals85.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        meals85.setForeground(new java.awt.Color(96, 66, 22));
+        meals85.setText("وجبه استيك");
+        meals85.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                add51ActionPerformed(evt);
+                meals85ActionPerformed(evt);
             }
         });
 
-        add55.setBackground(new java.awt.Color(204, 102, 0));
-        add55.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        add55.setForeground(new java.awt.Color(255, 255, 255));
-        add55.setText("اضافه كولوسلو");
-        add55.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                add55ActionPerformed(evt);
-            }
-        });
-
-        add54.setBackground(new java.awt.Color(204, 102, 0));
-        add54.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        add54.setForeground(new java.awt.Color(255, 255, 255));
-        add54.setText("اضافه موتزريلا");
-        add54.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                add54ActionPerformed(evt);
-            }
-        });
-
-        add50.setBackground(new java.awt.Color(204, 102, 0));
-        add50.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        add50.setForeground(new java.awt.Color(255, 255, 255));
-        add50.setText("باكت بطاطس");
-        add50.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                add50ActionPerformed(evt);
-            }
-        });
-
-        notes.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        notes.setForeground(new java.awt.Color(255, 255, 102));
-        notes.setText("ملاحظات : ");
-
-        area.setColumns(20);
-        area.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        area.setLineWrap(true);
-        jScrollPane4.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
-        area.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
-        area.setRows(6);
-        area.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 0), 2, true));
-        area.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        jScrollPane4.setViewportView(area);
-
-        add53.setBackground(new java.awt.Color(204, 102, 0));
-        add53.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        add53.setForeground(new java.awt.Color(255, 255, 255));
-        add53.setText("اضافه نوتيلا");
-        add53.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                add53ActionPerformed(evt);
-            }
-        });
-
-        add58.setBackground(new java.awt.Color(204, 102, 0));
-        add58.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        add58.setForeground(new java.awt.Color(255, 255, 255));
-        add58.setText("لقمه عيش");
-        add58.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                add58ActionPerformed(evt);
-            }
-        });
-
-        add57.setBackground(new java.awt.Color(204, 102, 0));
-        add57.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        add57.setForeground(new java.awt.Color(255, 255, 255));
-        add57.setText("طبق عيش");
-        add57.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                add57ActionPerformed(evt);
-            }
-        });
-
-        add56.setBackground(new java.awt.Color(204, 102, 0));
-        add56.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        add56.setForeground(new java.awt.Color(255, 255, 255));
-        add56.setText("كنز بيبسي");
-        add56.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                add56ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout addsLayout = new javax.swing.GroupLayout(adds);
-        adds.setLayout(addsLayout);
-        addsLayout.setHorizontalGroup(
-            addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(addsLayout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addComponent(jScrollPane4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(notes)
-                .addGap(58, 58, 58))
-            .addGroup(addsLayout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(addsLayout.createSequentialGroup()
-                        .addComponent(add50, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(add51, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(addsLayout.createSequentialGroup()
-                        .addComponent(add53, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(add54, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(addsLayout.createSequentialGroup()
-                        .addComponent(add56, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(add57, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(add55, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(add52, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(add58, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addsLayout.createSequentialGroup()
+        javax.swing.GroupLayout mealsLayout = new javax.swing.GroupLayout(meals);
+        meals.setLayout(mealsLayout);
+        mealsLayout.setHorizontalGroup(
+            mealsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mealsLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(mealsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(mealsLayout.createSequentialGroup()
+                        .addComponent(meals83, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(meals82, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(meals81, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(meals80, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(mealsLayout.createSequentialGroup()
+                        .addComponent(meals87, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(meals86, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(meals85, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(meals84, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(26, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mealsLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(quantity5, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel14)
-                .addGap(110, 110, 110))
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(230, 230, 230))
         );
-        addsLayout.setVerticalGroup(
-            addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(addsLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(add50, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(add51, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(add52, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(add55, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(add54, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(add53, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(add58, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(add57, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(add56, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
-                .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+        mealsLayout.setVerticalGroup(
+            mealsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mealsLayout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addGroup(mealsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(meals83, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(meals82, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(meals81, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(meals80, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addGroup(mealsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(meals87, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(mealsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(meals86, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(meals84, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(meals85, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(144, 144, 144)
+                .addGroup(mealsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(quantity5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(37, 37, 37)
-                .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addsLayout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(notes, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(119, 119, 119))
-                    .addGroup(addsLayout.createSequentialGroup()
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addComponent(jLabel5))
+                .addContainerGap(226, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("     اضافات    ", adds);
+        jTabbedPane1.addTab("   الوجبات   ", meals);
 
-        fasting.setBackground(new java.awt.Color(51, 51, 51));
-        fasting.setBorder(javax.swing.BorderFactory.createCompoundBorder(new javax.swing.border.MatteBorder(null), new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.gray, java.awt.Color.gray, java.awt.Color.gray, java.awt.Color.gray)));
-        fasting.setForeground(new java.awt.Color(51, 51, 51));
-        fasting.setToolTipText(null);
-        fasting.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        sweet.setBackground(new java.awt.Color(51, 51, 51));
+        sweet.setForeground(new java.awt.Color(51, 51, 51));
+        sweet.setToolTipText(null);
 
-        fast59.setBackground(new java.awt.Color(255, 153, 0));
-        fast59.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        fast59.setForeground(new java.awt.Color(255, 255, 255));
-        fast59.setText("شاورما فراخ");
-        fast59.setBorder(null);
-        fast59.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fast59ActionPerformed(evt);
-            }
-        });
-
-        fast60.setBackground(new java.awt.Color(255, 153, 0));
-        fast60.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        fast60.setForeground(new java.awt.Color(255, 255, 255));
-        fast60.setText("بانيه");
-        fast60.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fast60ActionPerformed(evt);
-            }
-        });
-
-        fast61.setBackground(new java.awt.Color(255, 153, 0));
-        fast61.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        fast61.setForeground(new java.awt.Color(255, 255, 255));
-        fast61.setText("سوبر كرانشي");
-        fast61.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fast61ActionPerformed(evt);
-            }
-        });
-
-        fast70.setBackground(new java.awt.Color(255, 153, 0));
-        fast70.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        fast70.setForeground(new java.awt.Color(255, 255, 255));
-        fast70.setText("كريب بطاطس");
-        fast70.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fast70ActionPerformed(evt);
-            }
-        });
-
-        fast62.setBackground(new java.awt.Color(255, 153, 0));
-        fast62.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        fast62.setForeground(new java.awt.Color(255, 255, 255));
-        fast62.setText("تشيز برجر");
-        fast62.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fast62ActionPerformed(evt);
-            }
-        });
-
-        fast63.setBackground(new java.awt.Color(255, 153, 0));
-        fast63.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        fast63.setForeground(new java.awt.Color(255, 255, 255));
-        fast63.setText("فراي داي");
-        fast63.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fast63ActionPerformed(evt);
-            }
-        });
-
-        fast64.setBackground(new java.awt.Color(255, 153, 0));
-        fast64.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        fast64.setForeground(new java.awt.Color(255, 255, 255));
-        fast64.setText("شيش طاووق");
-        fast64.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fast64ActionPerformed(evt);
-            }
-        });
-
-        fast73.setBackground(new java.awt.Color(0, 51, 51));
-        fast73.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        fast73.setForeground(new java.awt.Color(255, 255, 255));
-        fast73.setText("سندوتش بطاطس");
-        fast73.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fast73ActionPerformed(evt);
-            }
-        });
-
-        fast65.setBackground(new java.awt.Color(255, 153, 0));
-        fast65.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        fast65.setForeground(new java.awt.Color(255, 255, 255));
-        fast65.setText("سوسيس");
-        fast65.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fast65ActionPerformed(evt);
-            }
-        });
-
-        fast66.setBackground(new java.awt.Color(255, 153, 0));
-        fast66.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        fast66.setForeground(new java.awt.Color(255, 255, 255));
-        fast66.setText("شاورما لحمه");
-        fast66.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fast66ActionPerformed(evt);
-            }
-        });
-
-        fast67.setBackground(new java.awt.Color(255, 153, 0));
-        fast67.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        fast67.setForeground(new java.awt.Color(255, 255, 255));
-        fast67.setText("كفته");
-        fast67.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fast67ActionPerformed(evt);
-            }
-        });
-
-        fast72.setBackground(new java.awt.Color(0, 51, 51));
-        fast72.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        fast72.setForeground(new java.awt.Color(255, 255, 255));
-        fast72.setText("سندوتش بطاطس موتزريلا");
-        fast72.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fast72ActionPerformed(evt);
-            }
-        });
-
-        fast68.setBackground(new java.awt.Color(255, 153, 0));
-        fast68.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        fast68.setForeground(new java.awt.Color(255, 255, 255));
-        fast68.setText("مشروم موتزريلا");
-        fast68.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fast68ActionPerformed(evt);
-            }
-        });
-
-        fast69.setBackground(new java.awt.Color(255, 153, 0));
-        fast69.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        fast69.setForeground(new java.awt.Color(255, 255, 255));
-        fast69.setText("كريب بطاطس موتزريلا");
-        fast69.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fast69ActionPerformed(evt);
-            }
-        });
-
-        jLabel15.setBackground(new java.awt.Color(204, 0, 0));
-        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 102));
-        jLabel15.setText("الكميه :");
-
-        fast71.setBackground(new java.awt.Color(0, 51, 51));
-        fast71.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        fast71.setForeground(new java.awt.Color(255, 255, 255));
-        fast71.setText("باكيت بطاطس");
-        fast71.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fast71ActionPerformed(evt);
-            }
-        });
-
-        quantity6.setVisible(true);
         quantity6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         quantity6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quantity6.setText("1");
@@ -1763,160 +1409,128 @@ public class recipes extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout fastingLayout = new javax.swing.GroupLayout(fasting);
-        fasting.setLayout(fastingLayout);
-        fastingLayout.setHorizontalGroup(
-            fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(fastingLayout.createSequentialGroup()
-                .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(fastingLayout.createSequentialGroup()
-                        .addGap(70, 70, 70)
-                        .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(fastingLayout.createSequentialGroup()
-                                .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(fast59, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(fast65, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(fast62, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(17, 17, 17)
-                                .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(fastingLayout.createSequentialGroup()
-                                        .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(fast60, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(fast63, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(17, 17, 17)
-                                        .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(fast61, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(fast64, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(fastingLayout.createSequentialGroup()
-                                        .addComponent(fast66, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(17, 17, 17)
-                                        .addComponent(fast67, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(fastingLayout.createSequentialGroup()
-                                .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(fastingLayout.createSequentialGroup()
-                                        .addComponent(fast68, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(17, 17, 17)
-                                        .addComponent(fast69, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(fastingLayout.createSequentialGroup()
-                                        .addComponent(fast71, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(fast72, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(17, 17, 17)
-                                .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(fast73, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(fast70, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(fastingLayout.createSequentialGroup()
-                        .addGap(239, 239, 239)
-                        .addComponent(quantity6, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 204, 0));
+        jLabel6.setText("الكميه : ");
+
+        add101.setBackground(new java.awt.Color(255, 153, 0));
+        add101.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        add101.setForeground(new java.awt.Color(255, 255, 255));
+        add101.setText("شوكولاته موز");
+        add101.setMaximumSize(new java.awt.Dimension(119, 31));
+        add101.setMinimumSize(new java.awt.Dimension(119, 31));
+        add101.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                add101ActionPerformed(evt);
+            }
+        });
+
+        add102.setBackground(new java.awt.Color(255, 153, 0));
+        add102.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        add102.setForeground(new java.awt.Color(255, 255, 255));
+        add102.setText("شوكولاته اوريو");
+        add102.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                add102ActionPerformed(evt);
+            }
+        });
+
+        add105.setBackground(new java.awt.Color(255, 153, 0));
+        add105.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        add105.setForeground(new java.awt.Color(255, 255, 255));
+        add105.setText("نوتيلا");
+        add105.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                add105ActionPerformed(evt);
+            }
+        });
+
+        add103.setBackground(new java.awt.Color(255, 153, 0));
+        add103.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        add103.setForeground(new java.awt.Color(255, 255, 255));
+        add103.setText("شوكولاته هوهوز");
+        add103.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                add103ActionPerformed(evt);
+            }
+        });
+
+        add100.setBackground(new java.awt.Color(255, 153, 0));
+        add100.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        add100.setForeground(new java.awt.Color(255, 255, 255));
+        add100.setText("شوكولاته");
+        add100.setMaximumSize(new java.awt.Dimension(119, 31));
+        add100.setMinimumSize(new java.awt.Dimension(119, 31));
+        add100.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                add100ActionPerformed(evt);
+            }
+        });
+
+        add104.setBackground(new java.awt.Color(255, 153, 0));
+        add104.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        add104.setForeground(new java.awt.Color(255, 255, 255));
+        add104.setText("شوكولاته مارشملو");
+        add104.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                add104ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout sweetLayout = new javax.swing.GroupLayout(sweet);
+        sweet.setLayout(sweetLayout);
+        sweetLayout.setHorizontalGroup(
+            sweetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(sweetLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(add103, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(add102, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(sweetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(add105, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(add101, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(sweetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(add104, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(add100, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(17, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sweetLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(quantity6, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel6)
+                .addGap(230, 230, 230))
         );
-        fastingLayout.setVerticalGroup(
-            fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fastingLayout.createSequentialGroup()
-                .addGap(55, 55, 55)
-                .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(fast60, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(fast61, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(fast59, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(13, 13, 13)
-                .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(fast62, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(fast63, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(fast64, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(13, 13, 13)
-                .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(fast65, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(fast67, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(fast66, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(13, 13, 13)
-                .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(fast68, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(fast69, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(fastingLayout.createSequentialGroup()
-                        .addComponent(fast70, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(13, 13, 13)
-                        .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(fast73, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(fast72, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(fast71, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(54, 54, 54)
-                .addGroup(fastingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(quantity6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(70, Short.MAX_VALUE))
+        sweetLayout.setVerticalGroup(
+            sweetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(sweetLayout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addGroup(sweetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(sweetLayout.createSequentialGroup()
+                        .addGroup(sweetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(add103, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(add102, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(add101, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(add105, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(213, 213, 213))
+                    .addGroup(sweetLayout.createSequentialGroup()
+                        .addComponent(add100, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(add104, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(213, 213, 213)))
+                .addGroup(sweetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(quantity6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(145, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("    صيامي    ", fasting);
+        jTabbedPane1.addTab("   الحلو    ", sweet);
 
-        newmex.setBackground(new java.awt.Color(28, 33, 52));
-        newmex.setToolTipText(null);
-
-        newmex95.setBackground(new java.awt.Color(233, 185, 111));
-        newmex95.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        newmex95.setForeground(new java.awt.Color(96, 66, 22));
-        newmex95.setText("شاورما تشيزديب");
-        newmex95.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex95ActionPerformed(evt);
-            }
-        });
-
-        newmex90.setBackground(new java.awt.Color(233, 185, 111));
-        newmex90.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        newmex90.setForeground(new java.awt.Color(96, 66, 22));
-        newmex90.setText("كونو");
-        newmex90.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex90ActionPerformed(evt);
-            }
-        });
-
-        newmex91.setBackground(new java.awt.Color(233, 185, 111));
-        newmex91.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        newmex91.setForeground(new java.awt.Color(96, 66, 22));
-        newmex91.setText("كونو بيتزا");
-        newmex91.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex91ActionPerformed(evt);
-            }
-        });
-
-        newmex92.setBackground(new java.awt.Color(233, 185, 111));
-        newmex92.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        newmex92.setForeground(new java.awt.Color(96, 66, 22));
-        newmex92.setText("تشيكن سموكد");
-        newmex92.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex92ActionPerformed(evt);
-            }
-        });
-
-        newmex93.setBackground(new java.awt.Color(233, 185, 111));
-        newmex93.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        newmex93.setForeground(new java.awt.Color(96, 66, 22));
-        newmex93.setText("ايطاليانو");
-        newmex93.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex93ActionPerformed(evt);
-            }
-        });
-
-        newmex94.setBackground(new java.awt.Color(233, 185, 111));
-        newmex94.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        newmex94.setForeground(new java.awt.Color(96, 66, 22));
-        newmex94.setText("استربس باربكيو");
-        newmex94.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex94ActionPerformed(evt);
-            }
-        });
+        adds.setBackground(new java.awt.Color(51, 51, 51));
+        adds.setForeground(new java.awt.Color(51, 51, 51));
+        adds.setToolTipText(null);
 
         quantity7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         quantity7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -1928,195 +1542,233 @@ public class recipes extends javax.swing.JFrame {
             }
         });
 
-        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 102, 0));
-        jLabel17.setText("الكميه:  ");
+        jLabel7x.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel7x.setForeground(new java.awt.Color(255, 204, 0));
+        jLabel7x.setText("الكميه : ");
 
-        newmex99.setBackground(new java.awt.Color(233, 185, 111));
-        newmex99.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        newmex99.setForeground(new java.awt.Color(96, 66, 22));
-        newmex99.setText("بطاطس هالبينو");
-        newmex99.addActionListener(new java.awt.event.ActionListener() {
+        add141.setBackground(new java.awt.Color(255, 153, 0));
+        add141.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        add141.setForeground(new java.awt.Color(255, 255, 255));
+        add141.setText("باكت بطاطس شيدر");
+        add141.setMaximumSize(new java.awt.Dimension(119, 31));
+        add141.setMinimumSize(new java.awt.Dimension(119, 31));
+        add141.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex99ActionPerformed(evt);
+                add141ActionPerformed(evt);
             }
         });
 
-        newmex104.setBackground(new java.awt.Color(233, 185, 111));
-        newmex104.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        newmex104.setForeground(new java.awt.Color(96, 66, 22));
-        newmex104.setText("سي فود رانش");
-        newmex104.addActionListener(new java.awt.event.ActionListener() {
+        add142.setBackground(new java.awt.Color(255, 153, 0));
+        add142.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        add142.setForeground(new java.awt.Color(255, 255, 255));
+        add142.setText("باكت بطاطس سوسيس");
+        add142.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex104ActionPerformed(evt);
+                add142ActionPerformed(evt);
             }
         });
 
-        newmex100.setBackground(new java.awt.Color(233, 185, 111));
-        newmex100.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        newmex100.setForeground(new java.awt.Color(96, 66, 22));
-        newmex100.setText("تايجر كرسبي");
-        newmex100.addActionListener(new java.awt.event.ActionListener() {
+        add145.setBackground(new java.awt.Color(255, 153, 0));
+        add145.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        add145.setForeground(new java.awt.Color(255, 255, 255));
+        add145.setText("اضافه لحوم");
+        add145.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex100ActionPerformed(evt);
+                add145ActionPerformed(evt);
             }
         });
 
-        newmex101.setBackground(new java.awt.Color(233, 185, 111));
-        newmex101.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        newmex101.setForeground(new java.awt.Color(96, 66, 22));
-        newmex101.setText("كوردن  سوسيس");
-        newmex101.addActionListener(new java.awt.event.ActionListener() {
+        add146.setBackground(new java.awt.Color(255, 153, 0));
+        add146.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        add146.setForeground(new java.awt.Color(255, 255, 255));
+        add146.setText("كلوسلو");
+        add146.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex101ActionPerformed(evt);
+                add146ActionPerformed(evt);
             }
         });
 
-        newmex102.setBackground(new java.awt.Color(233, 185, 111));
-        newmex102.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        newmex102.setForeground(new java.awt.Color(96, 66, 22));
-        newmex102.setText("هوت دوج");
-        newmex102.addActionListener(new java.awt.event.ActionListener() {
+        add143.setBackground(new java.awt.Color(255, 153, 0));
+        add143.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        add143.setForeground(new java.awt.Color(255, 255, 255));
+        add143.setText("كومبو");
+        add143.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex102ActionPerformed(evt);
+                add143ActionPerformed(evt);
             }
         });
 
-        newmex103.setBackground(new java.awt.Color(233, 185, 111));
-        newmex103.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        newmex103.setForeground(new java.awt.Color(96, 66, 22));
-        newmex103.setText(" بطاطس موتزريلا");
-        newmex103.addActionListener(new java.awt.event.ActionListener() {
+        notes7x.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        notes7x.setForeground(new java.awt.Color(255, 204, 0));
+        notes7x.setText("ملاحظات : ");
+
+        area7x.setColumns(20);
+        area7x.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        area7x.setLineWrap(true);
+        jScrollPane4.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
+        area7x.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
+        area7x.setRows(6);
+        area7x.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 0), 2, true));
+        area7x.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        jScrollPane4.setViewportView(area7x);
+
+        add147.setBackground(new java.awt.Color(255, 153, 0));
+        add147.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        add147.setForeground(new java.awt.Color(255, 255, 255));
+        add147.setText("مشروب غازي");
+        add147.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex103ActionPerformed(evt);
+                add147ActionPerformed(evt);
             }
         });
 
-        newmex97.setBackground(new java.awt.Color(233, 185, 111));
-        newmex97.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        newmex97.setForeground(new java.awt.Color(96, 66, 22));
-        newmex97.setText("مكس جبن بسطرمه");
-        newmex97.addActionListener(new java.awt.event.ActionListener() {
+        add149.setBackground(new java.awt.Color(255, 153, 0));
+        add149.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        add149.setForeground(new java.awt.Color(255, 255, 255));
+        add149.setText("مياه معدنيه كبيره");
+        add149.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex97ActionPerformed(evt);
+                add149ActionPerformed(evt);
             }
         });
 
-        newmex96.setBackground(new java.awt.Color(233, 185, 111));
-        newmex96.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        newmex96.setForeground(new java.awt.Color(96, 66, 22));
-        newmex96.setText("كوكتيل سموكد");
-        newmex96.addActionListener(new java.awt.event.ActionListener() {
+        add150.setBackground(new java.awt.Color(255, 153, 0));
+        add150.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        add150.setForeground(new java.awt.Color(255, 255, 255));
+        add150.setText("اضافه صوصات");
+        add150.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex96ActionPerformed(evt);
+                add150ActionPerformed(evt);
             }
         });
 
-        newmex98.setBackground(new java.awt.Color(233, 185, 111));
-        newmex98.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        newmex98.setForeground(new java.awt.Color(96, 66, 22));
-        newmex98.setText("هيرو");
-        newmex98.addActionListener(new java.awt.event.ActionListener() {
+        add151.setBackground(new java.awt.Color(255, 153, 0));
+        add151.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        add151.setForeground(new java.awt.Color(255, 255, 255));
+        add151.setText("تشيكن كب");
+        add151.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex98ActionPerformed(evt);
+                add151ActionPerformed(evt);
             }
         });
 
-        newmex105.setBackground(new java.awt.Color(233, 185, 111));
-        newmex105.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        newmex105.setForeground(new java.awt.Color(96, 66, 22));
-        newmex105.setText("اسبشيال X ميكس");
-        newmex105.addActionListener(new java.awt.event.ActionListener() {
+        add140.setBackground(new java.awt.Color(255, 153, 0));
+        add140.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        add140.setForeground(new java.awt.Color(255, 255, 255));
+        add140.setText("باكيت بطاطس");
+        add140.setMaximumSize(new java.awt.Dimension(119, 31));
+        add140.setMinimumSize(new java.awt.Dimension(119, 31));
+        add140.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newmex105ActionPerformed(evt);
+                add140ActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout newmexLayout = new javax.swing.GroupLayout(newmex);
-        newmex.setLayout(newmexLayout);
-        newmexLayout.setHorizontalGroup(
-            newmexLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(newmexLayout.createSequentialGroup()
+        add144.setBackground(new java.awt.Color(255, 153, 0));
+        add144.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        add144.setForeground(new java.awt.Color(255, 255, 255));
+        add144.setText("اضافه جبن");
+        add144.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                add144ActionPerformed(evt);
+            }
+        });
+
+        add148.setBackground(new java.awt.Color(255, 153, 0));
+        add148.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        add148.setForeground(new java.awt.Color(255, 255, 255));
+        add148.setText("مياه معدنيه صغير");
+        add148.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                add148ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout addsLayout = new javax.swing.GroupLayout(adds);
+        adds.setLayout(addsLayout);
+        addsLayout.setHorizontalGroup(
+            addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(addsLayout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addComponent(jScrollPane4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(notes7x)
+                .addGap(58, 58, 58))
+            .addGroup(addsLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addGroup(newmexLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(newmexLayout.createSequentialGroup()
-                        .addComponent(newmex90, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(newmex91, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(newmex92, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(newmex93, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(newmexLayout.createSequentialGroup()
-                        .addComponent(newmex94, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(newmex95, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(newmex96, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(newmex97, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(newmexLayout.createSequentialGroup()
-                        .addComponent(newmex98, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(newmex99, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(newmex100, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(newmex101, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(newmexLayout.createSequentialGroup()
-                        .addComponent(newmex102, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(newmex103, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(newmex104, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
-                        .addComponent(newmex105, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, newmexLayout.createSequentialGroup()
+                .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(addsLayout.createSequentialGroup()
+                        .addComponent(add143, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(add142, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(addsLayout.createSequentialGroup()
+                        .addComponent(add147, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(add146, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(addsLayout.createSequentialGroup()
+                        .addComponent(add151, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(add150, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(add145, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(add141, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(add149, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(add144, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(add140, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(add148, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(26, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addsLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(quantity7, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(230, 230, 230))
+                .addComponent(jLabel7x)
+                .addGap(80, 80, 80))
         );
-        newmexLayout.setVerticalGroup(
-            newmexLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, newmexLayout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addGroup(newmexLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(newmex90, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(newmex91, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(newmex92, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(newmex93, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(15, 15, 15)
-                .addGroup(newmexLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(newmex94, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(newmexLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(newmex95, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(newmex97, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(newmex96, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(15, 15, 15)
-                .addGroup(newmexLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(newmexLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(newmex100, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(newmex101, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(newmexLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(newmex99, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(newmex98, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(16, 16, 16)
-                .addGroup(newmexLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(newmex103, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(newmex102, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(newmex104, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(newmex105, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44)
-                .addGroup(newmexLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+        addsLayout.setVerticalGroup(
+            addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(addsLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(addsLayout.createSequentialGroup()
+                        .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(add143, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(add142, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(add141, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(add145, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(add146, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(add147, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(add149, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(add150, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(add151, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(addsLayout.createSequentialGroup()
+                        .addComponent(add140, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(add144, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(add148, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(quantity7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel17))
-                .addContainerGap(159, Short.MAX_VALUE))
+                    .addComponent(jLabel7x, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addGroup(addsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addsLayout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(notes7x, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(119, 119, 119))
+                    .addGroup(addsLayout.createSequentialGroup()
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(81, Short.MAX_VALUE))))
         );
 
-        jTabbedPane1.addTab("       جديد     ", newmex);
+        jTabbedPane1.addTab("   اضافات    ", adds);
 
         header.setBackground(new java.awt.Color(153, 0, 51));
         header.setForeground(new java.awt.Color(255, 255, 255));
@@ -2489,7 +2141,7 @@ public class recipes extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(datapanelLayout.createSequentialGroup()
-                                .addComponent(orderid)
+                                .addComponent(orderid, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(clname, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -2568,8 +2220,8 @@ public class recipes extends javax.swing.JFrame {
                 .addContainerGap(637, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                    .addGap(0, 733, Short.MAX_VALUE)
-                    .addComponent(datapanel, javax.swing.GroupLayout.PREFERRED_SIZE, 639, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGap(0, 728, Short.MAX_VALUE)
+                    .addComponent(datapanel, javax.swing.GroupLayout.PREFERRED_SIZE, 644, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2585,6 +2237,8 @@ public class recipes extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(datapanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jTabbedPane1.getAccessibleContext().setAccessibleName("الوجبات");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -2604,16 +2258,10 @@ public class recipes extends javax.swing.JFrame {
     
     
     
-    private void kryb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb1ActionPerformed
-        itemid=1;
+    private void kryb4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb4ActionPerformed
+        itemid=4;
         item_kryb(itemid);
-    }//GEN-LAST:event_kryb1ActionPerformed
-
-    private void kryb2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb2ActionPerformed
-        // TODO add your handling code here:
-        itemid=2;
-        item_kryb(itemid);
-    }//GEN-LAST:event_kryb2ActionPerformed
+    }//GEN-LAST:event_kryb4ActionPerformed
 
     private void kryb3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb3ActionPerformed
         // TODO add your handling code here:
@@ -2621,34 +2269,28 @@ public class recipes extends javax.swing.JFrame {
         item_kryb(itemid);
     }//GEN-LAST:event_kryb3ActionPerformed
 
-    private void kryb12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb12ActionPerformed
-        itemid=12;
+    private void kryb2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb2ActionPerformed
+        // TODO add your handling code here:
+        itemid=2;
+        item_kryb(itemid);
+    }//GEN-LAST:event_kryb2ActionPerformed
+
+    private void kryb13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb13ActionPerformed
+        itemid=13;
         item_kryb(itemid);        // TODO add your handling code here:
-    }//GEN-LAST:event_kryb12ActionPerformed
+    }//GEN-LAST:event_kryb13ActionPerformed
 
-    private void kryb4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb4ActionPerformed
+    private void kryb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb1ActionPerformed
         // TODO add your handling code here:
-        itemid=4;
+        itemid=1;
         item_kryb(itemid);
-    }//GEN-LAST:event_kryb4ActionPerformed
+    }//GEN-LAST:event_kryb1ActionPerformed
 
-    private void kryb5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb5ActionPerformed
+    private void kryb8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb8ActionPerformed
         // TODO add your handling code here:
-        itemid=5;
+        itemid=8;
         item_kryb(itemid);
-    }//GEN-LAST:event_kryb5ActionPerformed
-
-    private void kryb6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb6ActionPerformed
-        // TODO add your handling code here:
-        itemid=6;
-        item_kryb(itemid);
-    }//GEN-LAST:event_kryb6ActionPerformed
-
-    private void kryb15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb15ActionPerformed
-        // TODO add your handling code here:
-        itemid=15;
-        item_kryb(itemid);
-    }//GEN-LAST:event_kryb15ActionPerformed
+    }//GEN-LAST:event_kryb8ActionPerformed
 
     private void kryb7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb7ActionPerformed
         // TODO add your handling code here:
@@ -2656,11 +2298,23 @@ public class recipes extends javax.swing.JFrame {
         item_kryb(itemid);
     }//GEN-LAST:event_kryb7ActionPerformed
 
-    private void kryb8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb8ActionPerformed
+    private void kryb11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb11ActionPerformed
         // TODO add your handling code here:
-        itemid=8;
+        itemid=11;
         item_kryb(itemid);
-    }//GEN-LAST:event_kryb8ActionPerformed
+    }//GEN-LAST:event_kryb11ActionPerformed
+
+    private void kryb6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb6ActionPerformed
+        // TODO add your handling code here:
+        itemid=6;
+        item_kryb(itemid);
+    }//GEN-LAST:event_kryb6ActionPerformed
+
+    private void kryb5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb5ActionPerformed
+        // TODO add your handling code here:
+        itemid=5;
+        item_kryb(itemid);
+    }//GEN-LAST:event_kryb5ActionPerformed
 
     private void kryb9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb9ActionPerformed
         // TODO add your handling code here:
@@ -2674,27 +2328,63 @@ public class recipes extends javax.swing.JFrame {
         item_kryb(itemid);
     }//GEN-LAST:event_kryb14ActionPerformed
 
-    private void kryb10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb10ActionPerformed
+    private void kryb12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb12ActionPerformed
         // TODO add your handling code here:
-        itemid=10;
+        itemid=12;
         item_kryb(itemid);
-    }//GEN-LAST:event_kryb10ActionPerformed
+    }//GEN-LAST:event_kryb12ActionPerformed
 
-    private void kryb11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb11ActionPerformed
+    private void kryb15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb15ActionPerformed
         // TODO add your handling code here:
-        itemid=11;
+        itemid=15;
         item_kryb(itemid);
-    }//GEN-LAST:event_kryb11ActionPerformed
+    }//GEN-LAST:event_kryb15ActionPerformed
 
     private void quantity1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quantity1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_quantity1ActionPerformed
 
-    private void kryb13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb13ActionPerformed
+    private void kryb16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb16ActionPerformed
         // TODO add your handling code here:
-          itemid=13;
+          itemid=16;
         item_kryb(itemid);
-    }//GEN-LAST:event_kryb13ActionPerformed
+    }//GEN-LAST:event_kryb16ActionPerformed
+
+    private void mix27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix27ActionPerformed
+        // TODO add your handling code here:
+        itemid=27;
+        item_mex(itemid);
+    }//GEN-LAST:event_mix27ActionPerformed
+
+    private void mix24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix24ActionPerformed
+        // TODO add your handling code here:
+         itemid=24;
+        item_mex(itemid);
+    }//GEN-LAST:event_mix24ActionPerformed
+
+    private void mix23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix23ActionPerformed
+        // TODO add your handling code here:
+         itemid=23;
+        item_mex(itemid);
+    }//GEN-LAST:event_mix23ActionPerformed
+
+    private void mix22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix22ActionPerformed
+        // TODO add your handling code here:
+        itemid=22;
+        item_mex(itemid);
+    }//GEN-LAST:event_mix22ActionPerformed
+
+    private void kryb17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb17ActionPerformed
+        // TODO add your handling code here:
+        itemid=17;
+       item_kryb(itemid);
+    }//GEN-LAST:event_kryb17ActionPerformed
+
+    private void kryb18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb18ActionPerformed
+        // TODO add your handling code here:
+        itemid=18;
+        item_kryb(itemid);
+    }//GEN-LAST:event_kryb18ActionPerformed
 
     private void mix21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix21ActionPerformed
         // TODO add your handling code here:
@@ -2702,367 +2392,53 @@ public class recipes extends javax.swing.JFrame {
         item_mex(itemid);
     }//GEN-LAST:event_mix21ActionPerformed
 
-    private void mix16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix16ActionPerformed
+    private void mix28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix28ActionPerformed
         // TODO add your handling code here:
-         itemid=16;
+        itemid=28;
         item_mex(itemid);
-    }//GEN-LAST:event_mix16ActionPerformed
-
-    private void mix17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix17ActionPerformed
-        // TODO add your handling code here:
-         itemid=17;
-        item_mex(itemid);
-    }//GEN-LAST:event_mix17ActionPerformed
-
-    private void mix18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix18ActionPerformed
-        // TODO add your handling code here:
-        itemid=18;
-        item_mex(itemid);
-    }//GEN-LAST:event_mix18ActionPerformed
-
-    private void mix23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix23ActionPerformed
-        // TODO add your handling code here:
-        itemid=23;
-       item_kryb(itemid);
-    }//GEN-LAST:event_mix23ActionPerformed
-
-    private void mix24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix24ActionPerformed
-        // TODO add your handling code here:
-        itemid=24;
-        item_kryb(itemid);
-    }//GEN-LAST:event_mix24ActionPerformed
-
-    private void mix19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix19ActionPerformed
-        // TODO add your handling code here:
-        itemid=19;
-        item_mex(itemid);
-    }//GEN-LAST:event_mix19ActionPerformed
-
-    private void mix20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix20ActionPerformed
-        // TODO add your handling code here:
-        itemid=20;
-        item_mex(itemid);
-    }//GEN-LAST:event_mix20ActionPerformed
+    }//GEN-LAST:event_mix28ActionPerformed
 
     private void quantity2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quantity2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_quantity2ActionPerformed
 
-    private void mix22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix22ActionPerformed
+    private void cheese43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese43ActionPerformed
         // TODO add your handling code here:
-         itemid=22;
-        item_mex(itemid);
-    }//GEN-LAST:event_mix22ActionPerformed
-
-    private void cheese25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese25ActionPerformed
-        itemid=25;
+         itemid=43;
         item_cheese(itemid);
-    }//GEN-LAST:event_cheese25ActionPerformed
+    }//GEN-LAST:event_cheese43ActionPerformed
 
-    private void cheese26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese26ActionPerformed
-
-         itemid=26;
-        item_cheese(itemid);
-    }//GEN-LAST:event_cheese26ActionPerformed
-
-    private void cheese32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese32ActionPerformed
+    private void cheese44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese44ActionPerformed
         // TODO add your handling code here:
-         itemid=32;
+          itemid=44;
         item_cheese(itemid);
-    }//GEN-LAST:event_cheese32ActionPerformed
+    }//GEN-LAST:event_cheese44ActionPerformed
 
-    private void cheese31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese31ActionPerformed
+    private void cheese42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese42ActionPerformed
         // TODO add your handling code here:
-          itemid=31;
+          itemid=42;
         item_cheese(itemid);
-    }//GEN-LAST:event_cheese31ActionPerformed
-
-    private void cheese33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese33ActionPerformed
-        // TODO add your handling code here:
-          itemid=33;
-        item_cheese(itemid);
-    }//GEN-LAST:event_cheese33ActionPerformed
+    }//GEN-LAST:event_cheese42ActionPerformed
 
     private void quantity3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quantity3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_quantity3ActionPerformed
 
-    private void kryb83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb83ActionPerformed
+    private void kryb20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb20ActionPerformed
         // TODO add your handling code here:
-          itemid=83;
+          itemid=20;
         item_kryb(itemid);
-    }//GEN-LAST:event_kryb83ActionPerformed
+    }//GEN-LAST:event_kryb20ActionPerformed
 
-    private void cheese27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese27ActionPerformed
+    private void cheese41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese41ActionPerformed
         // TODO add your handling code here:
-           itemid=27;
+           itemid=41;
         item_cheese(itemid);
-    }//GEN-LAST:event_cheese27ActionPerformed
+    }//GEN-LAST:event_cheese41ActionPerformed
 
-    private void cheese30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese30ActionPerformed
+    private void quantity7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quantity7ActionPerformed
         // TODO add your handling code here:
-           itemid=30;
-        item_cheese(itemid);
-    }//GEN-LAST:event_cheese30ActionPerformed
-
-    private void cheese28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese28ActionPerformed
-        // TODO add your handling code here:
-           itemid=28;
-        item_cheese(itemid);
-    }//GEN-LAST:event_cheese28ActionPerformed
-
-    private void sandwich38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich38ActionPerformed
-        // TODO add your handling code here:
-        itemid=38;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich38ActionPerformed
-
-    private void sandwich34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich34ActionPerformed
-        // TODO add your handling code here:
-        itemid=34;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich34ActionPerformed
-
-    private void sandwich39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich39ActionPerformed
-        // TODO add your handling code here:
-        itemid=39;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich39ActionPerformed
-
-    private void quantity4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quantity4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_quantity4ActionPerformed
-
-    private void sandwich35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich35ActionPerformed
-        // TODO add your handling code here:
-      itemid=35;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich35ActionPerformed
-
-    private void sandwich37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich37ActionPerformed
-        // TODO add your handling code here:
-         itemid=37;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich37ActionPerformed
-
-    private void sandwich36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich36ActionPerformed
-        // TODO add your handling code here:
-         itemid=36;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich36ActionPerformed
-
-    private void sandwich40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich40ActionPerformed
-        // TODO add your handling code here:
-         itemid=40;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich40ActionPerformed
-
-    private void sandwich41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich41ActionPerformed
-        // TODO add your handling code here:
-         itemid=41;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich41ActionPerformed
-
-    private void sandwich46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich46ActionPerformed
-        // TODO add your handling code here:
-         itemid=46;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich46ActionPerformed
-
-    private void sandwich47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich47ActionPerformed
-        // TODO add your handling code here:
-         itemid=47;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich47ActionPerformed
-
-    private void sandwich48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich48ActionPerformed
-        // TODO add your handling code here:
-         itemid=48;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich48ActionPerformed
-
-    private void sandwich49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich49ActionPerformed
-        // TODO add your handling code here:
-         itemid=49;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich49ActionPerformed
-
-    private void sandwich45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich45ActionPerformed
-        // TODO add your handling code here:
-         itemid=45;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich45ActionPerformed
-
-    private void sandwich44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich44ActionPerformed
-        // TODO add your handling code here:
-         itemid=44;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich44ActionPerformed
-
-    private void sandwich43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich43ActionPerformed
-        // TODO add your handling code here:
-         itemid=43;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich43ActionPerformed
-
-    private void sandwich42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwich42ActionPerformed
-        // TODO add your handling code here:
-         itemid=42;
-        item_sandwich(itemid);
-    }//GEN-LAST:event_sandwich42ActionPerformed
-
-    private void quantity5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quantity5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_quantity5ActionPerformed
-
-    private void add52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add52ActionPerformed
-        // TODO add your handling code here:
-        itemid=52;
-        item_add(itemid);
-    }//GEN-LAST:event_add52ActionPerformed
-
-    private void add51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add51ActionPerformed
-        // TODO add your handling code here:
-        itemid=51;
-        item_add(itemid);
-    }//GEN-LAST:event_add51ActionPerformed
-
-    private void add55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add55ActionPerformed
-        // TODO add your handling code here:
-        itemid=55;
-        item_add(itemid);
-    }//GEN-LAST:event_add55ActionPerformed
-
-    private void add54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add54ActionPerformed
-        // TODO add your handling code here:
-        itemid=54;
-        item_add(itemid);
-    }//GEN-LAST:event_add54ActionPerformed
-
-    private void add50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add50ActionPerformed
-        // TODO add your handling code here:
-        itemid=50;
-        item_add(itemid);
-    }//GEN-LAST:event_add50ActionPerformed
-
-    private void add53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add53ActionPerformed
-        // TODO add your handling code here:
-         itemid=53;
-        item_add(itemid);
-                           
-    }//GEN-LAST:event_add53ActionPerformed
-
-    private void add58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add58ActionPerformed
-        // TODO add your handling code here:
-           itemid=58;
-        item_add(itemid);
-    }//GEN-LAST:event_add58ActionPerformed
-
-    private void add57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add57ActionPerformed
-        // TODO add your handling code here:
-           itemid=57;
-        item_add(itemid);
-    }//GEN-LAST:event_add57ActionPerformed
-
-    private void add56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add56ActionPerformed
-        // TODO add your handling code here:
-           itemid=56;
-        item_add(itemid);
-    }//GEN-LAST:event_add56ActionPerformed
-
-    private void fast59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fast59ActionPerformed
-        // TODO add your handling code here:
-           itemid=59;
-        item_syame(itemid);
-    }//GEN-LAST:event_fast59ActionPerformed
-
-    private void fast60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fast60ActionPerformed
-        // TODO add your handling code here:
-            itemid=60;
-        item_syame(itemid);
-    }//GEN-LAST:event_fast60ActionPerformed
-
-    private void fast61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fast61ActionPerformed
-        // TODO add your handling code here:
-            itemid=61;
-        item_syame(itemid);
-    }//GEN-LAST:event_fast61ActionPerformed
-
-    private void fast70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fast70ActionPerformed
-        // TODO add your handling code here:
-            itemid=70;
-        item_syame(itemid);
-    }//GEN-LAST:event_fast70ActionPerformed
-
-    private void fast62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fast62ActionPerformed
-        // TODO add your handling code here:
-            itemid=62;
-        item_syame(itemid);
-    }//GEN-LAST:event_fast62ActionPerformed
-
-    private void fast63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fast63ActionPerformed
-        // TODO add your handling code here:
-            itemid=63;
-        item_syame(itemid);
-    }//GEN-LAST:event_fast63ActionPerformed
-
-    private void fast64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fast64ActionPerformed
-        // TODO add your handling code here:
-            itemid=64;
-        item_syame(itemid);
-    }//GEN-LAST:event_fast64ActionPerformed
-
-    private void fast73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fast73ActionPerformed
-        // TODO add your handling code here:
-            itemid=73;
-        item_syame(itemid);
-    }//GEN-LAST:event_fast73ActionPerformed
-
-    private void fast65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fast65ActionPerformed
-        // TODO add your handling code here:
-            itemid=65;
-        item_syame(itemid);
-    }//GEN-LAST:event_fast65ActionPerformed
-
-    private void fast66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fast66ActionPerformed
-        // TODO add your handling code here:
-            itemid=66;
-        item_syame(itemid);
-    }//GEN-LAST:event_fast66ActionPerformed
-
-    private void fast67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fast67ActionPerformed
-        // TODO add your handling code here:
-            itemid=67;
-        item_syame(itemid);
-    }//GEN-LAST:event_fast67ActionPerformed
-
-    private void fast72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fast72ActionPerformed
-        // TODO add your handling code here:
-            itemid=72;
-        item_syame(itemid);
-    }//GEN-LAST:event_fast72ActionPerformed
-
-    private void fast68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fast68ActionPerformed
-        // TODO add your handling code here:
-            itemid=68;
-        item_syame(itemid);
-    }//GEN-LAST:event_fast68ActionPerformed
-
-    private void fast69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fast69ActionPerformed
-        // TODO add your handling code here:
-            itemid=69;
-        item_syame(itemid);
-    }//GEN-LAST:event_fast69ActionPerformed
-
-    private void fast71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fast71ActionPerformed
-        // TODO add your handling code here:
-            itemid=71;
-        item_syame(itemid);
-    }//GEN-LAST:event_fast71ActionPerformed
-
-    private void quantity6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quantity6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_quantity6ActionPerformed
+    }//GEN-LAST:event_quantity7ActionPerformed
 
     private void takeawayMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_takeawayMouseClicked
         // TODO add your handling code here:
@@ -3229,9 +2605,10 @@ public class recipes extends javax.swing.JFrame {
         TotalCost.setText(""+totalcost);   
         quantity4.setText("1");
     }
-    
-    
-      public void item_add(int itemid)
+      
+      
+      
+           public void item_meal(int itemid)
     {
         int quanint=Integer.parseInt( quantity5.getText().toString());
         findIemsDetails item =new findIemsDetails(itemid);
@@ -3239,10 +2616,10 @@ public class recipes extends javax.swing.JFrame {
         item.getItemList(itemid);
         ArrayList<Items> list=item.getItemList(itemid);
         DefaultTableModel model=(DefaultTableModel)orderstable.getModel();
-          Object[] row=new Object[4];
+        Object[] row=new Object[4];
         for(int i=0;i<list.size();i++)
         {
-            row[0]=quanint*list.get(i).getCost();
+             row[0]=quanint*list.get(i).getCost();
             row[1]=list.get(i).getName();
             row[2]=quantity5.getText();
             row[3]=list.get(i).getId();
@@ -3255,35 +2632,10 @@ public class recipes extends javax.swing.JFrame {
         TotalCost.setText(""+totalcost);   
         quantity5.setText("1");
     }
-    
-                       
-      public void item_syame(int itemid)
-    {
-        int quanint=Integer.parseInt( quantity6.getText().toString());
-        findIemsDetails item =new findIemsDetails(itemid);
-        item.getConnection();
-        item.getItemList(itemid);
-        ArrayList<Items> list=item.getItemList(itemid);
-        DefaultTableModel model=(DefaultTableModel)orderstable.getModel();
-        Object[] row=new Object[4];
-        for(int i=0;i<list.size();i++)
-        {
-             row[0]=quanint*list.get(i).getCost();
-            row[1]=list.get(i).getName();
-            row[2]=quantity6.getText();
-            row[3]=list.get(i).getId();
-            model.addRow(row);
-        }        
-        egmaly+=quanint*list.get(0).getCost();
-        totalcost+=quanint*list.get(0).getCost();
-        
-        sum.setText(""+egmaly);
-        TotalCost.setText(""+totalcost);   
-        quantity6.setText("1");
-    }
-       
-      
-           public void item_newmex(int itemid)
+                      
+           
+           
+             public void item_add(int itemid)
     {
         int quanint=Integer.parseInt( quantity7.getText().toString());
         findIemsDetails item =new findIemsDetails(itemid);
@@ -3291,10 +2643,10 @@ public class recipes extends javax.swing.JFrame {
         item.getItemList(itemid);
         ArrayList<Items> list=item.getItemList(itemid);
         DefaultTableModel model=(DefaultTableModel)orderstable.getModel();
-        Object[] row=new Object[4];
+          Object[] row=new Object[4];
         for(int i=0;i<list.size();i++)
         {
-             row[0]=quanint*list.get(i).getCost();
+            row[0]=quanint*list.get(i).getCost();
             row[1]=list.get(i).getName();
             row[2]=quantity7.getText();
             row[3]=list.get(i).getId();
@@ -3307,7 +2659,35 @@ public class recipes extends javax.swing.JFrame {
         TotalCost.setText(""+totalcost);   
         quantity7.setText("1");
     }
-                               
+    
+    
+      public void item_sweet(int itemid)
+    {
+        int quanint=Integer.parseInt( quantity6.getText().toString());
+        findIemsDetails item =new findIemsDetails(itemid);
+        item.getConnection();
+        item.getItemList(itemid);
+        ArrayList<Items> list=item.getItemList(itemid);
+        DefaultTableModel model=(DefaultTableModel)orderstable.getModel();
+          Object[] row=new Object[4];
+        for(int i=0;i<list.size();i++)
+        {
+            row[0]=quanint*list.get(i).getCost();
+            row[1]=list.get(i).getName();
+            row[2]=quantity6.getText();
+            row[3]=list.get(i).getId();
+            model.addRow(row);
+        }        
+        egmaly+=quanint*list.get(0).getCost();
+        totalcost+=quanint*list.get(0).getCost();
+        
+        sum.setText(""+egmaly);
+        TotalCost.setText(""+totalcost);   
+        quantity6.setText("1");
+    }
+    
+
+       
 
       
       
@@ -3476,16 +2856,16 @@ void store_cashorder(){
                             quantity2.setText("1");
                             quantity3.setText("1");
                             quantity4.setText("1");
-                            quantity5.setText("1");
-                            quantity6.setText("1");
                             quantity7.setText("1");
+                            quantity4.setText("1");
+                            quantity5.setText("1");
                             discount.setText("0");
                             taxs.setText("0");
                             TotalCost.setText("0");
                             DeliveryBox.setEnabled(false);
                             egmaly=0;
                             totalcost=0;
-                            area.setText(" ");
+                            area7x.setText(" ");
                             ImageIcon icon = new ImageIcon(this.getClass().getResource("correct.png"));
                            JLabel label = new JLabel("تم طباعه الاوردر بنجاح");
                            label.setFont(new Font("Tahoma", Font.BOLD, 14));
@@ -3594,13 +2974,13 @@ void store_deliveryorder(){
                             quantity2.setText("1");
                             quantity3.setText("1");
                             quantity4.setText("1");
-                            quantity5.setText("1");
-                            quantity6.setText("1");
                             quantity7.setText("1");
+                            quantity4.setText("1");
+                            quantity5.setText("1");
                             printdelivery.setEnabled(false);
                             egmaly=0;
                             totalcost=0;
-                            area.setText(" ");
+                            area7x.setText(" ");
                              ImageIcon icon = new ImageIcon(this.getClass().getResource("correct.png"));
                              
                              
@@ -3648,7 +3028,7 @@ try {
    
    JasperDesign jsd = JRXmlLoader.load("C:/Reports/kitchentake.jrxml");
     HashMap map = new HashMap();
-    String txtarea=area.getText(); 
+    String txtarea=area7x.getText(); 
     map.put("notes", txtarea);
    JasperReport jr = JasperCompileManager.compileReport(jsd);
    JasperPrint jp = JasperFillManager.fillReport(jr, map,con);
@@ -3673,7 +3053,7 @@ try {
    
    JasperDesign jsd = JRXmlLoader.load("C:/Reports/kitchendelivery.jrxml");
     HashMap map = new HashMap();
-    String txtarea=area.getText(); 
+    String txtarea=area7x.getText(); 
     map.put("notes", txtarea);
    JasperReport jr = JasperCompileManager.compileReport(jsd);
    JasperPrint jp = JasperFillManager.fillReport(jr, map,con);
@@ -3834,16 +3214,16 @@ try {
         discount.setText("0");
         taxs.setText("0");
         TotalCost.setText("0");
-        area.setText(" ");
+        area7x.setText(" ");
         egmaly=0;
         totalcost=0;
         quantity1.setText("1");
         quantity2.setText("1");
         quantity3.setText("1");
         quantity4.setText("1");
-        quantity5.setText("1");
-        quantity6.setText("1");
         quantity7.setText("1");
+        quantity4.setText("1");
+        quantity5.setText("1");
         printsheek.setEnabled(true);
         choosedelivery.setEnabled(false);
         printdelivery.setEnabled(false);
@@ -3993,197 +3373,356 @@ try {
         main.setVisible(true);
     }//GEN-LAST:event_exitlbMouseClicked
 
-    private void mix89ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix89ActionPerformed
+    private void mix30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix30ActionPerformed
         // TODO add your handling code here:
-         itemid=89;
-        item_mex(itemid); 
-       
-    }//GEN-LAST:event_mix89ActionPerformed
-
-    private void mix75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix75ActionPerformed
-        // TODO add your handling code here:
-          itemid=75;
+          itemid=30;
         item_mex(itemid);
-    }//GEN-LAST:event_mix75ActionPerformed
+    }//GEN-LAST:event_mix30ActionPerformed
 
-    private void mix76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix76ActionPerformed
+    private void mix29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix29ActionPerformed
         // TODO add your handling code here:
-          itemid=76;
+          itemid=29;
         item_mex(itemid);
-    }//GEN-LAST:event_mix76ActionPerformed
+    }//GEN-LAST:event_mix29ActionPerformed
 
-    private void mix80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix80ActionPerformed
+    private void mix25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix25ActionPerformed
         // TODO add your handling code here:
-           itemid=80;
+           itemid=25;
         item_mex(itemid);
-    }//GEN-LAST:event_mix80ActionPerformed
+    }//GEN-LAST:event_mix25ActionPerformed
 
-    private void mix79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix79ActionPerformed
+    private void mix26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix26ActionPerformed
         // TODO add your handling code here:
-           itemid=79;
+           itemid=26;
         item_mex(itemid);
-    }//GEN-LAST:event_mix79ActionPerformed
+    }//GEN-LAST:event_mix26ActionPerformed
 
-    private void mix78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix78ActionPerformed
+    private void cheese45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese45ActionPerformed
         // TODO add your handling code here:
-           itemid=78;
-        item_mex(itemid);
-    }//GEN-LAST:event_mix78ActionPerformed
-
-    private void mix77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix77ActionPerformed
-        // TODO add your handling code here:
-           itemid=77;
-        item_mex(itemid);
-    }//GEN-LAST:event_mix77ActionPerformed
-
-    private void cheese87ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese87ActionPerformed
-        // TODO add your handling code here:
-          itemid=87;
+          itemid=45;
         item_cheese(itemid);
-    }//GEN-LAST:event_cheese87ActionPerformed
+    }//GEN-LAST:event_cheese45ActionPerformed
 
-    private void cheese86ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese86ActionPerformed
+    private void cheese46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese46ActionPerformed
         // TODO add your handling code here:
-          itemid=86;
+          itemid=46;
         item_cheese(itemid);
-    }//GEN-LAST:event_cheese86ActionPerformed
+    }//GEN-LAST:event_cheese46ActionPerformed
 
-    private void cheese85ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese85ActionPerformed
+    private void cheese47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese47ActionPerformed
         // TODO add your handling code here:
-          itemid=85;
+          itemid=47;
         item_cheese(itemid);
-    }//GEN-LAST:event_cheese85ActionPerformed
+    }//GEN-LAST:event_cheese47ActionPerformed
 
-    private void cheese84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese84ActionPerformed
+    private void cheese48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheese48ActionPerformed
         // TODO add your handling code here:
-          itemid=84;
+          itemid=48;
         item_cheese(itemid);
-    }//GEN-LAST:event_cheese84ActionPerformed
+    }//GEN-LAST:event_cheese48ActionPerformed
 
-    private void kryb82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb82ActionPerformed
+    private void kryb10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb10ActionPerformed
         // TODO add your handling code here:
-         itemid=82;
+         itemid=10;
         item_kryb(itemid);
-    }//GEN-LAST:event_kryb82ActionPerformed
+    }//GEN-LAST:event_kryb10ActionPerformed
 
-    private void kryb81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb81ActionPerformed
+    private void kryb19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kryb19ActionPerformed
         // TODO add your handling code here:
-         itemid=81;
+         itemid=19;
         item_kryb(itemid);
-    }//GEN-LAST:event_kryb81ActionPerformed
+    }//GEN-LAST:event_kryb19ActionPerformed
 
-    private void mix88ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix88ActionPerformed
+    private void meals86ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_meals86ActionPerformed
         // TODO add your handling code here:
-            itemid=88;
-        item_mex(itemid); 
-    }//GEN-LAST:event_mix88ActionPerformed
+        itemid=86;
+        item_meal(itemid);
+    }//GEN-LAST:event_meals86ActionPerformed
 
-    private void mix74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mix74ActionPerformed
+    private void meals83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_meals83ActionPerformed
         // TODO add your handling code here:
-            itemid=74;
-        item_mex(itemid); 
-    }//GEN-LAST:event_mix74ActionPerformed
+          itemid=83;
+        item_meal(itemid);
+    }//GEN-LAST:event_meals83ActionPerformed
 
-    private void newmex95ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex95ActionPerformed
+    private void meals82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_meals82ActionPerformed
         // TODO add your handling code here:
-          itemid=95;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex95ActionPerformed
+       itemid=82;
+        item_meal(itemid);
+    }//GEN-LAST:event_meals82ActionPerformed
 
-    private void newmex90ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex90ActionPerformed
+    private void meals81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_meals81ActionPerformed
         // TODO add your handling code here:
-          itemid=90;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex90ActionPerformed
+        itemid=81;
+        item_meal(itemid);
+    }//GEN-LAST:event_meals81ActionPerformed
 
-    private void newmex91ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex91ActionPerformed
+    private void meals80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_meals80ActionPerformed
         // TODO add your handling code here:
-          itemid=91;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex91ActionPerformed
+        itemid=80;
+        item_meal(itemid);
+    }//GEN-LAST:event_meals80ActionPerformed
 
-    private void newmex92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex92ActionPerformed
+    private void meals87ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_meals87ActionPerformed
         // TODO add your handling code here:
-          itemid=92;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex92ActionPerformed
+         itemid=87;
+        item_meal(itemid);
+    }//GEN-LAST:event_meals87ActionPerformed
 
-    private void newmex93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex93ActionPerformed
-        // TODO add your handling code here:
-          itemid=93;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex93ActionPerformed
-
-    private void newmex94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex94ActionPerformed
-        // TODO add your handling code here:
-          itemid=94;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex94ActionPerformed
-
-    private void quantity7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quantity7ActionPerformed
+    private void quantity5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quantity5ActionPerformed
         // TODO add your handling code here:
         
-    }//GEN-LAST:event_quantity7ActionPerformed
+    }//GEN-LAST:event_quantity5ActionPerformed
 
-    private void newmex99ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex99ActionPerformed
+    private void meals84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_meals84ActionPerformed
         // TODO add your handling code here:
-          itemid=99;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex99ActionPerformed
+       itemid=84;
+        item_meal(itemid);
+    }//GEN-LAST:event_meals84ActionPerformed
 
-    private void newmex104ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex104ActionPerformed
+    private void meals85ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_meals85ActionPerformed
         // TODO add your handling code here:
-          itemid=104;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex104ActionPerformed
+      itemid=85;
+        item_meal(itemid);
+    }//GEN-LAST:event_meals85ActionPerformed
 
-    private void newmex100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex100ActionPerformed
+    private void sandwithch63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch63ActionPerformed
         // TODO add your handling code here:
-          itemid=100;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex100ActionPerformed
+           itemid=63;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch63ActionPerformed
 
-    private void newmex101ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex101ActionPerformed
+    private void sandwithch62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch62ActionPerformed
         // TODO add your handling code here:
-          itemid=101;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex101ActionPerformed
+           itemid=62;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch62ActionPerformed
 
-    private void newmex102ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex102ActionPerformed
+    private void sandwithch61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch61ActionPerformed
         // TODO add your handling code here:
-          itemid=102;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex102ActionPerformed
+           itemid=61;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch61ActionPerformed
 
-    private void newmex103ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex103ActionPerformed
-        // TODO add your handling code here: 
-        itemid=103;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex103ActionPerformed
-
-    private void newmex97ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex97ActionPerformed
+    private void sandwithch72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch72ActionPerformed
         // TODO add your handling code here:
-          itemid=97;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex97ActionPerformed
+            itemid=72;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch72ActionPerformed
 
-    private void newmex96ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex96ActionPerformed
+    private void sandwithch60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch60ActionPerformed
         // TODO add your handling code here:
-          itemid=96;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex96ActionPerformed
+           itemid=60;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch60ActionPerformed
 
-    private void newmex98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex98ActionPerformed
-        // TODO add your handling code here:
-          itemid=98;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex98ActionPerformed
+    private void sandwithch67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch67ActionPerformed
+        // TODO add your handling code here:    
+        itemid=67;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch67ActionPerformed
 
-    private void newmex105ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmex105ActionPerformed
+    private void sandwithch66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch66ActionPerformed
         // TODO add your handling code here:
-          itemid=105;
-        item_newmex(itemid);
-    }//GEN-LAST:event_newmex105ActionPerformed
+            itemid=66;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch66ActionPerformed
+
+    private void sandwithch70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch70ActionPerformed
+        // TODO add your handling code here:
+            itemid=70;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch70ActionPerformed
+
+    private void sandwithch65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch65ActionPerformed
+        // TODO add your handling code here:
+            itemid=65;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch65ActionPerformed
+
+    private void sandwithch64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch64ActionPerformed
+        // TODO add your handling code here:
+            itemid=64;
+        item_sandwich(itemid);
+        
+    }//GEN-LAST:event_sandwithch64ActionPerformed
+
+    private void sandwithch68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch68ActionPerformed
+        // TODO add your handling code here:
+            itemid=68;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch68ActionPerformed
+
+    private void sandwithch73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch73ActionPerformed
+        // TODO add your handling code here:
+            itemid=73;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch73ActionPerformed
+
+    private void sandwithch71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch71ActionPerformed
+        // TODO add your handling code here:
+            itemid=71;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch71ActionPerformed
+
+    private void sandwithch74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch74ActionPerformed
+        // TODO add your handling code here:
+            itemid=74;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch74ActionPerformed
+
+    private void quantity4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quantity4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_quantity4ActionPerformed
+
+    private void sandwithch75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch75ActionPerformed
+        // TODO add your handling code here:
+            itemid=75;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch75ActionPerformed
+
+    private void sandwithch69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch69ActionPerformed
+        // TODO add your handling code here:
+            itemid=69;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch69ActionPerformed
+
+    private void sandwithch78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch78ActionPerformed
+        // TODO add your handling code here:
+            itemid=78;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch78ActionPerformed
+
+    private void sandwithch79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch79ActionPerformed
+        // TODO add your handling code here:
+            itemid=79;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch79ActionPerformed
+
+    private void sandwithch77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch77ActionPerformed
+        // TODO add your handling code here:
+            itemid=77;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch77ActionPerformed
+
+    private void sandwithch76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwithch76ActionPerformed
+        // TODO add your handling code here:
+            itemid=76;
+        item_sandwich(itemid);
+    }//GEN-LAST:event_sandwithch76ActionPerformed
+
+    private void add149ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add149ActionPerformed
+        // TODO add your handling code here:
+        itemid=149;
+        item_add(itemid);
+    }//GEN-LAST:event_add149ActionPerformed
+
+    private void add150ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add150ActionPerformed
+        // TODO add your handling code here:
+        itemid=150;
+        item_add(itemid);
+    }//GEN-LAST:event_add150ActionPerformed
+
+    private void add151ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add151ActionPerformed
+        // TODO add your handling code here:
+        itemid=151;
+        item_add(itemid);
+    }//GEN-LAST:event_add151ActionPerformed
+
+    private void add145ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add145ActionPerformed
+        // TODO add your handling code here:
+        itemid=145;
+        item_add(itemid);
+    }//GEN-LAST:event_add145ActionPerformed
+
+    private void add146ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add146ActionPerformed
+        // TODO add your handling code here:
+        itemid=146;
+        item_add(itemid);
+    }//GEN-LAST:event_add146ActionPerformed
+
+    private void add147ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add147ActionPerformed
+        // TODO add your handling code here:
+        itemid=147;
+        item_add(itemid);
+
+    }//GEN-LAST:event_add147ActionPerformed
+
+    private void add141ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add141ActionPerformed
+        // TODO add your handling code here:
+        itemid=141;
+        item_add(itemid);
+    }//GEN-LAST:event_add141ActionPerformed
+
+    private void add142ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add142ActionPerformed
+        // TODO add your handling code here:
+        itemid=142;
+        item_add(itemid);
+    }//GEN-LAST:event_add142ActionPerformed
+
+    private void add143ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add143ActionPerformed
+        // TODO add your handling code here:
+        itemid=143;
+        item_add(itemid);
+    }//GEN-LAST:event_add143ActionPerformed
+
+    private void add140ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add140ActionPerformed
+        // TODO add your handling code here:
+            itemid=140;
+        item_add(itemid);
+    }//GEN-LAST:event_add140ActionPerformed
+
+    private void add144ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add144ActionPerformed
+        // TODO add your handling code here:
+          itemid=144;
+        item_add(itemid);
+    }//GEN-LAST:event_add144ActionPerformed
+
+    private void add148ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add148ActionPerformed
+        // TODO add your handling code here:
+          itemid=148;
+        item_add(itemid);
+    }//GEN-LAST:event_add148ActionPerformed
+
+    private void quantity6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quantity6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_quantity6ActionPerformed
+
+    private void add101ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add101ActionPerformed
+        // TODO add your handling code here:
+         itemid=101;
+        item_sweet(itemid);
+    }//GEN-LAST:event_add101ActionPerformed
+
+    private void add102ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add102ActionPerformed
+        // TODO add your handling code here:
+         itemid=102;
+        item_sweet(itemid);
+    }//GEN-LAST:event_add102ActionPerformed
+
+    private void add105ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add105ActionPerformed
+        // TODO add your handling code here:
+         itemid=105;
+        item_sweet(itemid);
+    }//GEN-LAST:event_add105ActionPerformed
+
+    private void add103ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add103ActionPerformed
+        // TODO add your handling code here:
+         itemid=103;
+        item_sweet(itemid);
+    }//GEN-LAST:event_add103ActionPerformed
+
+    private void add100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add100ActionPerformed
+        // TODO add your handling code here:
+         itemid=100;
+        item_sweet(itemid);
+    }//GEN-LAST:event_add100ActionPerformed
+
+    private void add104ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add104ActionPerformed
+        // TODO add your handling code here:
+         itemid=104;
+        item_sweet(itemid);
+    }//GEN-LAST:event_add104ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -4235,32 +3774,37 @@ try {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> DeliveryBox;
     private javax.swing.JTextField TotalCost;
-    private javax.swing.JButton add50;
-    private javax.swing.JButton add51;
-    private javax.swing.JButton add52;
-    private javax.swing.JButton add53;
-    private javax.swing.JButton add54;
-    private javax.swing.JButton add55;
-    private javax.swing.JButton add56;
-    private javax.swing.JButton add57;
-    private javax.swing.JButton add58;
+    private javax.swing.JButton add100;
+    private javax.swing.JButton add101;
+    private javax.swing.JButton add102;
+    private javax.swing.JButton add103;
+    private javax.swing.JButton add104;
+    private javax.swing.JButton add105;
+    private javax.swing.JButton add140;
+    private javax.swing.JButton add141;
+    private javax.swing.JButton add142;
+    private javax.swing.JButton add143;
+    private javax.swing.JButton add144;
+    private javax.swing.JButton add145;
+    private javax.swing.JButton add146;
+    private javax.swing.JButton add147;
+    private javax.swing.JButton add148;
+    private javax.swing.JButton add149;
+    private javax.swing.JButton add150;
+    private javax.swing.JButton add151;
     private javax.swing.JPanel adds;
-    private javax.swing.JTextArea area;
+    private javax.swing.JTextArea area7x;
     private javax.swing.JButton backtorderbtn1;
     private javax.swing.JTextField cashierid;
     private javax.swing.JPanel cheese;
-    private javax.swing.JButton cheese25;
-    private javax.swing.JButton cheese26;
-    private javax.swing.JButton cheese27;
-    private javax.swing.JButton cheese28;
-    private javax.swing.JButton cheese30;
-    private javax.swing.JButton cheese31;
-    private javax.swing.JButton cheese32;
-    private javax.swing.JButton cheese33;
-    private javax.swing.JButton cheese84;
-    private javax.swing.JButton cheese85;
-    private javax.swing.JButton cheese86;
-    private javax.swing.JButton cheese87;
+    private javax.swing.JButton cheese41;
+    private javax.swing.JButton cheese42;
+    private javax.swing.JButton cheese43;
+    private javax.swing.JButton cheese44;
+    private javax.swing.JButton cheese45;
+    private javax.swing.JButton cheese46;
+    private javax.swing.JButton cheese47;
+    private javax.swing.JButton cheese48;
     private javax.swing.JButton choosedelivery;
     public static javax.swing.JTextField clid;
     public static javax.swing.JTextField clname;
@@ -4268,38 +3812,18 @@ try {
     private javax.swing.JLabel delivery;
     private javax.swing.JTextField discount;
     private javax.swing.JLabel exitlb;
-    private javax.swing.JButton fast59;
-    private javax.swing.JButton fast60;
-    private javax.swing.JButton fast61;
-    private javax.swing.JButton fast62;
-    private javax.swing.JButton fast63;
-    private javax.swing.JButton fast64;
-    private javax.swing.JButton fast65;
-    private javax.swing.JButton fast66;
-    private javax.swing.JButton fast67;
-    private javax.swing.JButton fast68;
-    private javax.swing.JButton fast69;
-    private javax.swing.JButton fast70;
-    private javax.swing.JButton fast71;
-    private javax.swing.JButton fast72;
-    private javax.swing.JButton fast73;
-    private javax.swing.JPanel fasting;
     private javax.swing.JPanel header;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel1x;
+    private javax.swing.JLabel jLabel2x;
+    private javax.swing.JLabel jLabel3x;
+    private javax.swing.JLabel jLabel4x;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel7x;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
@@ -4312,56 +3836,42 @@ try {
     private javax.swing.JButton kryb13;
     private javax.swing.JButton kryb14;
     private javax.swing.JButton kryb15;
+    private javax.swing.JButton kryb16;
+    private javax.swing.JButton kryb17;
+    private javax.swing.JButton kryb18;
+    private javax.swing.JButton kryb19;
     private javax.swing.JButton kryb2;
+    private javax.swing.JButton kryb20;
     private javax.swing.JButton kryb3;
     private javax.swing.JButton kryb4;
     private javax.swing.JButton kryb5;
     private javax.swing.JButton kryb6;
     private javax.swing.JButton kryb7;
     private javax.swing.JButton kryb8;
-    private javax.swing.JButton kryb81;
-    private javax.swing.JButton kryb82;
-    private javax.swing.JButton kryb83;
     private javax.swing.JButton kryb9;
     private javax.swing.JPanel krybs;
+    private javax.swing.JPanel meals;
+    private javax.swing.JButton meals80;
+    private javax.swing.JButton meals81;
+    private javax.swing.JButton meals82;
+    private javax.swing.JButton meals83;
+    private javax.swing.JButton meals84;
+    private javax.swing.JButton meals85;
+    private javax.swing.JButton meals86;
+    private javax.swing.JButton meals87;
     private javax.swing.JPanel mix;
-    private javax.swing.JButton mix16;
-    private javax.swing.JButton mix17;
-    private javax.swing.JButton mix18;
-    private javax.swing.JButton mix19;
-    private javax.swing.JButton mix20;
     private javax.swing.JButton mix21;
     private javax.swing.JButton mix22;
     private javax.swing.JButton mix23;
     private javax.swing.JButton mix24;
-    private javax.swing.JButton mix74;
-    private javax.swing.JButton mix75;
-    private javax.swing.JButton mix76;
-    private javax.swing.JButton mix77;
-    private javax.swing.JButton mix78;
-    private javax.swing.JButton mix79;
-    private javax.swing.JButton mix80;
-    private javax.swing.JButton mix88;
-    private javax.swing.JButton mix89;
-    private javax.swing.JPanel newmex;
-    private javax.swing.JButton newmex100;
-    private javax.swing.JButton newmex101;
-    private javax.swing.JButton newmex102;
-    private javax.swing.JButton newmex103;
-    private javax.swing.JButton newmex104;
-    private javax.swing.JButton newmex105;
-    private javax.swing.JButton newmex90;
-    private javax.swing.JButton newmex91;
-    private javax.swing.JButton newmex92;
-    private javax.swing.JButton newmex93;
-    private javax.swing.JButton newmex94;
-    private javax.swing.JButton newmex95;
-    private javax.swing.JButton newmex96;
-    private javax.swing.JButton newmex97;
-    private javax.swing.JButton newmex98;
-    private javax.swing.JButton newmex99;
+    private javax.swing.JButton mix25;
+    private javax.swing.JButton mix26;
+    private javax.swing.JButton mix27;
+    private javax.swing.JButton mix28;
+    private javax.swing.JButton mix29;
+    private javax.swing.JButton mix30;
     private javax.swing.JButton neworder;
-    private javax.swing.JLabel notes;
+    private javax.swing.JLabel notes7x;
     private javax.swing.JTextField orderid;
     private javax.swing.JTable orderstable;
     public static javax.swing.JButton printdelivery;
@@ -4374,24 +3884,29 @@ try {
     private javax.swing.JTextField quantity6;
     private javax.swing.JTextField quantity7;
     private javax.swing.JButton removerecipe;
-    private javax.swing.JPanel sandwich;
-    private javax.swing.JButton sandwich34;
-    private javax.swing.JButton sandwich35;
-    private javax.swing.JButton sandwich36;
-    private javax.swing.JButton sandwich37;
-    private javax.swing.JButton sandwich38;
-    private javax.swing.JButton sandwich39;
-    private javax.swing.JButton sandwich40;
-    private javax.swing.JButton sandwich41;
-    private javax.swing.JButton sandwich42;
-    private javax.swing.JButton sandwich43;
-    private javax.swing.JButton sandwich44;
-    private javax.swing.JButton sandwich45;
-    private javax.swing.JButton sandwich46;
-    private javax.swing.JButton sandwich47;
-    private javax.swing.JButton sandwich48;
-    private javax.swing.JButton sandwich49;
+    private javax.swing.JPanel sandwitch;
+    private javax.swing.JButton sandwithch60;
+    private javax.swing.JButton sandwithch61;
+    private javax.swing.JButton sandwithch62;
+    private javax.swing.JButton sandwithch63;
+    private javax.swing.JButton sandwithch64;
+    private javax.swing.JButton sandwithch65;
+    private javax.swing.JButton sandwithch66;
+    private javax.swing.JButton sandwithch67;
+    private javax.swing.JButton sandwithch68;
+    private javax.swing.JButton sandwithch69;
+    private javax.swing.JButton sandwithch70;
+    private javax.swing.JButton sandwithch71;
+    private javax.swing.JButton sandwithch72;
+    private javax.swing.JButton sandwithch73;
+    private javax.swing.JButton sandwithch74;
+    private javax.swing.JButton sandwithch75;
+    private javax.swing.JButton sandwithch76;
+    private javax.swing.JButton sandwithch77;
+    private javax.swing.JButton sandwithch78;
+    private javax.swing.JButton sandwithch79;
     private javax.swing.JTextField sum;
+    private javax.swing.JPanel sweet;
     private javax.swing.JLabel takeaway;
     private javax.swing.JTextField taxs;
     // End of variables declaration//GEN-END:variables

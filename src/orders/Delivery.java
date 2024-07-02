@@ -35,7 +35,8 @@ import javax.swing.table.DefaultTableCellRenderer;
  * @author Amer Osama
  */
 public class Delivery extends javax.swing.JFrame {
-    ImageIcon uplogo =new ImageIcon (getClass().getResource("/images/uppo.jpg"));
+
+    ImageIcon uplogo = new ImageIcon(getClass().getResource("/images/uppo.jpg"));
 
     /**
      * Creates new form Cashiers
@@ -46,7 +47,7 @@ public class Delivery extends javax.swing.JFrame {
         this.setTitle("Delivery ");
         this.setLocationRelativeTo(null);
         this.setResizable(false);
-                this.setIconImage(uplogo.getImage());
+        this.setIconImage(uplogo.getImage());
 
     }
 
@@ -381,122 +382,115 @@ public class Delivery extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-   
-    
-    
     //for searching about a person in clients table
-    private void checksizeforsearch(){
-    if (deliverytable.getColumnModel().getColumnCount() > 0) {
-    deliverytable.getColumnModel().getColumn(0).setMinWidth(0);
-    deliverytable.getColumnModel().getColumn(0).setMaxWidth(0);
-    deliverytable.getColumnModel().getColumn(1).setMinWidth(200);
-    deliverytable.getColumnModel().getColumn(1).setMaxWidth(200);
-    deliverytable.getColumnModel().getColumn(2).setMinWidth(160);
-    deliverytable.getColumnModel().getColumn(2).setMaxWidth(160);
-    }
+    private void checksizeforsearch() {
+        if (deliverytable.getColumnModel().getColumnCount() > 0) {
+            deliverytable.getColumnModel().getColumn(0).setMinWidth(0);
+            deliverytable.getColumnModel().getColumn(0).setMaxWidth(0);
+            deliverytable.getColumnModel().getColumn(1).setMinWidth(200);
+            deliverytable.getColumnModel().getColumn(1).setMaxWidth(200);
+            deliverytable.getColumnModel().getColumn(2).setMinWidth(160);
+            deliverytable.getColumnModel().getColumn(2).setMaxWidth(160);
+        }
     }
 
-    
+
     private void searchclientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchclientActionPerformed
         // TODO add your handling code here:
-       
 
-       find_client();
-      
-       
-        
+        find_client();
+
+
     }//GEN-LAST:event_searchclientActionPerformed
 
-         public void find_client()
-        {
-            ArrayList<Client>clients= ListClients(txtname.getText());
-            if (clients.isEmpty())
-            {
+    public void find_client() {
+        ArrayList<Client> clients = ListClients(txtname.getText());
+        if (clients.isEmpty()) {
             JLabel label = new JLabel("لا يوجد مستخدم بهذا الاسم");
             label.setFont(new Font("Tahoma", Font.BOLD, 14));
             JOptionPane.showMessageDialog(null, label);
+        } else {
+
+            DefaultTableModel model = new DefaultTableModel();
+            model.setColumnIdentifiers(new Object[]{"id", "الاسم ", "الهاتف", "العنوان", "ملاحظات"});
+
+            Object[] row = new Object[5];
+            for (int i = 0; i < clients.size(); i++) {
+                row[0] = clients.get(i).getid();
+                row[1] = clients.get(i).getName();
+                row[2] = clients.get(i).getPhone();
+                row[3] = clients.get(i).getAddress();
+                row[4] = clients.get(i).getNotes();
+
+                model.addRow(row);
             }
-               
-                else
-            {
 
-        DefaultTableModel model=new DefaultTableModel();
-          model.setColumnIdentifiers(new Object[]{"id","الاسم ","الهاتف","العنوان","ملاحظات"});
+            deliverytable.setModel(model);
+            checksizeforsearch();
 
-        Object[] row=new Object[5];
-        for(int i=0;i<clients.size();i++)
-        {
-            row[0]=clients.get(i).getid();
-            row[1]=clients.get(i).getName();
-            row[2]=clients.get(i).getPhone();
-            row[3]=clients.get(i).getAddress();
-            row[4]=clients.get(i).getNotes();
-
-            
-            model.addRow(row);
-        }  
-          
-        deliverytable.setModel(model);
-          checksizeforsearch();  
-          
-                    }
         }
-        
-    
-    
-    
-        public ArrayList<Client>ListClients(String ValToSearch)
-    {
-       
-        ArrayList<Client>clientsList=new ArrayList<Client>();
-          Statement st;
-        ResultSet rs;
-        try{
-        Connection connection= getConnection();   
-        st=connection.createStatement();
-        st.executeQuery("SET NAMES UTF8");
-        st.executeQuery("SET CHARACTER SET UTF8");
-        String query="SELECT * FROM `Clients` WHERE `Client_name`LIKE '%"+ValToSearch+"%'";
-            rs=st.executeQuery(query);
+    }
+
+    public ArrayList<Client> ListClients(String ValToSearch) {
+        ArrayList<Client> clientsList = new ArrayList<>();
+        Statement st = null;
+        ResultSet rs = null;
+        Connection connection = getConnection();
+
+        try {
+            st = connection.createStatement();
+            st.execute("SET NAMES UTF8");
+            st.execute("SET CHARACTER SET UTF8");
+            String query = "SELECT * FROM Clients WHERE Client_name LIKE '%" + ValToSearch + "%'";
+            rs = st.executeQuery(query);
             Client client;
-            while(rs.next())
-            {
-                client = new Client(rs.getInt("Client_id"),rs.getString("Client_name"),rs.getString("Client_phone"),rs.getString("Client_address"),rs.getString("Client_notes"));
-               clientsList.add(client);
+            while (rs.next()) {
+                client = new Client(rs.getInt("Client_id"),
+                        rs.getString("Client_name"),
+                        rs.getString("Client_phone"),
+                        rs.getString("Client_address"),
+                        rs.getString("Client_notes"));
+                clientsList.add(client);
             }
-            
-        }
-        catch(Exception e)
-        {
-         e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (rs != null) {
+                    rs.close();
+                }
+                if (st != null) {
+                    st.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
         return clientsList;
     }
-        
-        
-         
-        
-       
-        
-        // show the Row that is selected from client table on the text field
+
+    // show the Row that is selected from client table on the text field
     private void deliverytableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_deliverytableMouseClicked
-        int i=deliverytable.getSelectedRow();       
-        TableModel model=deliverytable.getModel();
+        int i = deliverytable.getSelectedRow();
+        TableModel model = deliverytable.getModel();
         textid.setText(model.getValueAt(i, 0).toString());
         txtname.setText(model.getValueAt(i, 1).toString());
         txtphone.setText(model.getValueAt(i, 2).toString());
         txtaddress.setText(model.getValueAt(i, 3).toString());
         txtnotes.setText(model.getValueAt(i, 4).toString());
-       
+
     }//GEN-LAST:event_deliverytableMouseClicked
 
     private void updateclientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateclientActionPerformed
-        String query="UPDATE `Clients` SET `Client_name`='"+txtname.getText()+"',`Client_phone`='"+txtphone.getText()+"',`Client_address`='"+txtaddress.getText()+"',`Client_notes`='"+txtnotes.getText()+"' WHERE `Client_id`="+textid.getText();
-        executeSQlQuery(query,"تعديل  ");
+        String query = "UPDATE `Clients` SET `Client_name`='" + txtname.getText() + "',`Client_phone`='" + txtphone.getText() + "',`Client_address`='" + txtaddress.getText() + "',`Client_notes`='" + txtnotes.getText() + "' WHERE `Client_id`=" + textid.getText();
+        executeSQlQuery(query, "تعديل  ");
     }//GEN-LAST:event_updateclientActionPerformed
 
     private void addclientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addclientActionPerformed
-        String query="INSERT INTO `Clients`(`Client_name`,`Client_phone`,`Client_address`,`Client_notes`) VALUES('"+txtname.getText()+"','"+txtphone.getText()+"','"+txtaddress.getText()+"','"+txtnotes.getText()+"');";
+        String query = "INSERT INTO `Clients`(`Client_name`,`Client_phone`,`Client_address`,`Client_notes`) VALUES('" + txtname.getText() + "','" + txtphone.getText() + "','" + txtaddress.getText() + "','" + txtnotes.getText() + "');";
 
         executeSQlQuery(query, "اضافة  ");
     }//GEN-LAST:event_addclientActionPerformed
@@ -511,77 +505,70 @@ public class Delivery extends javax.swing.JFrame {
 
     private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
         // TODO add your handling code here:
-       
+
         this.setVisible(false);
         this.dispose();
     }//GEN-LAST:event_exitActionPerformed
 
     private void txtnameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtnameMouseClicked
         // TODO add your handling code here:
-               
+
     }//GEN-LAST:event_txtnameMouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-               textid.setText("");
-               txtname.setText("");
-               txtphone.setText("");
-               txtaddress.setText("");
-               txtnotes.setText("");      
+        textid.setText("");
+        txtname.setText("");
+        txtphone.setText("");
+        txtaddress.setText("");
+        txtnotes.setText("");
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    public void chooseclient(){
-        try{
-             ArrayList<Client>clientList=new ArrayList<Client>();
-             int index=deliverytable.getSelectedRow();
-             TableModel model=deliverytable.getModel();
-             String sid=model.getValueAt(index, 0).toString();
-             String name=model.getValueAt(index, 1).toString();
-             String phone=model.getValueAt(index, 2).toString();
-             String address=model.getValueAt(index, 3).toString();
-             String notes=model.getValueAt(index, 4).toString();
-             int id=Integer.parseInt(sid);
-             Client client;
-             client=new Client(id,name,phone,address,notes);
-             clientList.add(client);
-             clientid =clientList.get(0).getid();
-           clientname =clientList.get(0).getName();
-           
-             JLabel label = new JLabel("تمت اضافه"+" "+clientname+" "+"الي الطلب");
+    public void chooseclient() {
+        try {
+            ArrayList<Client> clientList = new ArrayList<Client>();
+            int index = deliverytable.getSelectedRow();
+            TableModel model = deliverytable.getModel();
+            String sid = model.getValueAt(index, 0).toString();
+            String name = model.getValueAt(index, 1).toString();
+            String phone = model.getValueAt(index, 2).toString();
+            String address = model.getValueAt(index, 3).toString();
+            String notes = model.getValueAt(index, 4).toString();
+            int id = Integer.parseInt(sid);
+            Client client;
+            client = new Client(id, name, phone, address, notes);
+            clientList.add(client);
+            clientid = clientList.get(0).getid();
+            clientname = clientList.get(0).getName();
+
+            JLabel label = new JLabel("تمت اضافه" + " " + clientname + " " + "الي الطلب");
             label.setFont(new Font("Tahoma", Font.BOLD, 14));
             JOptionPane.showMessageDialog(null, label);
-      
-        }
-        catch(ArrayIndexOutOfBoundsException ex)
-        {
+
+        } catch (ArrayIndexOutOfBoundsException ex) {
             JLabel label = new JLabel("يرجي تحديد العميل الذي تريده");
             label.setFont(new Font("Tahoma", Font.BOLD, 14));
             JOptionPane.showMessageDialog(null, label);
-  
+
         }
-        
-        
+
     }
-    
-    
-    
+
+
     private void addorderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addorderActionPerformed
         // TODO add your handling code here: 
         chooseclient();
-  
-    if(clientid>0)
-    {
-    clname.setText(clientname);
-    clid.setText(""+clientid);
-    printdelivery.setEnabled(true);
-   
-    }
-    else
-    {
+
+        if (clientid > 0) {
+            clname.setText(clientname);
+            clid.setText("" + clientid);
+            printdelivery.setEnabled(true);
+
+        } else {
             clname.setText("");
             printdelivery.setEnabled(false);
-    }
- this.setVisible(false);
+        }
+        this.setVisible(false);
     }//GEN-LAST:event_addorderActionPerformed
 
     private void showalldataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showalldataActionPerformed
@@ -589,161 +576,182 @@ public class Delivery extends javax.swing.JFrame {
         Display_All();
     }//GEN-LAST:event_showalldataActionPerformed
 
-     public void Display_All()
-    {
-       
-        
-            ArrayList<Client> list=getClientList();
-        DefaultTableModel model=new DefaultTableModel();
-          model.setColumnIdentifiers(new Object[]{"id","الاسم ","الهاتف","العنوان","ملاحظات"});
-        Object[] row=new Object[5];
-        for(int i=0;i<list.size();i++)
-        {
-            row[0]=list.get(i).getid();
-            row[1]=list.get(i).getName();
-            row[2]=list.get(i).getPhone();
-            row[3]=list.get(i).getAddress();
-            row[4]=list.get(i).getNotes();
+    public void Display_All() {
 
-            
+        ArrayList<Client> list = getClientList();
+        DefaultTableModel model = new DefaultTableModel();
+        model.setColumnIdentifiers(new Object[]{"id", "الاسم ", "الهاتف", "العنوان", "ملاحظات"});
+        Object[] row = new Object[5];
+        for (int i = 0; i < list.size(); i++) {
+            row[0] = list.get(i).getid();
+            row[1] = list.get(i).getName();
+            row[2] = list.get(i).getPhone();
+            row[3] = list.get(i).getAddress();
+            row[4] = list.get(i).getNotes();
+
             model.addRow(row);
         }
-        
-               deliverytable.setModel(model);
-          checksizeforsearch();  
 
-       
-        
+        deliverytable.setModel(model);
+        checksizeforsearch();
+
     }
-    
-    
-     public Connection getConnection()
-    {
+
+    public Connection getConnection() {
         Connection con;
-        try{
+        try {
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/xmix","root","");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/xmix", "root", "");
             return con;
-        } catch(Exception e)
-        {
-           return null;
+        } catch (Exception e) {
+            return null;
         }
     }
-    public ArrayList<Client>getClientList()
-    {
-        ArrayList<Client>clientList=new ArrayList<Client>();
-        Connection connection= getConnection();
-        String query="SELECT * FROM `Clients`;";
-        Statement st;
-        ResultSet rs;
-        
-        try{
-            st=connection.createStatement();
-                st.executeQuery("SET NAMES UTF8");
-        st.executeQuery("SET CHARACTER SET UTF8");
-            rs=st.executeQuery(query);
-            Client client;
-            while(rs.next())
-            {
-                client = new Client(rs.getInt("Client_id"),rs.getString("Client_name"),rs.getString("Client_phone"),rs.getString("Client_address"),rs.getString("Client_notes"));
-               clientList.add(client);
-            }
-            
-        }
-        catch(Exception e)
-        {
-         e.printStackTrace();
-        }
-        return clientList;
-    }
-    
-    
-        public ArrayList<Client>getClientList(int clientid)
-    {
-        ArrayList<Client>clientList=new ArrayList<Client>();
-        Connection connection= getConnection();
-        String query="SELECT * FROM `Clients`WHERE `item_id`="+clientid;
-        Statement st;
-        ResultSet rs;
-        try{
-            st=connection.createStatement();
-                 st.executeQuery("SET NAMES UTF8");
-        st.executeQuery("SET CHARACTER SET UTF8");
-            rs=st.executeQuery(query);
-            Client client;
-            while(rs.next())
-            {
-                client = new Client(rs.getInt("Client_id"),rs.getString("Client_name"),rs.getString("Client_phone"),rs.getString("Client_address"),rs.getString("Client_notes"));
-               clientList.add(client);
-            }
-            
-        }
-        catch(Exception e)
-        {
-            JOptionPane.showMessageDialog(null, "لم يضاف للاوردر ");
-        }
-        return clientList;
-    }
- // Display data in JTable
-    public void show_client()
-    {
-        
-        ArrayList<Client> list=getClientList();
-        DefaultTableModel model=(DefaultTableModel)deliverytable.getModel();
-        Object[] row=new Object[5];
-        for(int i=0;i<list.size();i++)
-        {
-            row[0]=list.get(i).getid();
-            row[1]=list.get(i).getName();
-            row[2]=list.get(i).getPhone();
-            row[3]=list.get(i).getAddress();
-            row[4]=list.get(i).getNotes();
 
-            
+    public ArrayList<Client> getClientList() {
+        ArrayList<Client> clientList = new ArrayList<>();
+        Connection connection = null;
+        String query = "SELECT * FROM Clients;";
+        Statement st;
+        ResultSet rs;
+
+        try {
+            connection=getConnection();
+            st = connection.createStatement();
+            st.execute("SET NAMES UTF8");
+            st.execute("SET CHARACTER SET UTF8");
+            rs = st.executeQuery(query);
+            Client client;
+            while (rs.next()) {
+                client = new Client(rs.getInt("Client_id"),
+                        rs.getString("Client_name"),
+                        rs.getString("Client_phone"),
+                        rs.getString("Client_address"),
+                        rs.getString("Client_notes"));
+                clientList.add(client);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return clientList;
+    }
+
+    public ArrayList<Client> getClientList(int clientid) {
+        ArrayList<Client> clientList = new ArrayList<>();
+        Connection connection = null;
+        Statement st = null;
+        ResultSet rs = null;
+
+        try {
+            connection = getConnection(); // Obtain connection from getConnection() method
+            st = connection.createStatement();
+            st.execute("SET NAMES UTF8");
+            st.execute("SET CHARACTER SET UTF8");
+
+            String query = "SELECT * FROM Clients WHERE Client_id = " + clientid;
+            rs = st.executeQuery(query);
+
+            while (rs.next()) {
+                int clientId = rs.getInt("Client_id");
+                String clientName = rs.getString("Client_name");
+                String clientPhone = rs.getString("Client_phone");
+                String clientAddress = rs.getString("Client_address");
+                String clientNotes = rs.getString("Client_notes");
+
+                Client client = new Client(clientId, clientName, clientPhone, clientAddress, clientNotes);
+                clientList.add(client);
+            }
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Error retrieving client list: " + e.getMessage());
+        } finally {
+            // Close resources in finally block to ensure they are always closed
+            try {
+                if (rs != null) {
+                    rs.close();
+                }
+                if (st != null) {
+                    st.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return clientList;
+    }
+
+    // Display data in JTable
+    public void show_client() {
+
+        ArrayList<Client> list = getClientList();
+        DefaultTableModel model = (DefaultTableModel) deliverytable.getModel();
+        Object[] row = new Object[5];
+        for (int i = 0; i < list.size(); i++) {
+            row[0] = list.get(i).getid();
+            row[1] = list.get(i).getName();
+            row[2] = list.get(i).getPhone();
+            row[3] = list.get(i).getAddress();
+            row[4] = list.get(i).getNotes();
+
             model.addRow(row);
-        }  
-        
-    }
-    
+        }
 
-    
- 
-    
-    
-    
-    
-    public void executeSQlQuery(String query, String message)
-   {
-       Connection con = getConnection();
-       Statement st;
-       try{
-           st = con.createStatement();
-                st.executeQuery("SET NAMES UTF8");
-        st.executeQuery("SET CHARACTER SET UTF8");
-           if((st.executeUpdate(query)) == 1)
-           {
-               // refresh jtable data
-               DefaultTableModel model = (DefaultTableModel)deliverytable.getModel();
-               model.setRowCount(0);
-               show_client();
-               textid.setText("");
-               txtname.setText("");
-               txtphone.setText("");
-               txtaddress.setText("");
-               txtnotes.setText("");               
-               
- ImageIcon icon = new ImageIcon(this.getClass().getResource("correct.png"));
-    JOptionPane.showMessageDialog(null, "تم "+message+"العميل بنجاح  "+"  ","DONE",JOptionPane.PLAIN_MESSAGE,icon); 
-           }else{
-               JOptionPane.showMessageDialog(null, "لم يتم "+message+"العميل ");
-           }
-       }catch(Exception ex){
-           JLabel label = new JLabel("حدد ماذا تريد");
+    }
+
+    public void executeSQlQuery(String query, String message) {
+        Connection con = getConnection();
+        Statement st = null;
+        try {
+            st = con.createStatement();
+            st.execute("SET NAMES UTF8");
+            st.execute("SET CHARACTER SET UTF8");
+
+            if (st.executeUpdate(query) == 1) {
+                // Refresh JTable data
+                DefaultTableModel model = (DefaultTableModel) deliverytable.getModel();
+                model.setRowCount(0);
+                show_client(); // Assuming this method fetches data and updates the table
+                textid.setText("");
+                txtname.setText("");
+                txtphone.setText("");
+                txtaddress.setText("");
+                txtnotes.setText("");
+
+                ImageIcon icon = new ImageIcon(getClass().getResource("correct.png"));
+                JOptionPane.showMessageDialog(null, "تم " + message + " العميل بنجاح", "DONE", JOptionPane.PLAIN_MESSAGE, icon);
+            } else {
+                JOptionPane.showMessageDialog(null, "لم يتم " + message + " العميل");
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            JLabel label = new JLabel("حدد ماذا تريد");
             label.setFont(new Font("Tahoma", Font.BOLD, 14));
             JOptionPane.showMessageDialog(null, label);
-       }
-         }
-    
+        } finally {
+            try {
+                if (st != null) {
+                    st.close();
+                }
+                if (con != null) {
+                    con.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
     /**
      * @param args the command line arguments
      */

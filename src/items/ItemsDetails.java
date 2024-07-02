@@ -427,8 +427,7 @@ public class ItemsDetails extends javax.swing.JFrame {
         Connection connection= getConnection();   
         st=connection.createStatement();
         String query="SELECT * FROM `Items` WHERE `Item_name`LIKE '%"+ValToSearch+"%'";
-         st.executeQuery("SET NAMES 'UTF8'");
-         st.executeQuery("SET CHARACTER SET 'UTF8'");    
+  
         rs=st.executeQuery(query);
             Items item;
             while(rs.next())
@@ -541,8 +540,6 @@ public class ItemsDetails extends javax.swing.JFrame {
         ResultSet rs;
         try{
             st=connection.createStatement();
-         st.executeQuery("SET NAMES 'UTF8'");
-         st.executeQuery("SET CHARACTER SET 'UTF8'");
             rs=st.executeQuery(query);
             Items item;
             while(rs.next())
@@ -613,8 +610,6 @@ checksizeforsearch();
        Statement st;
        try{
            st = con.createStatement();
-            st.executeQuery("SET NAMES 'UTF8'");
-         st.executeQuery("SET CHARACTER SET 'UTF8'");
            if((st.executeUpdate(query)) == 1)
            {
             

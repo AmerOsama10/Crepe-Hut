@@ -224,7 +224,7 @@ public class CashierLogin extends javax.swing.JFrame {
                         
                     }
                 catch (SQLException ex) {
-                        //System.out.print(ex.toString());
+                        System.out.print(ex.toString());
                         JLabel label = new JLabel("خطا السرفر غير متصل يرجي الاتصال اولا واعاده المحاوله");
                         label.setFont(new Font("Tahoma", Font.BOLD, 14));
                         JOptionPane.showMessageDialog(null, label);

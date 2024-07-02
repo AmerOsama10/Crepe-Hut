@@ -435,8 +435,7 @@ public class ClientsDetails extends javax.swing.JFrame {
         try{
         Connection connection= getConnection();   
         st=connection.createStatement();
-//         st.executeQuery("SET NAMES 'UTF8'");
-//         st.executeQuery("SET CHARACTER SET 'UTF8'");
+
         String query="SELECT * FROM `clients` WHERE `client_name`LIKE '%"+ValToSearch+"%'";
             rs=st.executeQuery(query);
             Client client;
@@ -544,8 +543,7 @@ public class ClientsDetails extends javax.swing.JFrame {
         ResultSet rs;
         try{
             st=connection.createStatement();
-//             st.executeQuery("SET NAMES 'UTF8'");
-//         st.executeQuery("SET CHARACTER SET 'UTF8'");
+
             rs=st.executeQuery(query);
             Client client;
             while(rs.next())
@@ -621,8 +619,6 @@ public class ClientsDetails extends javax.swing.JFrame {
        Statement st;
        try{
            st = con.createStatement();
-//            st.executeQuery("SET NAMES 'UTF8'");
-//         st.executeQuery("SET CHARACTER SET 'UTF8'");
            if((st.executeUpdate(query)) == 1)
            {
                // refresh jtable data

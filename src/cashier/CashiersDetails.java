@@ -15,7 +15,6 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import admin.AdminMain;
-import com.mysql.jdbc.exceptions.MySQLIntegrityConstraintViolationException;
 import java.awt.Color;
 import java.awt.Font;
 import java.sql.SQLIntegrityConstraintViolationException;
