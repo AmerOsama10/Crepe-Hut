@@ -44,7 +44,7 @@ inner join dates on orders.order_id=dates.order_id)
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Tahoma" size="13" isBold="true"/>
 				</textElement>
-				<text><![CDATA[X.MIX]]></text>
+				<text><![CDATA[Z Crepe]]></text>
 			</staticText>
 			<frame>
 				<reportElement style="Row" mode="Opaque" x="49" y="70" width="148" height="20" uuid="040e3321-e471-4d70-8b32-4e45f5ef511a"/>

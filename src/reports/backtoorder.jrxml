@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="226" pageHeight="864" columnWidth="200" leftMargin="13" rightMargin="13" topMargin="13" bottomMargin="13" uuid="cad44d53-af5b-4dfc-b6ce-216f903d055f">
 	<property name="ireport.zoom" value="3.4522712143931042"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="153"/>
+	<property name="ireport.y" value="291"/>
 	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
 	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
 	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
@@ -84,7 +84,7 @@ WHERE
 				<reportElement x="0" y="107" width="108" height="1" uuid="054453d3-0102-43a7-b835-9cc01bd2460e"/>
 			</line>
 			<image>
-				<reportElement x="50" y="0" width="100" height="37" uuid="055c5576-dd7d-4fa2-b050-787528988006"/>
+				<reportElement x="67" y="0" width="113" height="74" uuid="055c5576-dd7d-4fa2-b050-787528988006"/>
 				<imageExpression><![CDATA["C:\\Reports\\11.jpg"]]></imageExpression>
 			</image>
 		</band>

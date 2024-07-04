@@ -5,18 +5,22 @@
             <url>src/orders/recipes.java</url>
             <bookmark id="1">
                 <name/>
-                <line>4396</line>
+                <line>3913</line>
                 <key/>
             </bookmark>
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/NetBeansProjects/XMIX/src/orders/Delivery.java</file>
-            <file>file:/E:/NetBeansProjects/XMIX/src/admin/EnterSystem.java</file>
-            <file>file:/E:/NetBeansProjects/XMIX/src/cashier/CashierLogin.java</file>
-            <file>file:/E:/NetBeansProjects/XMIX/src/reports/takeaway.jrxml</file>
-            <file>file:/E:/NetBeansProjects/XMIX/src/orders/backtoorder.java</file>
+            <file>file:/C:/amer/Z-crepe/src/reports/Delivery.jrxml</file>
+            <file>file:/C:/amer/Z-crepe/src/reports/kitchendelivery.jrxml</file>
+            <file>file:/C:/amer/Z-crepe/src/reports/allrecord.jrxml</file>
+            <file>file:/C:/amer/Z-crepe/src/reports/kitchentake.jrxml</file>
+            <file>file:/C:/amer/Z-crepe/src/reports/takeaway.jrxml</file>
+            <file>file:/C:/amer/Z-crepe/src/reports/soldrange.jrxml</file>
+            <file>file:/C:/amer/Z-crepe/src/reports/backtoorder.jrxml</file>
+            <file>file:/C:/amer/Z-crepe/src/reports/soldcash.jrxml</file>
+            <file>file:/C:/amer/Z-crepe/src/cashier/CashiersDetails.java</file>
         </group>
     </open-files>
 </project-private>

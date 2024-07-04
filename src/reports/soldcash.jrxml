@@ -60,7 +60,7 @@ where order_date LIKE $P{date}
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Tahoma" size="13" isBold="true"/>
 				</textElement>
-				<text><![CDATA[X.MIX]]></text>
+				<text><![CDATA[Z Crepe]]></text>
 			</staticText>
 		</band>
 	</title>

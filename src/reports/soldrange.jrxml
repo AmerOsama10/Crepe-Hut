@@ -56,7 +56,7 @@ where order_date between $P{fromdate} and $P{todate}
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Tahoma" size="13" isBold="true"/>
 				</textElement>
-				<text><![CDATA[X.MIX]]></text>
+				<text><![CDATA[Z Crepe]]></text>
 			</staticText>
 			<staticText>
 				<reportElement style="Title" mode="Opaque" x="0" y="0" width="213" height="43" forecolor="#FFFFFF" backcolor="#006699" uuid="b456c066-4183-4303-b2c7-a64da50838f5"/>
